@@ -1,0 +1,74 @@
+/*----===== AAL BLOCKCHAIN FINANCIALS 2022 ===== -*/
+
+/* ===== Classic logo purple #9600FF ===== */
+/* ===== Modern logo gold #F6E99C ===== */
+/* ===== Dark mode background #18191A ===== */
+/* ===== Dark mode text #ced4e2 ===== */
+/* ===== Light mode background #E4E9F7 ===== */
+/* ===== Light mode text #272a2e ===== */
+
+/* ===== Dark mode gradient ===== */
+/* =====  background-image: linear-gradient(135deg, #18191A, #272A2E); ===== */
+
+/* ===== Light mode gradient ===== */
+/* =====  background-image: linear-gradient(135deg, #CED4E2, #FAFAFA); ===== */
+
+/* ===== Import Google Font ===== */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+html {
+    height:100%;
+  }
+  
+  body {
+    margin:0;
+  }
+
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(135deg, #3685fd 50%, #272A2E 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:15s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  .content {
+    background-color: #272a2e00;
+    border-radius:.25em;
+    box-sizing:border-box;
+    left:50%;
+    padding:5vmin;
+    position:fixed;
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+  }
+  
+  h1 {
+    font-family:Ubuntu;
+    color: #fff9f9;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+
+  

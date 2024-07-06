@@ -1,0 +1,72 @@
+{ 
+
+    "6/25/2022": {
+        "type":"Voice Chat",
+        "title": "Podcast #12",
+        "location": "Telegram",
+        "time": "4:00 PM EDT",
+        "date": "June 25",
+        "desc": "PDEX Community Podcast #12",
+        "more": "https://t.me/ThePolkadexVoiceChat"
+    },
+    
+    "7/2/2022": {
+        "type":"Voice Chat",
+        "title": "Podcast #13",
+        "location": "Telegram",
+        "time": "4:00 PM EDT",
+        "date": "July 2",
+        "desc": "PDEX Community Podcast #13",
+        "more": "https://t.me/ThePolkadexVoiceChat"
+    },
+    
+    "7/9/2022": {
+        "type":"Voice Chat",
+        "title": "Podcast #14",
+        "location": "Telegram",
+        "time": "4:00 PM EDT",
+        "date": "July 9",
+        "desc": "PDEX Community Podcast #14",
+        "more": "https://t.me/ThePolkadexVoiceChat"
+    },
+
+    "7/16/2022": {
+        "type":"Voice Chat",
+        "title": "Podcast #15",
+        "location": "Telegram",
+        "time": "4:00 PM EDT",
+        "date": "July 16",
+        "desc": "PDEX Community Podcast #15",
+        "more": "https://t.me/ThePolkadexVoiceChat"
+    },
+
+    "7/23/2022": {
+        "type":"Voice Chat",
+        "title": "Podcast #16",
+        "location": "Telegram",
+        "time": "4:00 PM EDT",
+        "date": "July 23",
+        "desc": "PDEX Community Podcast #16",
+        "more": "https://t.me/ThePolkadexVoiceChat"
+    },
+
+    "7/30/2022": {
+        "type":"Voice Chat",
+        "title": "Podcast #17",
+        "location": "Telegram",
+        "time": "4:00 PM EDT",
+        "date": "July 30",
+        "desc": "PDEX Community Podcast #17",
+        "more": "https://t.me/ThePolkadexVoiceChat"
+    },
+
+    "8/6/2022": {
+        "type":"Voice Chat",
+        "title": "Podcast #18",
+        "location": "Telegram",
+        "time": "4:00 PM EDT",
+        "date": "Aug 6",
+        "desc": "PDEX Community Podcast #18",
+        "more": "https://t.me/ThePolkadexVoiceChat"
+    }
+} 

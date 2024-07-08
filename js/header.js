@@ -1,26 +1,28 @@
-
-header.innerHTML =`
-<nav>
+/*-- Dynamic Header is named "header" - previously was "nav bar" --*/
+header.innerHTML =
+`
+<header>
     <div class="container">
         <div class="logo">
-        <a href="#"><img src="" alt="logo goes here"></a>
+        <a href="index.html"><img src="Images/transparent-bg-logo.PNG" alt="logo goes here"></a>
         </div>
 
-        <div class="navbar">
+        <div class="header">
             <div class="icon-bar" onclick="Show()">
             <i></i>
             <i></i>
             <i></i>
             </div>
 
-            <ul id="nav-lists">
-            <li class="close"><span onclick="Hide()">×</span></li>
+            <ul id="header-lists">
+            <li class="close"><span onclick="Hide()"></span></li>
             <li><a href="index.html">Welcome</a></li>
-            <li><a href="Tenant.html">Tenants</a></li>
-            <li><a href="Property Owner.html">Property Owners</a></li>
-            <li><a href="Agents.html"> Real Estate Agents</a></li>
+            <li><a href="Tenant.html">Tenant</a></li>
+            <li><a href="Property Owner.html">Property Owner</a></li>
+            <li><a href="Agent.html"> Real Estate Agents</a></li>
             </ul>
         </div>
     </div> 
-</nav>
+</header>
+
 `;

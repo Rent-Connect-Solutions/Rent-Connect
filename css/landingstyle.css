@@ -269,19 +269,40 @@ cursor: pointer;
 
 /* ============================== MAIN CONTENT (How it works)============================== */
 .maincontent{
-  justify-content: center;
+  display: block;
   max-width: 100%;
-  display: flex;
-  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 #h2 {
   color: #000000;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bold; 
-  font-size: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400; 
+  font-size: 40px;
   text-align: center;
   padding-block: 30px;
 }
+
+.column2 {
+  max-width: 100%;
+  display: block;
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Clear floats after image containers */
+.row2::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
 /* ====-- PROFILE CARD FORMATING --==== */
 *{
   margin: 0px;
@@ -404,7 +425,7 @@ color: #17c0eb
   width: 100%;
 }
 .footer-distributed {
-  background-color: #18191a; /* ===== Footer Background ===== */
+  background-color: #3685fd; /* ===== Footer Background ===== */
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
@@ -447,19 +468,16 @@ color: #17c0eb
   float: right;
   margin-top: 6px;
   max-width: 180px;
+ 
 }
 .footer-distributed .footer-right a {
   display: inline-block;
-  width: 35px;
-  height: 35px;
-  background-color: #afdfa5; /* ===== Footer social media logo background ===== */
-  border-radius: 2px;
   font-size: 20px;
-  color: #18191a; /* ===== Footer social media logo color  ===== */
   text-align: center;
   line-height: 35px;
   margin-left: 3px;
   transition:all .25s;
+  justify-content: space-between;
 }
 .footer-distributed .footer-right a:hover {
   transform:scale(1.1); 
@@ -476,6 +494,7 @@ color: #17c0eb
 .footer-distributed .footer-right {
   float: none;
   margin: 0 auto 20px;
+ 
 }
 .footer-distributed .footer-left p.footer-links {
   line-height: 1.8;

@@ -1,132 +1,116 @@
-<!-----------------------Tenant Sing up/Login in Page -------------------->
-
 <!DOCTYPE html>
 <html lang="en">
 
-<!----===== STYLESHEET SOURCEFILE ===== -->
-   <link rel="stylesheet" href="css/style.css">
-
 <head>
-      <meta charset="UTF-8">
-      <!----===== This makes the page mobile device friendly ===== -->
-      <meta name="viewport"content="width=device-width, initial-scale=1.0">
-      <!----===== Browser tab title ===== -->
-      <title>Rent Connect Tenant Protal</title>
-      <!----===== Browser tab icon large ===== -->
-      <link rel="image" type="" img src="Images/Tenant-Portal-32x32.png" sizes= "32 x 32">
-      <!----===== Browser tab icon small ===== -->
-      <link rel="icon" type="" sizes="16x16" href="">
-      <!----===== iPhone homescreen icon large ===== -->
-      <link rel="apple-touch-icon" href="">
-      <!----===== For browsers that support color matching  ===== -->
-      <meta name="theme-color" content="#18191A"> 
-      <!----===== Browser icon list ===== -->
-      <link rel="manifest" href="images/site.webmanifest">
-      <!----===== FA icon styles ===== -->
-      <link rel="stylesheet" href="images/font-awesome-4.7.0/css/font-awesome.css">
-      <!----===== W3 button styles ===== -->
-      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-   
-      <!-- Java Script Dynamic Header Script-->
-      <script defer src="./js/header.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<link rel="stylesheet" href="css/portal-tenant.css">
+<!----===== Browser tab title ===== ---->
+<title>Rent Connect</title>
+<!----===== Browser tab icon large ===== ---->
+<link rel="icon" type="image/png" sizes="32x32" href="/images/Logo Blue Transparent.png">
+<!----===== Browser tab icon small ===== ---->
+<link rel="icon" type="image/png" sizes="16x16" href="/images/Logo Transparent.png"> 
+<!----===== iPhone homescreen icon large ===== ---->
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<!----===== For browsers that support color matching  ===== ---->
+<meta name="theme-color" content="#3685fd">
+<!----===== Browser icon list ===== ---->
+<link rel="manifest" href="images/site.webmanifest">
+<!----===== FA icon styles ===== ---->
+<link rel="stylesheet" href="images/font-awesome-4.7.0/css/font-awesome.css">
+<!----===== W3 button styles ===== ---->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+
+<title>Tenant Portal</title>
 </head>
+
+<header>
+    <div class="container"> 
+        <div class="header">
+            <div class="icon-bar" onclick="Show()">
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+
+            <ul id="header-lists">
+                <li class="close"><span onclick="Hide()"></span></li>
+                <li><a href="">Home</a></li>
+
+            </ul>
+        </div>
+        <div class="logo"><img src="Images/RC.png" style="height: 60px" width="apple-touch-icon"></div>
+
+        <!----===== HEADER NAME 
+
+        <div id="navname">RENT CONNECT</div> ===== ---->
+
+
+<button type="submit" class="button1"><a href="">LOG OUT</a></button>
+</div> 
+</header>
 
 <body>
 
-<!-- Java Script Dynamic Header injected into HTML-->
-<div id="header"></div>
+    <!--- TOP HEADER --->
+ <div class="topcontainer"></div>   
 
-<!----===== Node cards ===== -->
-<div class="body">
-    <h1><b>Tenant Profile</b></h1>
-    <div style="width:100%;">
-        <div class="cardleft">
-            <img src="images/T Logo Orange.png" alt="Network Logo" style="width:170px;height:168px;">
-            <div class="cardcontainer">
-                <h5><b>"Picture Upload"</b></h5> 
-            
-            <p style="word-wrap:break-word;"></p>           
-        </div>
-        </div>
+
+<div class="float-container">
+    <div class="float-child sidebar">
+        <img class="userimg" src="Images/purple-bg-logo.PNG">
         
-        
-    </div>
-    <!--------------------- Tenant fill in Section  -------------------------------->
-<div>
-    <form action="/action_page.php">
-        <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname"><br><br>
-        <label for="fname"># of Occupents</label>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="lname"># of Pets</label>
-        <input type="text" id="lname" name="lname"><br><br>
-        <label for="fname">Desired Bedrooms</label>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="lname">Desired Bathrooms</label>
-        <input type="text" id="lname" name="lname"><br><br>
-        <label for="fname"># of parking spots:</label>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="fname">Area (radius km) </label>
-        <input type="text" id="fname" name="fname"><br><br>
-        <input type="submit" value="Submit">
-        </form>
-<!--------------============ Embedded Map Tenant wants to rent in ================------------------------->
-
-        <div class="mapouter">
-            <div class="gmap_canvas">
-                <iframe width="500" height="500" id="gmap_canvas" 
-                    src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-
-                </iframe>
-            <a href="https://embedgooglemap.net/124/"></a><br>
-                <style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}
-                </style>
-            <a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
-                <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}
-                </style>
-            </div>
-        </div>
-<img src="images/T Logo WhiteGreen.png" width="50" height="50" alt=></a>
-<p>Please leave a Google Review!! It helps us make things more effecient for you!</p>
-
-</div>
-</div>
-<!----===== Footer Info Panel ===== -->
-<!----=====   <div class="w3-bar"> === -->
- <!----=====    <button class="w3-button w3-theme" === -->
- <!----=====    onclick="toggle_light_mode()">Lightmode</button> === -->
-  <!----=====    <button class="w3-bar-item w3-disabled" onclick=newlogo();> New Logo</button> === -->
-  <!----=====   <button class="w3-bar-item w3-disabled" onclick=classiclogo();> Classic Logo</button> === --> 
-</div>
-
-<footer class="footer-distributed">
-
-    <div class="footer-right">
-
-        <a href="emailto:AALBlockchainFinancials@pm.me"><i class="fa fa-at"></i></a>
-        <a href="https://twitter.com/AAL_Blockchain"><i class="fa fa-twitter"></i></a>
-        <a href="https://t.me/AALCommunityChat"><i class="fa fa-telegram"></i></a>
-        <a href="https://t.me/ThePolkadexVoiceChat"><img src="images/PDEX_VC_logo.png" width="20" height="20"></a>
-
+        <ul>
+            <li><a class="active" href="#home">Dashboard</a></li>
+            <li><a href="#news">Profile</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">Documents</a></li>
+          </ul>       
     </div>
 
-    <div class="footer-left">
-        <p class="footer-links">
-            <a class="link-1" href="index.html">Home</a>
-            <a href="Tenant.html">Tenant</a>
-            <a href="Property Owner.html">Landlord</a>
-            <a href="Agent.html">Agents</a>    
-        </p>
-        <p> Rent Connect  &copy; 2024
-        
-        </p>
-    </div>
+    <div class="float-child content">
+        <h1>Welcome back, "NAME"</h1>
+
+        <div class="plus radius"> 
+        </div>
+
+        <h2>
+            <li><a class="active" href="#home">Posts</a></li>
+         
+        </h2>
+        <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham. </p>
 </div>
-</footer>
+
+
 </body>
-<!----===== JAVASCRIPT SOURCEFILE ===== -->
-   <script src="js/app.js"></script>
+
+<!-- ==== FOOTER ==== -->
+<footer>
+    <div class="footercontainer">
+        <footer class="footer-distributed">
+            <div class="footer-right">
+                <a href="emailto:"><img src="images/icons8-mail-50.png"></a>
+
+                <a href="https://twitter.com/"><img src="Images/icons8-twitterx-50.png"></a><br>
+                <a target="_blank" href="https://icons8.com/icon/53388/mail" style="font-size: 8px; color: #ffffff;">Mail</a> <a target="_blank" href="https://icons8.com/icon/6Fsj3rv2DCmG/twitterx" style="font-size: 8px; color: #ffffff;">& TwitterX</a><a target="_blank" href="https://icons8.com" style="font-size: 8px; color: #ffffff;">Icons8</a>
+
+            </div>
+          
+            <div class="footer-left">
+                <p class="footer-links">
+                    <a class="link-1" href="index.html">Home</a>
+                    <a href="Tenant.html">Tenant</a>
+                    <a href="Property Owner.html">Property Owner</a>
+                    <a href="Agent.html">Real Estate Agent</a>    
+                </p>
+                <p> Rent Connect  &copy; 2024
+                </p>
+            </div>
+    </div>
+</footer>
+
 </html>

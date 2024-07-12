@@ -2,7 +2,7 @@
 header.innerHTML =
 `
 <header>
-    <div class="container">
+    <div class="header">
         <div class="logo">
         <a href="landingpage.html"><img src="Images/transparent-bg-logo.PNG" alt="logo goes here"></a>
         </div>
@@ -12,9 +12,9 @@ header.innerHTML =
             <i></i>
             <i></i>
             <i></i>
-            </div>
+        </div>
 
-            <ul id="header-lists">
+            <ul id="header-list">
             <li class="close"><span onclick="Hide()"></span></li>
             <li><a href="Index.html">Welcome</a></li>
             <li><a href="Tenant.html">Tenant</a></li>

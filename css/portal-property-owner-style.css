@@ -356,6 +356,11 @@ cursor: pointer;
   border-radius: 10px 0px 0px 10px;
 }
 
+.createpost-text p{
+  color:#5e7ce2;
+  font-size: 20px;
+  font-weight: 600;
+}
 
 
 /* PLUS SIGN FOR CREATE POST */
@@ -378,7 +383,7 @@ cursor: pointer;
 
 .plus:hover {
   --b: 4px; /* the thickness */
-  width: 45px; /* the size */
+  width: 40px; /* the size */
   aspect-ratio: 1;
   border: 10px solid #9da9ce; /* the outer space */
   background:
@@ -395,6 +400,7 @@ cursor: pointer;
 
 .radius {
   border-radius: 50%;
+
 }
 
 

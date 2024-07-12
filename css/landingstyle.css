@@ -175,7 +175,7 @@ cursor: pointer;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    background: #272A2E; /*small screen header background*/
+    background: #3685fd; /*small screen header background*/
     width: 100%;
     height: 100%;
     overflow: auto;

@@ -404,7 +404,7 @@ img{  /*how it works images*/
 .card {
   background-color: #f5f7fd;
   border-radius: 10px;
-  box-shadow: 0 10px 10px #9da9ce;
+  box-shadow: 30px 15px 10px #9da9ce;
   display: flex;
   max-width: 100%;
   padding: 1%;
@@ -438,6 +438,7 @@ img{  /*how it works images*/
   width: calc(33% - 10px);
   background: #ffffff;
   border-color: #3685fd;
+  box-shadow: 30px 10px 10px #9da9ce;
   border: solid;
   display: flex;
   flex-direction: column;

@@ -397,25 +397,6 @@ cursor: pointer;
   border-radius: 50%;
 }
 
-.createposttext {
-  display:flex;
-  flex-direction: row;
-  float: center;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.createposttext p{
-  text-align: center;
-  color: #5e7ce2;
-  padding: 20px;
-  font-family: MuliRegular, sans-serif;
-  font-size: 20px;
-  font-weight: 550;
-  padding-top: 0px;
-  text-align: center;
-}
 
 
 
@@ -515,6 +496,7 @@ cursor: pointer;
 .left {
   width: 50% ;
   display: flex;
+  flex-direction: column;
   margin-left: auto;
   margin-right: auto;
   padding-right: 10px;
@@ -535,7 +517,6 @@ padding-left: 5%;
   clear: both;
 
  }
-
 
 .post-cards {
   background-color: #ffffff;

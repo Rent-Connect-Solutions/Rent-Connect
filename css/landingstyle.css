@@ -373,11 +373,13 @@ img{  /*how it works images*/
 
 .img-col2 { /*how it works text*/
   float: right;
+ 
 }
 
 .text-col {/*how it works text*/
   max-width: 50%;
   padding-left: 20px;
+  
 }
 
 .text-col h2{ /*how it works text*/
@@ -388,7 +390,7 @@ img{  /*how it works images*/
 
 .text-col p { /*how it works text*/
   color:#000000;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 
@@ -400,14 +402,18 @@ img{  /*how it works images*/
 }
 
 .card {
-  background-color: #ffffff;
+  background-color: #f5f7fd;
   border-radius: 10px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 10px #9da9ce;
   display: flex;
   max-width: 100%;
-  margin: 20px;
+  padding: 1%;
   overflow: hidden;
   width: 60%;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2%;
 }
 
 /* ====-- PROFILE CARD FORMATING --==== */
@@ -610,38 +616,7 @@ img{  /*how it works images*/
 }
 }
 
-/* ============================= Basic Popup Textboxes  ============================== */
-.tooltip {
-  position: relative;
-  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
-}
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -60px;
-}
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: black transparent transparent transparent;
-}
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
+
 /* ===== Basic Form styles  ===== */
 .form-row {
   font-size: larger;

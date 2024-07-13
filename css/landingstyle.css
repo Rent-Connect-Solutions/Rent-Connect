@@ -347,10 +347,12 @@ cursor: pointer;
 }
 
 .maincontent2 h1 {
-  color:#5e7ce2;
+  background:linear-gradient(to right, #5d9eff,#5e17eb); /* this is title text */
+  background-clip:text;
+  color: transparent;
   font-family: 'Popins', sans-serif;
-  font-weight: 400; 
-  font-size: 30px;
+  font-weight: 800; 
+  font-size: 40px;
   text-align: center;
   padding-top: 40px;
 }

@@ -293,6 +293,7 @@ cursor: pointer;
 /* ============================== MAIN CONTENT ============================== */
 .maincontent{ /* -- white background --*/
   display: flex;
+  padding-block: 20px;
   flex-direction: row;
   width: min(1200px,90%);
   margin-left: auto;
@@ -414,6 +415,11 @@ img{  /*how it works images*/
   margin-right: auto;
   margin-left: auto;
   margin-top: 2%;
+  transition: 250ms ease-in-out;
+}
+.card:hover {
+  scale: 1.2;
+
 }
 
 /* ====-- PROFILE CARD FORMATING --==== */

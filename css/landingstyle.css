@@ -304,7 +304,7 @@ cursor: pointer;
 
 .maincontent2 { /* -- light blue background --*/
   background-color: #f5f7fd;
-  background-image: url(/Images/Bubble\ Background.png);
+
   background-size: cover;
   max-width: 100%;
   margin-left: auto;
@@ -409,22 +409,20 @@ img{  /*how it works images*/
 .card {
   background-color: #f5f7fd;
   border-radius: 10px;
-  box-shadow: 30px 15px 10px #9da9ce;
+  box-shadow: 10px 15px 10px #9da9ce;
   display: flex;
   max-width: 100%;
   padding: 1%;
   overflow: hidden;
-  width: 60%;
+  width: 50%;
+  height: 50%;
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
   margin-top: 2%;
   transition: 250ms ease-in-out;
 }
-.card:hover {
-  scale: 1.2;
 
-}
 
 /* ====-- PROFILE CARD FORMATING --==== */
 *{

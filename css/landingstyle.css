@@ -304,6 +304,8 @@ cursor: pointer;
 
 .maincontent2 { /* -- light blue background --*/
   background-color: #f5f7fd;
+  background-image: url(/Images/Bubble\ Background.png);
+  background-size: cover;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto; 
@@ -442,24 +444,23 @@ img{  /*how it works images*/
 }
 .profilecontainer .box{
   width: calc(33% - 10px);
-  background: #ffffff;
-  border-color: #3685fd;
-  box-shadow: 15px 10px 10px #9da9ce;
+  background: #ffffff3a;
   border: solid;
+  border-color: #fafafa86;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px 30px;
   border-radius: 5px;
- 
+  backdrop-filter: blur(8px);
 }
 
 .profilecontainer .box .image{
   margin: 10px 0;
-  width: 70%;
-  background: #ffffff;
-  padding: 3px;
+  width: min(100px,70%); /* Changed width to switch from 100px size to 70% based on screen size*/
+  background: #ffffff3a;
+  /* padding: 3px; -- improves headshot image removing padding*/
   border-radius: 50%;
 }
 .box .image img{

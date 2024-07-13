@@ -294,7 +294,7 @@ cursor: pointer;
 .maincontent{ /* -- white background --*/
   display: flex;
   flex-direction: row;
-  max-width: 100%;
+  width: min(1200px,90%);
   margin-left: auto;
   margin-right: auto; 
   align-items: center;

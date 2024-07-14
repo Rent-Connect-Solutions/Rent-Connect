@@ -203,13 +203,28 @@ cursor: pointer;
 }
 }
 /* ============================== TOP BANNER BACKGROUNDFORMATING ============================== */
+
+/*
 .top-banner {
   background-color: #f5f7fd;
   height: 500px;
   max-width: 100%;
   display: flex;
-}
+} */
 
+.top-banner {
+  background-image: url(/Images/Wavebanner.svg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: scroll;
+  background-clip: border-box;
+  flex-flow: row;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  display: flex;
+  max-height: 500px;
+}
 
 #h1 {
   color: #5e7ce2;
@@ -236,15 +251,14 @@ cursor: pointer;
 }
 
 .left {
-  width: 50% ;
+  width: 70% ;
   padding-top: 100px;;
   padding-left: 150px;
 }
 
 .right{
-  width: 50%;
+ width: 50%;
  padding-top: 70px;
- padding-right: 50px;
 }
 
 .row:after {
@@ -295,16 +309,20 @@ cursor: pointer;
   display: flex;
   padding-block: 20px;
   flex-direction: row;
-  width: min(1200px,90%);
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto; 
-  align-items: center;
   justify-content: center;
 }
 
 .maincontent2 { /* -- light blue background --*/
   background-color: #f5f7fd;
-
+  background-image: url(/Images/BGcontent.svg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: scroll;
+  background-clip: border-box;
   background-size: cover;
   max-width: 100%;
   margin-left: auto;
@@ -313,6 +331,7 @@ cursor: pointer;
   justify-content: center;
   display: flex;
   flex-direction: column;
+  height: 100%
 }
 
 .maincontent3 { /* -- light blue background for gif --*/
@@ -347,81 +366,78 @@ cursor: pointer;
 }
 
 .maincontent2 h1 {
-  background:linear-gradient(to right, #5d9eff,#5e17eb); /* this is title text */
+  color: #5e7ce2;
   background-clip:text;
-  color: transparent;
   font-family: 'Popins', sans-serif;
-  font-weight: 800; 
-  font-size: 40px;
+  font-weight: 600; 
+  font-size: 35px;
   text-align: center;
   padding-top: 40px;
-}
-.contactform h1 {
-  color: #000000;
-  font-family: 'Popins', sans-serif;
-  font-weight: 400; 
-  font-size: 40px;
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 15px;
 }
 
-img{  /*how it works images*/
+/* CURRENT CARDS 
+.card {
+  background-color: #f5f7fd;
+  border-radius: 10px;
+  border: 2px solid rgba(114, 141, 230, .4);
+  box-shadow: 3px 3px 15px rgba(55, 43, 96, .2);
+  display: flex;
   max-width: 100%;
+  padding: 1%;
+  overflow: hidden;
+  width: 30%;
+  height: 50%;
+  margin-top: 2%;
+
+}
+
+img {  
+  max-width: 50%;
   padding-left: 10px;
   padding-right: 20px;
 }
 
-.img-col { /*how it works images*/
+.img-col { 
   float: left;
+  display: flex;
 }
 
-.img-col2 { /*how it works text*/
+.img-col2 {
   float: right;
+}
+
+.text-col {
+  max-width: 50%;
+  padding-left: 20px;
  
 }
 
-.text-col {/*how it works text*/
-  max-width: 50%;
-  padding-left: 20px;
-  
-}
-
-.text-col h2{ /*how it works text*/
+.card h2{ 
   color: #000000;
   font-size: 30px;
   font-weight: 500;
+  display: flex;
+  justify-content: center;
 }
 
-.text-col p { /*how it works text*/
+.text-col p { 
+  color:#000000;
+  font-size: 20px; 
+}
+
+.text-col p:hover { 
   color:#000000;
   font-size: 20px;
 }
 
 
-/* Clear floats after image containers */
 .row2::after {
   content: "";
   clear: both;
   display: table;
 }
+*/
 
-.card {
-  background-color: #f5f7fd;
-  border-radius: 10px;
-  box-shadow: 10px 15px 10px #9da9ce;
-  display: flex;
-  max-width: 100%;
-  padding: 1%;
-  overflow: hidden;
-  width: 50%;
-  height: 50%;
-  justify-content: center;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 2%;
-  transition: 250ms ease-in-out;
-}
 
 
 /* ====-- PROFILE CARD FORMATING --==== */
@@ -654,7 +670,10 @@ img{  /*how it works images*/
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8%;
+ 
 }
 
 .contact-form {

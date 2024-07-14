@@ -72,7 +72,6 @@
   background-color: white;
   padding: 10px 15px;
   margin-right: 100px;
-  
   float: right;
   border-radius: 10px;
   border: solid;
@@ -363,7 +362,23 @@ cursor: pointer;
 }
 
 
-/* PLUS SIGN FOR CREATE POST */
+@media screen and (max-width: 400px) {
+  .float-container {
+    flex-direction: row;
+  }
+
+  .float-child.sidebar{
+    width: 100%;
+    height: auto;
+  }
+
+  .float-container.sidebar{
+    padding-top: 0;
+  }
+}
+
+
+
 .plus {
   --b: 4px; /* the thickness */
   width: 40px; /* the size */

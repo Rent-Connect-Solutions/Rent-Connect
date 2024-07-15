@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="css/mobile-template.css">
+<link rel="stylesheet" href="css/MF-landing-page.css">
 <!----===== Browser tab title ===== ---->
 <title>Rent Connect Dashboard</title>
 
@@ -27,18 +27,18 @@
 
 
 
-<body>
+<header>
     <div class="app">
+
         <div class="menu-toggle">
             <div class="hamburger">
                 <span></span>
             </div>
         </div>
-
-        <div class="topnav">
-            <h3>Menu</h3>
-
+        <div class="navbar"> 
+            
             <nav class="menu">
+
                 <a href="#" class="menu-item is-active">Home</a>
                 <a href="#" class="menu-item">About Us</a>
                 <a href="#" class="menu-item">SIGN UP / LOG IN</a>
@@ -46,12 +46,26 @@
 
         </div>
 
-
-
+    <main class="content">
+        <h1>Match me up!</h1>
+        <p>Bridging the gap between property owners and tenants <br><br>
+            through key filtered amenities. </p>    
+       
 
 
     </div>
+    <script>
+        const menu_toggle = document.querySelector('.menu-toggle');
+        const sidebar = document.querySelector ('.navbar');
 
-</body>
+        menu_toggle.addEventListener('click', () => {
+            menu_toggle.classList.toggle ('is-active');
+            sidebar.classList.toggle('is-active');
+
+        })
+
+    </script>
+
+</header>
 
 </html>

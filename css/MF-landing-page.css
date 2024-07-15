@@ -9,59 +9,67 @@
 
 /* ==========---------- SIDE BAR NAVIGATION ----------========== */
 .app {
-    display: flex;
+    display:block;
     min-height: 100vh;
 }
 
- .topnav {
-    flex: 0 0 1;
-    width: 100%;
-    padding: 2rem 1rem;
+
+ .navbar {
+    flex: 0 0 0;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: space-between;
     background-color: #5e7ce2;
- }
-
- .topnav h3 {
     color: #ffffff;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    margin-bottom: 0.5em;
+    padding: 1rem 1.5rem;
+ 
  }
 
- .topnav .menu {
+
+.navbar .menu {
     margin: 0 -1rem;
- }
+}
 
- .topnav .menu .menu-item {
-    display: block;
+.navbar .menu .menu-item {
+    display: inline;
     padding: 1em;
     color: #ffffff;
     text-decoration: none;
     transition: 0.2s linear;
+  
  }
 
- .sidebar .menu .menu-item:hover,
- .sidebar .menu .menu-item.is-active {
+ .navbar .menu .menu-item:hover,
+ .navbar .menu .menu-item.is-active {
     color:#5e7ce2;
     background-color: #f5f7fd;
-    border-radius: 10px 0px 0px 10px;
  }
 
  .content {
     background-color: #f5f7fd;
     flex: 1 1 0;
     padding: 2rem;
+    height: 100vh;
     
  }
 
  .content h1 {
-    color: #505b77;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    color: #5e7ce2;
+    font-size: 5rem;
+    margin-top: 5rem;
+    margin-left: 10rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
 
  }
 
  .content p {
     color:#505b77;
+    font-size: 1.2rem;
+    margin-top: 1em;
+    margin-left: 10rem;
+
  }
 
  .menu-toggle {
@@ -122,31 +130,54 @@
 
 /* ==========---------- SIDE BAR RESPONSIVE - MOBILE ----------========== */
  @media (max-width: 1024px){
-    .sidebar {
-        max-width: 200px;
+    .navbar {
+        max-width: 100%;
     }
  }
 
  @media (max-width: 768px) {
     .menu-toggle{
+        display:block;
+    }
+
+    .navbar .menu .menu-item {
         display: block;
     }
+
     .content { /* ==========---------- MAIN CONTENT RESPONSIVE - MOBILE ----------==========*/
         padding-top: 8rem;
     }
-    .sidebar {
+    .navbar {
         position:fixed;
         top: 0;
-        left: -300px;
+        left: -250px;
         height: 100vh;
         width: 100%;
-        max-width: 300px;
+        max-width: 250px;
         transition: 0.2s linear;
-
     }
-    .sidebar.is-active {
+
+    .navbar.is-active {
         left: 0;
     }
+
+    .content h1 {
+        color: #5e7ce2;
+        font-size: 5rem;
+        margin-top: 5rem;
+        margin-left: 0rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 700;
+    
+     }
+    
+     .content p {
+        color:#505b77;
+        font-size: 1.2rem;
+        margin-top: 1em;
+        margin-left: 0rem;
+    
+     }
  }
 
 

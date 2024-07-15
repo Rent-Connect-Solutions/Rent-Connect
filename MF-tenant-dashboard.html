@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="css/MF-tenant-dashboard.css">
+<!----===== Browser tab title ===== ---->
+<title>Rent Connect Dashboard</title>
+
+<!----===== Browser tab icon large ===== ---->
+<link rel="icon" type="image/png" sizes="32x32" href="/images/Logo Blue Transparent.png">
+<!----===== Browser tab icon small ===== ---->
+<link rel="icon" type="image/png" sizes="16x16" href="/images/Logo Transparent.png"> 
+<!----===== iPhone homescreen icon large ===== ---->
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<!----===== For browsers that support color matching  ===== ---->
+<meta name="theme-color" content="#3685fd">
+<!----===== Browser icon list ===== ---->
+<link rel="manifest" href="images/site.webmanifest">
+<!----===== FA icon styles ===== ---->
+<link rel="stylesheet" href="images/font-awesome-4.7.0/css/font-awesome.css">
+<!----===== W3 button styles ===== ---->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+
+<title>Tenant Dashboard</title>
+</head>
+
+
+
+
+
+
+<body>
+    <div class="app">
+
+        <div class="menu-toggle">
+            <div class="hamburger">
+                <span></span>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <h3>Menu</h3>
+
+            <nav class="menu">
+                <a href="#" class="menu-item is-active">Dashboard</a>
+                <a href="#" class="menu-item">Profile</a>
+                <a href="#" class="menu-item">Properties</a>
+                <a href="#" class="menu-item">Marketplace</a>
+                <a href="#" class="menu-item">Log out</a>
+            </nav>
+
+        </aside>
+
+        <main class="content">
+            <h1>Welcome back, NAME</h1>
+            <p>Your Rent Connect Dashboard</p>
+
+            <a href="http://example.com">
+                <div class="plus radius"></div>
+            </a>
+            <div class="createpost-text"><p>Add Property</p></div>
+
+            <div class="cards">
+                <div id="h1">Your Properties</div>
+            </div>
+
+            <div class="cards">
+                <div id="h1">Stats</div>
+            </div>
+
+            <div class="cards">
+                <div id="h1">Content card</div>
+            </div>
+
+            
+
+        </main>
+
+
+    </div>
+
+    <script>
+        const menu_toggle = document.querySelector('.menu-toggle');
+        const sidebar = document.querySelector ('.sidebar');
+
+        menu_toggle.addEventListener('click', () => {
+            menu_toggle.classList.toggle ('is-active');
+            sidebar.classList.toggle('is-active');
+
+        })
+
+    </script>
+
+</body>
+</html>

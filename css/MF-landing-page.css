@@ -210,9 +210,33 @@
         font-weight: 500;
         font-size: 1.5rem;
         text-align: center;
-    }
-   
+    }  
  }
+
+ @media (max-width: 2000px){
+    .content { /* ==========---------- MAIN CONTENT RESPONSIVE - MOBILE ----------==========*/
+        padding-top: 8rem;
+        margin-top: -0.5rem;
+    }
+    .content h1 {
+        color: #ffffff;
+        font-size: 4.3rem;
+        margin-top: -6rem;
+        margin-left: 10rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 700;
+    
+     }
+    
+     .content p {
+        color:#ffffff;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        margin-left: 10rem;
+    
+     }
+}
+
 
 
 
@@ -235,8 +259,10 @@
         border: 2px solid #ffffff;
         letter-spacing: 0.2rem;
         text-align: center;
-        margin-inline-end: 100px;
+        margin-inline-end: 60px;
         margin-bottom: 80px;
+        margin-top: -123px;
+        margin-right: -10px;
         
     }
     
@@ -255,6 +281,7 @@
     .content { /* ==========---------- MAIN CONTENT RESPONSIVE - MOBILE ----------==========*/
         padding-top: 8rem;
         margin-top: 2rem;
+       
     }
 
     .content2 { /* ==========---------- MAIN CONTENT RESPONSIVE - MOBILE ----------==========*/
@@ -286,7 +313,7 @@
     .content h1 {
         color: #ffffff;
         font-size: 4.3rem;
-        margin-top: -4rem;
+        margin-top: -6rem;
         margin-left: 0rem;
         font-family: 'Times New Roman', Times, serif;
         font-weight: 700;
@@ -327,6 +354,7 @@
 }
 
 /** For mobile devices **/
+
 @media (max-width: 767px) {
     .custom-shape-divider-bottom-1721234491 svg {
         width: calc(142% + 1.3px);
@@ -384,6 +412,8 @@
     .callbtn{
         max-width: 10rem;
     }
+
+ 
  }
 
  @media (max-width: 768px) {
@@ -392,6 +422,7 @@
      margin-left: 2rem;
 
      }
+
  }
 
  /* ===== HOW IT WORKKS ===== */
@@ -697,4 +728,22 @@ ul > li { line-height: 2em; margin-left: .5rem;}
         order: 4;
     }
 }
+
+.arrow-container {
+    display: flex;
+    margin-top: 5rem;
+
+}
+
+.arrow {
+    border: solid #5e7ce2;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
 

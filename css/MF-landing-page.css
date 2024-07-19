@@ -279,7 +279,7 @@
     }
 
     .content2 { /* ==========---------- MAIN CONTENT RESPONSIVE - MOBILE ----------==========*/
-        padding-top: 8rem;
+        padding-top: 4rem;
         margin-top: 2rem;
        
     }
@@ -419,13 +419,44 @@
      }
 
  }
+/* ======---- LEARN MORE BUTTON STYLE ----====== */
 
- /* ===== HOW IT WORKKS ===== */
+ .learnbtn {
+    
+    width: 10rem;
+    height: 3rem;
+    background-color: #ffffff;
+    color: #5e17eb;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 50px;
+    border: solid, 2px;
+    border-color: #5e17eb;
+    
+}
+
+.learnbtn:hover {
+    
+    width: 10rem;
+    height: 3rem;
+    background-color: #5e17eb ;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+ /* ==============================================================  HOW IT WORKKS ============================================================== */
 
  .about-services ul{
     display: flex;
     margin: 30px auto;
-    width: min-content;
     text-align: center;
     list-style: none;
     justify-content: space-between;
@@ -462,7 +493,7 @@
 
 
 
- @media (max-width: 768px) {
+ @media (max-width: 950px) {
   .about-services ul{
      display:inline;
      text-align: center;
@@ -474,25 +505,41 @@
 
 
 
+/* ====== MAIL CHIMP SIGN UP BUTTONS ======*/
+/*== lANDLORD: id05 ==*/ /*== TENANT: id06 ==*//*== PROPERTY MANAGER: id07 ==*/
+button {
+border-radius: 10rem;
 
-/* ======PROFILE CARDS======*/
+}
+
+
+
+
+
+
+
+
+
+
+/* ====================================================================PROFILE CARDS ====================================================================*/
 
 .cards ul{
   display: inline-flex;
   text-align: center;
   list-style: none;
   width: 100%;
-
+  
 }
+
+
 
 .cards ul li{
   background-color: #ffffff;
-  width: min (400px, 90%);
+  width: min(768px, 90%);
   height: 300px;
   margin-left: 1rem;
   margin-right: 1rem;
   border-radius: 30px;
-  box-shadow: 3px 3px 15px #505b77;
   border: 1px solid #505b77 ;
 
 }
@@ -596,7 +643,7 @@
 
 
 
-/* ====== FOOTER STYLE ====== */
+/* ==================================================================== FOOTER STYLE ==================================================================== */
 
 .footer-container{
     position:static;

@@ -188,7 +188,7 @@
   
   .radius {
     border-radius: 50%;
-  
+
   }
   
   .createpost-text p{
@@ -212,7 +212,7 @@
     margin-left: auto;
     margin-right:auto;
     width: 90%;
-    min-height: 700px;
+    height:  min(800px,80%);
     background-color: #ffffff;
     border-radius: 10px;
     border: 2px solid rgba(114, 141, 230, .4);

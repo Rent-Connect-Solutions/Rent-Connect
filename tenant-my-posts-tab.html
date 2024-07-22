@@ -6,9 +6,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="css/MF-property-owner-dashboard.css">
+<link rel="stylesheet" href="css/tenant-dashboard.css">
 <!----===== Browser tab title ===== ---->
 <title>Rent Connect Dashboard</title>
+
+
 
 <!----===== Browser tab icon large ===== ---->
 <link rel="icon" type="image/png" sizes="32x32" href="/images/Logo Blue Transparent.png">
@@ -22,10 +24,9 @@
 <link rel="manifest" href="images/site.webmanifest">
 
 
-<title>Property Owner Dashboard</title>
+
+<title>Tenant Dashboard</title>
 </head>
-
-
 
 
 
@@ -43,9 +44,9 @@
             <h3>Menu</h3>
 
             <nav class="menu">
-                <a href="#" class="menu-item is-active">Dashboard</a>
-                <a href="#" class="menu-item">Profile</a>
-                <a href="#" class="menu-item">Properties</a>
+                <a href="tenant-my-dashboard-tab.html" class="menu-item">Dashboard</a>
+                <a href="tenant-my-profile-tab.html" class="menu-item">Profile</a>
+                <a href="tenant-my-posts-tab.html" class="menu-item is-active">Posts</a>
                 <a href="#" class="menu-item">Marketplace</a>
                 <a href="#" class="menu-item">Log out</a>
             </nav>
@@ -56,23 +57,19 @@
             <h1>Welcome back, NAME</h1>
             <p>Your Rent Connect Dashboard</p>
 
-            <a href="http://example.com">
-                <div class="plus radius"></div>
-            </a>
-            <div class="createpost-text"><p>Add Property</p></div>
+            
+    
+                <a href="property-owner-add-properties.html" target="popup" onclick="window.open('property-owner-add-properties.html', 'popup', 'width=800,height=600')  ; return false;" >
+                    <div class="plus radius"></div>
+                </a>
+                <div class="createpost-text"><p>Create a Rent Connect Post!</p></div> 
+    
+                <div class="cards"> <!------------------ Javascript JS here to add more properties visually in cards ------------>
+                    <div id="h1">Your Live Posts</div> 
+                </div>
+                
 
-            <div class="cards">
-                <div id="h1">Your Properties</div>
-            </div>
-
-            <div class="cards">
-                <div id="h1">Stats</div>
-            </div>
-
-            <div class="cards">
-                <div id="h1">Content card</div>
-            </div>
-
+        
             
 
         </main>

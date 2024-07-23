@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="stylesheet" href="css/tenant-dashboard.css">
-<link rel="stylesheet" href="css/form-profile.css">
+<link rel="stylesheet" href="css/form-documents.css">
 
 <!----===== Browser tab title ===== ---->
 <title>Rent Connect Dashboard</title>
@@ -47,40 +47,25 @@
 
             <nav class="menu">
                 <a href="tenant-my-dashboard-tab.html" class="menu-item">Dashboard</a>
-                <a href="tenant-my-profile-tab.html" class="menu-item is-active">Profile</a>
+                <a href="tenant-my-profile-tab.html" class="menu-item">Profile</a>
                 <a href="tenant-my-posts-tab.html" class="menu-item">Posts</a>
-                <a href="tenant-my-documents-tab.html" class="menu-item">Documents</a>
+                <a href="tenant-my-documents-tab.html" class="menu-item is-active">Documents</a>
                 <a href="#" class="menu-item">Log out</a>
             </nav>
 
         </aside>
 
         <main class="content">
-            <h1>Your Profile</h1>
-            <p>Update or Edit your Rent Connect profile</p>
+            <h1>Your Documents</h1>
+            <p>Upload your Documents to have ready for a rental unit Match</p>
             
-          <h2>Profile Picture</h2>
-          <img src="Images/Profile-Pic-Img.png" sizes="Thumbnail" alt="Display Pic"></img>
-            <form action='' class='form'>
-                <p class='field required half'>
-                  <label class='label required' for='name'>Name</label>
-                  <input class='text-input' id='name' name='name' required type='text'>
-                </p>
-                <p class='field required half'>
-                  <label class='label required' for='name'>Email</label>
-                  <input class='text-input' id='name' name='name' required type='text'>
-                </p>
-                
-                <p class='field half'>
-                  <input class='button' type='submit' value='Send'>
-                </p>
-              </form>
-  
-        
-            
+            <h2>Documents Upload Section</h2>
+              <h4>Credit Scrore</h4><input type="file" accept="Images/*">
+              <h4>Proof of Employment</h4><input type="file" accept="Images/*">
+              <h4>References</h4><input type="file" accept="Images/*">
+              <h4>Rental Application</h4><input type="file" accept="Images/*">
 
         </main>
-
 
     </div>
 

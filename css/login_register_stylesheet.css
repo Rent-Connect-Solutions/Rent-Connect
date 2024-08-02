@@ -155,3 +155,9 @@ form div.incorrect input{
   font-variation-settings:
     "slnt" 0;
 }
+.login-signup-image {
+border-radius: 20px 20px 20px 20px;
+width: 100%;
+max-width: 500px;
+height: auto;
+}

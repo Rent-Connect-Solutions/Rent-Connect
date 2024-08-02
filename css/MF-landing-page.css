@@ -10,7 +10,7 @@
 /* ==========---------- SIDE BAR NAVIGATION ----------========== */
 .app {
     display:block;
-    min-height: 100vh;
+    min-height: 8vh;
 }
 
 
@@ -26,6 +26,16 @@
  
  }
 
+ .navbarname {
+    display: inline;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 1rem;
+    letter-spacing: 0.5rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+ }
 
 .navbar .menu {
     margin: 0 -1rem;
@@ -47,17 +57,24 @@
  }
 
  .content {
-    background-color: #f5f7fd;
+    background-color: #5e7ce2;
     flex: 1 1 0;
     padding: 2rem;
-    height: 100vh;
-    
+    min-height: 55vh;   
+  
  }
 
+
+
+ body {
+    background-color: #F5F7FD;
+ }
+
+
  .content h1 {
-    color: #5e7ce2;
+
+    color: #ffffff;
     font-size: 5rem;
-    margin-top: 5rem;
     margin-left: 10rem;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 700;
@@ -65,11 +82,45 @@
  }
 
  .content p {
-    color:#505b77;
+    color:#ffffff;
     font-size: 1.2rem;
     margin-top: 1em;
     margin-left: 10rem;
 
+ }
+
+ .content2 {
+    background-color: #F5F7FD;
+    flex: 1 1 0;
+    padding: 2rem;
+    min-height: 55vh;
+
+ }
+
+ .content3 {
+  background-color: #F5F7FD;
+  flex: 1 1 0;
+  min-height: 55vh;
+
+}
+
+
+ .content2 h1{
+    color: #505b77;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 0rem;
+ }
+
+ .content3 h1{
+    color: #505b77;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 0rem;
  }
 
  .menu-toggle {
@@ -82,6 +133,7 @@
     border-radius: 99px;
     background-color: #5e7ce2;
     cursor: pointer;
+    z-index: 999;
  }
 
  .hamburger {
@@ -128,12 +180,59 @@
     transform: rotate(90deg);
 }
 
+
+.namemobile{
+    display: none;
+    color:#ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 2px solid #ffffff;
+    letter-spacing: 0.5rem;
+}
+
 /* ==========---------- SIDE BAR RESPONSIVE - MOBILE ----------========== */
  @media (max-width: 1024px){
     .navbar {
         max-width: 100%;
     }
+    .navbarname {
+        display: inline;
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        padding: 1rem;
+        letter-spacing: 0.5rem;
+        font-weight: 500;
+        font-size: 1.5rem;
+        text-align: center;
+    }  
  }
+
+ @media (max-width: 2000px){
+    .content { /* ==========---------- MAIN CONTENT RESPONSIVE - MOBILE ----------==========*/
+        padding-top: 8rem;
+        margin-top: -0.5rem;
+    }
+    .content h1 {
+        color: #ffffff;
+        font-size: 4.3rem;
+        margin-top: -6rem;
+        margin-left: 10rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 700;
+    
+     }
+    
+     .content p {
+        color:#ffffff;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        margin-left: 10rem;
+    
+     }
+}
+
+
+
 
  @media (max-width: 768px) {
     .menu-toggle{
@@ -144,8 +243,51 @@
         display: block;
     }
 
+    .namemobile{
+        display: flex;
+        float: inline-end;
+        color:#ffffff;
+        font-size: 1rem;
+        padding: 0.5rem;
+        font-weight: 500;
+        border: 2px solid #ffffff;
+        letter-spacing: 0.2rem;
+        text-align: center;
+        margin-inline-end: 60px;
+        margin-bottom: 80px;
+        margin-top: -123px;
+        margin-right: -10px;
+        
+    }
+    
+    .navbarname {
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        letter-spacing: 0.5rem;
+        font-weight: 500;
+        font-size: 1rem;
+        text-align: center;
+        margin-top: -50vh;
+        margin-left: -10vh;
+        
+     }
+
     .content { /* ==========---------- MAIN CONTENT RESPONSIVE - MOBILE ----------==========*/
         padding-top: 8rem;
+        margin-top: 2rem;
+       
+    }
+
+    .content2 { /* ==========---------- MAIN CONTENT RESPONSIVE - MOBILE ----------==========*/
+        padding-top: 4rem;
+        margin-top: 2rem;
+       
+    }
+
+    .content3 { /* ==========---------- MAIN CONTENT RESPONSIVE - MOBILE ----------==========*/
+        padding-top: 8rem;
+        margin-top: 2rem;
+       
     }
     .navbar {
         position:fixed;
@@ -155,6 +297,7 @@
         width: 100%;
         max-width: 250px;
         transition: 0.2s linear;
+        z-index: 999;
     }
 
     .navbar.is-active {
@@ -162,9 +305,9 @@
     }
 
     .content h1 {
-        color: #5e7ce2;
-        font-size: 5rem;
-        margin-top: 5rem;
+        color: #ffffff;
+        font-size: 4.3rem;
+        margin-top: -6rem;
         margin-left: 0rem;
         font-family: 'Times New Roman', Times, serif;
         font-weight: 700;
@@ -172,52 +315,502 @@
      }
     
      .content p {
-        color:#505b77;
+        color:#ffffff;
         font-size: 1.2rem;
-        margin-top: 1em;
+        margin-top: 1rem;
         margin-left: 0rem;
     
      }
+
+    
  }
 
+/* ===== SHAPE DIVIDER ===== */
+.custom-shape-divider-bottom-1721234491 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
 
- /* ==========---------- MAIN CONTENT CARDS ----------========== */
- .cards {
-    display: flex;
-    flex-direction: column;
-    margin: 3rem;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: auto;
-    margin-right:auto;
-    width: 90%;
-    min-height: 300px;
+.custom-shape-divider-bottom-1721234491 svg {
+    position: relative;
+    display: block;
+    width: calc(116% + 1.3px);
+    height: 226px;
+}
+
+.custom-shape-divider-bottom-1721234491 .shape-fill {
+    fill: #F5F7FD;
+}
+
+/** For mobile devices **/
+
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1721234491 svg {
+        width: calc(142% + 1.3px);
+        height: 90px;
+    }
+}
+
+
+/* ====== CALL TO ACTION BUTTON STYLE ====== */
+
+.callbtn {
+    margin-top: 2rem;
+    margin-left: 15rem;
+    width: 10rem;
+    height: 3rem;
+    background-color: #5e17eb;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 50px;
+    border: none;
+    
+}
+
+.callbtn:hover {
+    margin-top: 2rem;
+    margin-left: 15rem;
+    width: 10rem;
+    height: 3rem;
     background-color: #ffffff;
-    border-radius: 10px;
-    border: 2px solid rgba(114, 141, 230, .4);
-    box-shadow: 3px 3px 15px rgba(55, 43, 96, .2);
- }
-
- #h1 {
-    color: #505b77;
-    font-size: 1.5rem;
+    color: #5e17eb;
+    font-size: 1rem;
     font-weight: 500;
     text-align: center;
-    justify-content: center;
-    margin: 2rem;
- }
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
 
- @media (max-width: 1024px){
-    .cards{
-        max-width: 250px;
+.callbtn:visited {
+    margin-top: 2rem;
+    margin-left: 15rem;
+    width: 10rem;
+    height: 3rem;
+    background-color: #5e17eb;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 50px;
+    border: none;
+}
+
+@media (max-width: 1024px){
+    .callbtn{
+        max-width: 10rem;
     }
+
+ 
  }
 
  @media (max-width: 768px) {
-     .cards {
-     max-width: 250px;
+     .callbtn, .callbtn:hover, .callbtn:visited {
+     max-width: 10rem;
+     margin-left: 2rem;
+
+     }
+
+ }
+/* ======---- LEARN MORE BUTTON STYLE ----====== */
+
+ .learnbtn {
+    
+    width: 10rem;
+    height: 3rem;
+    background-color: #ffffff;
+    color: #5e17eb;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 50px;
+    border: solid, 2px;
+    border-color: #5e17eb;
+    
+}
+
+.learnbtn:hover {
+    
+    width: 10rem;
+    height: 3rem;
+    background-color: #5e17eb ;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+ /* ==============================================================  HOW IT WORKKS ============================================================== */
+
+ .about-services ul{
+    display: flex;
+    margin: 30px auto;
+    text-align: center;
+    list-style: none;
+    justify-content: space-between;
+}
+
+
+.about-services ul li{
+  margin: 0 50px;
+}
+
+.about-services ul li img{
+  max-width: 400px;
+  width: auto;
+  height: auto;
+  margin: 0rem;
+}
+
+.about-services ul li h1{
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 20px;
+  color: #5e7ce2;
+}
+
+.about-services ul li p{
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #505b77;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+
+ @media (max-width: 950px) {
+ .about-services ul{
+     display:inline;
+     text-align: center;
+     max-width: 10rem;
+     margin-left: 2rem;
 
      }
  }
 
 
+
+/* ====== MAIL CHIMP SIGN UP BUTTONS ======*/
+/*== lANDLORD: id05 ==*/ /*== TENANT: id06 ==*//*== PROPERTY MANAGER: id07 ==*/
+button {
+border-radius: 10rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ====================================================================PROFILE CARDS ====================================================================*/
+
+.cards ul{
+  display: inline-flex;
+  text-align: center;
+  list-style: none;
+  width: 100%;
+  
+}
+
+
+
+.cards ul li{
+  background-color: #ffffff;
+  width: min(768px, 90%);
+  height: 300px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 30px;
+  border: 1px solid #505b77 ;
+
+}
+
+.cards ul li img{
+  width: 120px;
+  height: auto;
+  margin: 0rem;
+  margin-top: 1rem;
+  border-radius: 100%;
+}
+
+.cards ul li h1{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #5e7ce2;
+  margin-top: 1rem;
+}
+
+.cards ul li p{
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #505b77;
+}
+
+@media (max-width: 1024px){
+  .cards ul{
+      max-width: 100%;
+     
+}
+}
+
+@media (max-width: 768px) {
+  .cards ul{
+  display:inline;
+   max-width: 100%;
+  }
+
+  .cards ul li{
+    background-color: #ffffff;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    border-radius: 30px;
+    margin-top:1rem;
+    box-shadow: 3px 3px 15px #505b77;
+    border: 1px solid #505b77 ;
+  
+  }
+
+  .cards ul li h1{
+  font-size: 2rem;
+  font-weight: 500;
+  color: #5e7ce2;
+  margin-top: 0rem;
+}
+.content2 h1{
+  color: #505b77;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: -5rem;
+}
+
+.content3 h1{
+    color: #505b77;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: -8rem;
+  }
+}
+
+
+.about {
+    display: inline;
+    color:#505b77;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    margin-bottom: 0rem;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 2rem;
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+.about p{
+    padding: 2rem;
+}
+
+/* ==================================================================== REACH OUT STYLE ==================================================================== */
+
+.reachout_form_header{
+    color:#505b77;
+    text-align: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.reachout_form{
+    padding-left: 10rem;
+    padding-right: 10rem;
+    margin-bottom: 0rem;
+}
+
+.dancing-script-600 {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+/* ==================================================================== FOOTER STYLE ==================================================================== */
+
+.footer-container{
+    position:static;
+    background-color: #5e7ce2;
+    min-height: 250px;
+    width: 100%;
+    
+}
+
+.footer-content {
+    display: inline-flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    row-gap: 20px;
+    max-width: 1180px;
+    margin-left: 15rem;
+    text-align: left;
+    padding-top: 2.5rem;
+    
+}
+
+ul { list-style: none;}
+a { text-decoration: unset; }
+a:hover { text-decoration: underline; }
+ul > li > a { color:#fff;  }
+ul > li { line-height: 2em; margin-left: .5rem;}
+
+.main-logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 5rem;
+}
+.main-logo .logo {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+.main-logo .logo > img {
+    display: block;
+    width: 100%;
+    min-width: 40px;
+
+}
+.logo-info {
+    text-align: left;
+    line-height: 20px;
+}
+.text {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: .5em;
+}
+.copyright {
+    color: #fff;
+    font-size: 1rem;
+}
+.footer .column {
+    width: 100%;
+    font-size: 14px;
+    text-align: left;
+}
+
+.footer .column .column-title {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 0.5em;
+    color: #fff;
+
+}
+.footer .column .column-title:not(:first-child) {
+    margin-top: 1em;
+}
+
+
+.section-title {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #505b77;
+    margin: 0.5rem;
+}
+
+.section-sub-heading span {
+    opacity: 0.6;
+}
+.section-sub-heading strong {
+    font-weight: 600;
+}
+
+img.bgimage {
+    width: 100%;
+    
+}
+
+@media (max-width: 1024px){
+    .footer-content {
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .text {
+        font-size: 2rem;
+        color: #fff;
+        font-weight: 500;
+        margin-bottom: .5em;
+        line-height: 1em;
+    }
+    .copyright {
+        color: #fff;
+        font-size: 1rem;
+    
+    }
+
+    .section-title {
+        font-size: 30px;
+        
+    }
+
+    .column.is-logo {
+        order: 2;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .footer-content {
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .text {
+        font-size: 2rem;
+        color: #fff;
+        font-weight: 500;
+        margin-bottom: .5em;
+        line-height: 1em;
+    }
+    .copyright {
+        color: #fff;
+        font-size: 1rem;
+    
+    }
+
+    .section-title {
+        font-size: 30px;
+        
+    }
+
+    .column.is-logo {
+        order: 4;
+    }
+}

@@ -349,9 +349,9 @@
 
 /** For mobile devices **/
 
-@media (max-width: 767px) {
+@media (max-width: 760px) {
     .custom-shape-divider-bottom-1721234491 svg {
-        width: calc(142% + 1.3px);
+        width: calc(116% + 1.3px); 
         height: 90px;
     }
 }
@@ -468,8 +468,7 @@
 }
 
 .about-services ul li img{
-  max-width: 400px;
-  width: auto;
+  width: min(400px,90%);
   height: auto;
   margin: 0rem;
 }

@@ -102,6 +102,7 @@
   flex: 1 1 0;
   min-height: 55vh;
 
+
 }
 
 
@@ -111,7 +112,7 @@
     font-weight: 500;
     text-align: center;
     margin-bottom: 2rem;
-    margin-top: 0rem;
+   
  }
 
  .content3 h1{
@@ -275,6 +276,7 @@
     .content { /* ==========---------- MAIN CONTENT RESPONSIVE - MOBILE ----------==========*/
         padding-top: 8rem;
         margin-top: 2rem;
+     
        
     }
 
@@ -319,6 +321,7 @@
         font-size: 1.2rem;
         margin-top: 1rem;
         margin-left: 0rem;
+      
     
      }
 
@@ -339,7 +342,7 @@
 .custom-shape-divider-bottom-1721234491 svg {
     position: relative;
     display: block;
-    width: calc(116% + 1.3px);
+    width: calc(120% + 1.3px);
     height: 226px;
 }
 
@@ -353,8 +356,11 @@
     .custom-shape-divider-bottom-1721234491 svg {
         width: calc(142% + 1.3px);
         height: 90px;
+      
     }
 }
+
+
 
 
 /* ==================================================== CALL TO ACTION BUTTON STYLE ======================================================= */
@@ -460,6 +466,7 @@
     text-align: center;
     list-style: none;
     justify-content: space-between;
+    
 }
 
 
@@ -478,6 +485,17 @@
   font-weight: 500;
   margin-top: 20px;
   color: #5e7ce2;
+  
+  
+}
+.about-services h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #5e7ce2;
+    font-weight: 600;
+    text-align: center;
 }
 
 .about-services ul li p{
@@ -507,15 +525,59 @@
 
 /* ====== MAIL CHIMP SIGN UP BUTTONS ======*/
 /*== lANDLORD: id05 ==*/ /*== TENANT: id06 ==*//*== PROPERTY MANAGER: id07 ==*/
-button {
-border-radius: 10rem;
-
+#button-mail{
+    border-radius: 30px;
+    margin: 1rem;
+    font-size: 1rem;
+    border: solid 2px #5e17eb;
+    font-weight: 500;
 }
 
 
+#button-mail:hover{
+    border-radius: 10rem;
+    margin: 1rem;
+    background-color: #ffffff;
+    border: solid 2px #5e17eb;
+    color: #5e17eb;
+    font-size: 1rem;
+    font-weight: 500;
+    }
 
 
 
+
+
+.img1 {
+    float:left;
+    margin-left: 20rem;
+}
+
+.img2 {
+    float: right;
+    margin-right: 20rem;
+}
+
+.arrow {
+    border: solid #5e7ce2;
+    border-width: 0 7px 7px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-top: 10rem;
+    margin-left: 10rem;
+   
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
 
 
 
@@ -629,13 +691,19 @@ border-radius: 10rem;
 }
 
 .about h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     max-width: 100%;
-    margin-top: 10px;
+    margin-top: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #5e7ce2;
+    font-weight: 600;
 }
 
 .about p{
-    padding: 2rem;
+    padding: 0rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    font-size: 1.5rem;
 }
 
 
@@ -740,7 +808,7 @@ img.bgimage {
     
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1224px){
     .footer-content {
         margin: 1rem;
         display: grid;

@@ -108,7 +108,7 @@
  .content3 {
   background-color: #5e7ce2;
   flex: 1 1 0;
-  min-height: 50vh;
+  min-height: 60vh;
   display: flex;
 
 }
@@ -145,6 +145,9 @@
    
  }
 
+
+
+ 
  .content3 h1{
     color: #505b77;
     font-size: 2rem;
@@ -152,7 +155,10 @@
     text-align: center;
     margin-bottom: 2rem;
     margin-top: 0rem;
+    margin-bottom: 1rem;
  }
+
+ 
 
  .menu-toggle {
     display: none;
@@ -166,6 +172,7 @@
     cursor: pointer;
     z-index: 999;
  }
+
 
  .hamburger {
     position: relative;
@@ -332,7 +339,7 @@
         padding-top: 8rem;
         display: flex;
         min-height: 155vh;
-        margin-top: -2px;
+        margin-top: -10px;
     }
     .navbar {
         position:fixed;
@@ -433,38 +440,41 @@
 
      .newsbtn {
         display: flex;
-        margin: 1rem;
         width: auto;
         height: auto;
-        background-color: #5e7ce2;
+        background-color: #505b77;
         color: #ffffff;
         text-align: center;
-        font-size: 1rem;
-        font-weight: 500;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
     }
     
     .newsbtn:hover {
         display: flex;
-        margin: 1rem;
         width: auto;
         height: auto;
         background-color: #ffffff;
-        color: #5e7ce2;
+        color: #505b77;
         text-align: center;
-        font-size: 1rem;
-        font-weight: 500;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
     }
     
     .newsbtn:visited {
         display: flex;
-        margin: 1rem;
-        width: 10rem;
+        width: auto;
         height: auto;
         background-color: #ffffff;
-        color: #5e7ce2;
+        color: #505b77;
         text-align: center;
-        font-size: 1rem;
-        font-weight: 500;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
     }
 
  }
@@ -477,8 +487,11 @@
     background-color: #505b77;
     color: #ffffff;
     text-align: center;
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 700;
+    border: 2px solid #505b77;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
 }
 
 .newsbtn:hover {
@@ -487,10 +500,13 @@
     width: auto;
     height: auto;
     background-color: #ffffff;
-    color: #5e7ce2;
+    color: #505b77;
+    text-transform: uppercase;
     text-align: center;
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 1s;
+    letter-spacing: 0.03em;
 }
 
 .newsbtn:visited {
@@ -499,10 +515,12 @@
     width: auto;
     height: auto;
     background-color: #ffffff;
-    color: #5e7ce2;
+    color: #505b77;
     text-align: center;
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
 }
 
  /* ==============================================================  HOW IT WORKKS ============================================================== */
@@ -533,17 +551,28 @@
   font-weight: 500;
   margin-top: 20px;
   color: #f5f7fd;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 
 }
 .about-services h2{
     font-size: 2.5rem;
     font-weight: 500;
     margin-top: 20px;
+    margin-bottom: 10px;
     font-family: 'Times New Roman', Times, serif;
     color: #f5f7fd;
     font-weight: 600;
     text-align: center;
 }
+
+.about-services p{
+    font-size: 1rem;
+    margin-bottom: 5rem;
+    font-weight: 500;
+    color: #F5F7FD;
+    text-align: center;
+  }
 
 .about-services ul li p{
   font-size: 1rem;
@@ -904,3 +933,13 @@ img.bgimage {
         order: 4;
     }
 }
+
+
+
+
+
+
+
+/* ======================== TEST TEST TEST ===============================*/
+
+

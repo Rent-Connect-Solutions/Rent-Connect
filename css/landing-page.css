@@ -158,6 +158,8 @@
     margin-bottom: 1rem;
  }
 
+
+
  
 
  .menu-toggle {
@@ -268,7 +270,7 @@
      
    
      #p {
-        font-size: 1.2rem;
+        font-size: 1.rem;
         margin-top: 1rem;
         margin-left: 10rem;
     
@@ -571,7 +573,7 @@
 }
 
 .about-services p{
-    font-size: 1rem;
+    font-size: 18px;
     margin-bottom: 5rem;
     font-weight: 500;
     color: #F5F7FD;

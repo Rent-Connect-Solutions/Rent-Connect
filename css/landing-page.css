@@ -391,6 +391,7 @@
     font-weight: 500;
     border-radius: 50px;
     border: none;
+    border: 2px solid #5e7ce2;
 
 }
 
@@ -398,7 +399,7 @@
     margin-top: 2rem;
     margin-left: 15rem;
     width: 10rem;
-    height: 3rem;
+    height: auto;
     background-color: #ffffff;
     color: #5e7ce2;
     font-size: 1rem;
@@ -407,13 +408,15 @@
     border-radius: 50px;
     border: none;
     cursor: pointer;
+    transition: 1s;
+    border: 2px solid #5e7ce2;
 }
 
 .callbtn:visited {
     margin-top: 2rem;
     margin-left: 15rem;
     width: 10rem;
-    height: 3rem;
+    height: auto;
     background-color: #5e7ce2;
     color: #ffffff;
     text-align: center;
@@ -421,6 +424,7 @@
     font-weight: 500;
     border-radius: 50px;
     border: none;
+    border: 2px solid #5e7ce2;
 }
 
 @media (max-width: 1024px){

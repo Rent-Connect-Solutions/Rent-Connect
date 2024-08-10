@@ -13,7 +13,7 @@
 </head>
 <body>
   <div class="wrapper">
-    <img src="/Images/Rent Connect MeGIF.gif" alt="Rent Connect" style="width:500px;height:300px; border-radius: 20px 20px 20px 20px;"> 
+    <img src="/Images/Rent Connect MeGIF.gif" alt="Rent Connect" style="max-width: min(500px , 90%); border-radius: 20px 20px 20px 20px;"> 
     <h1>Join Rent Connect</h1>
     <p id="error-message"></p>
     <form id="form">
@@ -41,7 +41,7 @@
         </label>
         <input type="password" name="repeat-password" id="repeat-password-input" placeholder="Repeat Password">
       </div>
-      <button type="submit">Signup</button>
+      <button class="disabled" type="submit" disabled>Signup</button>
       <br>
       <a href="index.html">Go Back</a>
     </form>

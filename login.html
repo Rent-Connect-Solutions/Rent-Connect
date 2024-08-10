@@ -13,7 +13,7 @@
 </head>
 <body>
   <div class="wrapper">
-    <img src="/Images/Rent Connect MeGIF.gif" alt="Rent Connect" style="width:500px;height:300px; border-radius: 20px 20px 20px 20px;"> 
+    <img src="/Images/Rent Connect MeGIF.gif" alt="Rent Connect" style="max-width:min(500px , 90%); border-radius: 20px 20px 20px 20px;"> 
     <h1>Login to Rent Connect</h1>
     <p id="error-message"></p>
     <form id="form">
@@ -29,7 +29,7 @@
         </label>
         <input type="password" name="password" id="password-input" placeholder="Password">
       </div>
-      <button type="submit">Login</button>
+      <button class="disabled" type="submit" disabled>Login</button>
       <br>
       <a href="index.html">Go Back</a>
     </form>

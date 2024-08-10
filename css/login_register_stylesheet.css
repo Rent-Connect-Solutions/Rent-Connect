@@ -161,3 +161,9 @@ width: 100%;
 max-width: 500px;
 height: auto;
 }
+
+.disabled {
+  background-color: #aaaaaa;
+  opacity: 0.6;
+  cursor: not-allowed;
+}

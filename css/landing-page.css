@@ -112,7 +112,7 @@
   display: flex;
 
 }
-
+/* --------=================------ SHAPE DIVDER -----------==============---------*/
 .custom-shape-divider-bottom-1723226119 {
     position: absolute;
     bottom: 0;
@@ -142,7 +142,6 @@
     font-weight: 500;
     text-align: center;
     margin-bottom: 2rem;
-   
  }
 
 
@@ -278,6 +277,20 @@
 }
 
 
+.autoShow{
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 5%);
+}
+@keyframes autoShowAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
 
 
  @media (max-width: 768px) {

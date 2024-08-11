@@ -11,7 +11,7 @@
 <!-- Cursive Font-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet"> -->
 <!----===== Browser tab icon large ===== ---->
 <link rel="icon" type="image/png" sizes="32x32" href="/images/Logo Blue Transparent.png">
 <!----===== Browser tab icon small ===== ---->
@@ -54,17 +54,21 @@
 </header>
 
 <body>
-
+    <div class="content">
+        <div class="contentcard">
+        <h2>About Us</h2>  
+        </div>
+    </div>
 
     <div class="content2">
         <div class="about">
-            <h1 style="font-size:3rem;font-family: Dancing Script;">Our Story</h1>
-                <p>Once upon a time in Paris… </p>
-                <p>It all started on a trip Europe, where I was planning on proposing to my girlfriend (thankfully she said yes). While browsing some local newspapers, I stumbled upon a section where people were posting about themselves looking for places to rent.</p>
-                <p>I started thinking, what if there was a platform that allowed tenants to advertise and list their wants and needs and match with available rental properties. This would reduce the endless scrolling for rentals by tenants, while simultaneously allowing property owners to fill their vacancies in a faster and more efficient way.</p>
-                
-            <h1 style="font-size:3rem;font-family: Dancing Script;">Our Team</h1>
-            <p>Although created and launched by a small team, the varied backgrounds of our team has brought a well rounded approach to all facets of Rent Connect! We're also looking for talented invdividuals to join the team and help bring our dream to life!</p>
+            <h2>Our Story</h2>
+                <p class="autoShow">Once upon a time in Paris… </p>
+                <p class="autoShow">It all started on a trip Europe, where I was planning on proposing to my girlfriend (thankfully she said yes). While browsing some local newspapers, I stumbled upon a section where people were posting about themselves looking for places to rent.</p>
+                <p class="autoShow">I started thinking, what if there was a platform that allowed tenants to advertise and list their wants and needs and match with available rental properties. This would reduce the endless scrolling for rentals by tenants, while simultaneously allowing property owners to fill their vacancies in a faster and more efficient way.</p>
+    
+            <h2>Our Team</h2>
+            <p class="autoShow">Although created and launched by a small team, the varied backgrounds of our team has brought a well rounded approach to all facets of Rent Connect! We're also looking for talented invdividuals to join the team and help bring our dream to life!</p>
             <div class="about-services">
                 <ul>
                     <li>
@@ -129,14 +133,14 @@
             <label aria-label="Your Message">Your Message</label>
             <input type="text" id="reachout_message" name="message" placeholder="I have feedback for the Rent Connect team!" aria-invalid="false" aria-required="true" data-name="message">
             <button style="width: 20%;" type="submit">Send</button>
-        </div>
+        </div>-->
     </div> 
-    -->
+    
 </body>
 
 <footer>
-<div class="footer-container">
-    <div class="footer-content">
+    <div class="footer-container">
+        <div class="footer-content">
             <div class="column is-logo">
                 <a href="#" class="main-logo">
                     <div class="logo">
@@ -160,9 +164,9 @@
                 <div class="section-title">Contact</div>
                 <ul>
                     <li><a href="#"><i class="fa fa-envelope-open"></i> info@rentconnect.com</a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i>Linkedin</a></li>
-                </ul>                
+                    <li><a href="https://x.com/rent_connect"><i class="fa fa-twitter"></i>Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/company/99276519/"><i class="fa fa-linkedin"></i>Linkedin</a></li>
+                </ul>       
             </div>
             <div class="column is-nav">
                 <div class="section-title">Support</div>
@@ -174,8 +178,8 @@
             </div>
         </div>
     </div>
-</div>
+      
+    
 </footer>
-
 <script src="js/modalControls.js"></script>
 </html>

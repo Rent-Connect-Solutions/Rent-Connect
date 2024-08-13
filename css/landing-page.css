@@ -97,12 +97,11 @@
 
  }
 
- .content2 {
+.content2 {
     background-color: #F5F7FD;
     flex: 1 1 0;
     padding: 2rem;
     min-height: 60vh;
-
  }
 
  .content3 {
@@ -145,7 +144,13 @@
  }
 
 
-
+ .content4 h1{
+    color: #505b77;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2rem;
+ }
  
  .content3 h1{
     color: #505b77;
@@ -356,6 +361,38 @@
         min-height: 155vh;
         margin-top: -10px;
     }
+
+
+
+/* --------------------------=================== Content 4 @media (max-width: 768px) ========================------------------------------*/
+
+    .content4 {
+        background-color: #F5F7FD;
+        flex: 1 1 0;
+        padding: 2rem;
+        min-height: 90vh;
+    }
+    .content4 .list {
+        display: grid;
+        justify-content:center;
+    }
+ 
+
+    .autoShow{
+        animation: autoShowAnimation both;
+        animation-timeline: view(70% 5%);
+    }
+    @keyframes autoShowAnimation{
+        from{
+            opacity: 0;
+            transform: translateY(200px) scale(0.3);
+     }
+        to  {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+
     .navbar {
         position:fixed;
         top: 0;
@@ -390,7 +427,13 @@
 
     
  }
-
+.content4 { 
+    padding-block: 4rem;
+    margin-top: 2rem;
+    display: grid;
+    justify-content:center;
+       
+}
 
 /* ==================================================== CALL TO ACTION BUTTON STYLE ======================================================= */
 
@@ -560,7 +603,7 @@
 }
 
 .about-services ul li img{
-  width: 120px;
+  width: 300px;
   height: auto;
   margin: 0rem;
 }
@@ -662,7 +705,7 @@
 
 
 /* ====================================================================PROFILE CARDS ====================================================================*/
-
+/* --
 .cards ul{
   display: inline-flex;
   text-align: center;
@@ -706,6 +749,7 @@
   font-weight: 500;
   color: #505b77;
 }
+  -- */
 
 @media (max-width: 1024px){
   .cards ul{
@@ -739,6 +783,8 @@
   color: #5e7ce2;
   margin-top: 0rem;
 }
+/* ====================----------------Content1,2,3,4 <H1> -----------=========================*/
+
 .content2 h1{
   color: #505b77;
   font-size: 2rem;
@@ -755,6 +801,14 @@
     margin-top: -8rem;
   }
 }
+
+.content4 h1{
+    color: #505b77;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: -5rem;
+  }
 
 
 .about {

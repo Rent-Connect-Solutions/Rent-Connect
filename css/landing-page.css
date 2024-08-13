@@ -100,7 +100,7 @@
 .content2 {
     background-color: #F5F7FD;
     flex: 1 1 0;
-    padding: 2rem;
+    padding: 4rem;
     min-height: 60vh;
  }
 
@@ -119,6 +119,7 @@
     width: 100%;
     overflow: hidden;
     line-height: 0;
+    z-index: 0;
 }
 
 .custom-shape-divider-bottom-1723226119 svg {
@@ -141,6 +142,7 @@
     font-weight: 500;
     text-align: center;
     margin-bottom: 2rem;
+    
  }
 
 
@@ -149,7 +151,7 @@
     font-size: 2rem;
     font-weight: 500;
     text-align: center;
-    margin-bottom: 2rem;
+    padding-block: 1rem;
  }
  
  .content3 h1{
@@ -269,6 +271,7 @@
         margin-left: 10rem;
         font-family: 'Times New Roman', Times, serif;
         font-weight: 700;
+        
     
      }
      
@@ -277,6 +280,7 @@
         font-size: 1.rem;
         margin-top: 1rem;
         margin-left: 10rem;
+        
     
      }
 }
@@ -386,7 +390,7 @@
         from{
             opacity: 0;
             transform: translateY(200px) scale(0.3);
-     }
+        }
         to  {
             opacity: 1;
             transform: translateY(0) scale(1);
@@ -585,7 +589,7 @@
     letter-spacing: 0.03em;
 }
 
- /* ==============================================================  HOW IT WORKKS ============================================================== */
+ /* ==============================================================  HOW IT WORKKS  ============================================================== */
 
 
 
@@ -682,12 +686,8 @@
 
 
 
-/* ====== MAIL CHIMP SIGN UP BUTTONS ======*/
+/* =========================  MAIL CHIMP SIGN UP BUTTONS CSS in MODAL Style Sheet ( Global button styles)  ========================*/
 /*== lANDLORD: id05 ==*/ /*== TENANT: id06 ==*//*== PROPERTY MANAGER: id07 ==*/
-
-
-
-
 
 .img1 {
     float:left;
@@ -713,8 +713,6 @@
   width: 100%;
   
 }
-
-
 
 .cards ul li{
   background-color: #ffffff;
@@ -782,8 +780,8 @@
   font-weight: 500;
   color: #5e7ce2;
   margin-top: 0rem;
-}
-/* ====================----------------Content1,2,3,4 <H1> -----------=========================*/
+  }
+/* ====================---------------- Content1,2,3,4 <H1> (MOBILE max-width:768px)-----------=========================*/
 
 .content2 h1{
   color: #505b77;
@@ -791,7 +789,7 @@
   font-weight: 500;
   text-align: center;
   margin-top: -5rem;
-}
+  }
 
 .content3 h1{
     color: #505b77;
@@ -800,16 +798,16 @@
     text-align: center;
     margin-top: -8rem;
   }
-}
+
 
 .content4 h1{
     color: #505b77;
     font-size: 2rem;
     font-weight: 500;
     text-align: center;
-    margin-top: -5rem;
+    padding-block: 1rem;
   }
-
+}
 
 .about {
     display: inline;
@@ -818,6 +816,7 @@
     padding-right: 10rem;
     margin-bottom: 0rem;
     text-align: center;
+    z-index: 10;
     
   
 }

@@ -1006,12 +1006,11 @@ img.bgimage {
     }
 }
 
+/* ======================== Disabled button style from login/register pages ===============================*/
 
-
-
-
-
-
-/* ======================== TEST TEST TEST ===============================*/
-
+.disabled {
+    background-color: #aaaaaa;
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
 

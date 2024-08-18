@@ -5,9 +5,11 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/modalstyle.css">
-<link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="css/landing-page.css">
+<link rel="stylesheet" href="css/modalstyle.css"  type="text/css">
+<link rel="stylesheet" href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" type="text/css">
+<link rel="stylesheet" href="css/landing-page.css" type="text/css">
+<link rel="stylesheet" href="css/login_register_min.css" type="text/css">
+
 <!----===== Browser tab title ===== ---->
 <title>Rent Connect</title>
 
@@ -22,11 +24,7 @@
 <!----===== Browser icon list ===== ---->
 <link rel="manifest" href="images/site.webmanifest">
 
-
-<title>Rent Connect</title>
 </head>
-
-
 
 <header>
     <div class="app">
@@ -43,7 +41,7 @@
                 <a href="index.html" class="menu-item is-active">Home</a>
                 <a href="aboutus.html" class="menu-item">About Us</a>
                 <a href="#" style="cursor: not-allowed;opacity: 0.6;" class="menu-item" disabled>Marketplace</a>
-                <a href="#" style="cursor: not-allowed;opacity: 0.6;" class="menu-item" disabled>Login / Signup</a>
+                <a href="login.html" class="menu-item">Login / Signup</a>
             </nav>
             <div class="navbarname">RENT CONNECT</div>
 
@@ -63,17 +61,61 @@
 
 <body>
     <div class="content">
-        <div class="namemobile">RENT CONNECT</div>
+        <div class="namemobile">RENT CONNECT
+        </div>
         <div class="contentcard">
         <h2>Match me up!</h2>
         <div id="p">Bridging the gap between property owners and tenants <br>
-        through key filtered amenities. </div>  
-        <button class="callbtn" style="background-color: #aaaaaa;cursor:not-allowed;opacity: 0.6;" onclick="window.location.href='signup.html';" disabled>JOIN NOW!</button> 
-     </div>
+        through key filtered amenities. 
+        </div>  
+        <button class="callbtn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">JOIN NOW!</button> 
+
+    <!--------------------->  
+    <!--LOGIN FORM 'id01'-->
+    <!--------------------->
+
+    <div id="id01" class="loginmodal">
+        <div class="wrapper">
+            <img src="/Images/Rent Connect MeGIF.gif" alt="Rent Connect" style="max-width: max(250px , 80%); border-radius: 20px 20px 20px 20px;"> 
+            <p class="h1style">Join Rent Connect</p>
+            <p id="error-message"></p>
+        <form id="LOGIN" class="loginmodal-content animate">
+          <div>
+            <label for="firstname-input">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Z"/></svg>
+            </label>
+            <input type="text" name="firstname" id="firstname-input" placeholder="Firstname">
+          </div>
+          <div>
+            <label for="email-input">
+              <span>@</span>
+            </label>
+            <input type="email" name="email" id="email-input" placeholder="Email">
+          </div>
+          <div>
+            <label for="password-input">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm240-200q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80Z"/></svg>
+            </label>
+            <input type="password" name="password" id="password-input" placeholder="Password">
+          </div>
+          <div>
+            <label for="repeat-password-input">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm240-200q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80Z"/></svg>
+            </label>
+            <input type="password" name="repeat-password" id="repeat-password-input" placeholder="Repeat Password">
+          </div>
+          <button class="disabled" type="submit" disabled>Signup</button>
+          <br>
+          <a href="index.html">Go Back</a>
+          <br>
+          <p>Already have an Account? <a href="/login.html">login</a> </p>
+        </form>
     </div>
-
-
+    </div>
+    </div> <!--contentcard-->
     
+    </div> <!--content1-->
+
     <div class="content2" style="position: relative;">      
 
         <div class="about">
@@ -86,43 +128,52 @@
                 <button class="newsbtn" onclick="document.getElementById('id05').style.display='block'" style="width:auto;">I'm a Landlord</button>
                 
                 <div id="id05" class="loginmodal">
-                  <div class="loginmodalcontainer">
-                  <div id="mc_embed_signup">
-                  <!--<div id="mc_embed_shell">-->
+                    <div class="wrapper">
                     <div class="loginmodalcontainer">
-                    <form action="https://rentconnectme.us9.list-manage.com/subscribe/post?u=fd11795636b05a899eb3b3051&amp;id=39c9e38dff&amp;f_id=00dbe0e3f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-                        <div id="mc_embed_signup_scroll"><h2>Landlord sign ups get early access to app and notification when you can upload your proeprties & vacancies for rent!</h2>
-                            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                            <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div><div class="mc-field-group"><label for="mce-FNAME">First Name </label><input style="color: #010101;" type="text" name="FNAME" class=" text" id="mce-FNAME" value=""></div>
-                        </div>
-                            <div hidden=""><input type="hidden" name="tags" value="12987430,12987446"></div>
-                        <div id="mce-responses" class="clear foot">
-                            <div class="response" id="mce-error-response" style="display: none;"></div>
-                            <div class="response" id="mce-success-response" style="display: none;"></div>
-                        </div>
-                        <div aria-hidden="true" style="position: absolute; left: -5000px;">
-                        <!-- /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */ -->
-                        <input type="text" name="b_fd11795636b05a899eb3b3051_39c9e38dff" tabindex="-1" value="">
-                      </div>
-                        <div class="optionalParent">
-                            <div class="clear foot">
-                                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
-                                <p style="margin: 0px auto;"><a href="http://eepurl.com/iT2g_E" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
+                    <div id="mc_embed_signup">
+                    <!--<div id="mc_embed_shell">-->
+                      <div class="loginmodalcontainer">
+                      <form  action="https://rentconnectme.us9.list-manage.com/subscribe/post?u=fd11795636b05a899eb3b3051&amp;id=39c9e38dff&amp;f_id=00dbe0e3f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                          <div style="display: block;" id="mc_embed_signup_scroll"><h2>Landlord Newsletter</h2>
+                              <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                              <div class="mc-field-group">
+                                <label style="color:#2E2B41; background-color: #fff9f9;" for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+                                <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="">
                             </div>
+                            <div class="mc-field-group">
+                                <label style="color:#2E2B41; background-color: #fff9f9;" for="mce-FNAME">First Name </label>
+                                <input type="text" name="FNAME" class=" text" id="mce-FNAME" value="">
+                            </div>
+                          </div>
+                              <div hidden=""><input type="hidden" name="tags" value="12987430,12987446"></div>
+                          <div id="mce-responses" class="clear foot">
+                              <div class="response" id="mce-error-response" style="display: none;"></div>
+                              <div class="response" id="mce-success-response" style="display: none;"></div>
+                          </div>
+                          <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                          <!-- /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */ -->
+                          <input type="text" name="b_fd11795636b05a899eb3b3051_39c9e38dff" tabindex="-1" value="">
                         </div>
-                    </form>
+                          <div class="optionalParent">
+                              <div class="clear foot">
+                                  <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+                                  <p style="margin: 0px auto;"><a href="http://eepurl.com/iT2g_E" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
+                              </div>
+                          </div>
+                      </form>
+                      </div>
+                
+                    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js">
+                    </script>
+                    <script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[6]='MMERG6';ftypes[6]='radio';}(jQuery));var $mcj = jQuery.noConflict(true);
+                    </script>
+                      <div class="loginmodalcontainer">
+                        <button type="button" onclick="document.getElementById('id05').style.display='none'" class="cancelbtn">Cancel</button>
+                      </div>
                     </div>
-                  </div>
-              
-                  <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js">
-                  </script>
-                  <script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[6]='MMERG6';ftypes[6]='radio';}(jQuery));var $mcj = jQuery.noConflict(true);
-                  </script>
-                    <div class="loginmodalcontainer" style="background-color:#f1f1f1">
-                      <button type="button" onclick="document.getElementById('id05').style.display='none'" class="cancelbtn">Cancel</button>
-                    </div>
-                  </div>
                 </div>  
+                </div>  
+                  </div>
             
                   
                 <!---------------------------------->
@@ -132,14 +183,19 @@
                 <button class="newsbtn" onclick="document.getElementById('id06').style.display='block'" style="width:auto;">I'm a Tenant</button>
                 
                 <div id="id06" class="loginmodal">
+                   <div class="wrapper"> 
                   <div class="loginmodalcontainer">
-                  <div id="mc_embed_signup">
-                  <!--<div id="mc_embed_shell">-->
+                    <div id="mc_embed_signup">
                     <div class="loginmodalcontainer">
                     <form action="https://rentconnectme.us9.list-manage.com/subscribe/post?u=fd11795636b05a899eb3b3051&amp;id=39c9e38dff&amp;f_id=00d9e0e3f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-                        <div id="mc_embed_signup_scroll"><h2>Get Started - Tenant</h2>
+                        <div style="display: block;" id="mc_embed_signup_scroll"><h2>Tenant Newsletter</h2>
                             <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                            <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div><div class="mc-field-group"><label for="mce-FNAME">First Name </label><input style="color: #010101;" type="text" name="FNAME" class=" text" id="mce-FNAME" value=""></div>
+                            <div class="mc-field-group">
+                                <label style="color:#2E2B41; background-color: #fff9f9;" for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+                                <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div>
+                                <div class="mc-field-group">
+                                    <label style="color:#2E2B41; background-color: #fff9f9;" for="mce-FNAME">First Name </label>
+                                    <input style="color: #010101;" type="text" name="FNAME" class=" text" id="mce-FNAME" value=""></div>
                         </div>
                             <div hidden=""><input type="hidden" name="tags" value="12987446,12987434"></div>
                         <div id="mce-responses" class="clear foot">
@@ -164,11 +220,13 @@
                 </script>
                 <script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[6]='MMERG6';ftypes[6]='radio';}(jQuery));var $mcj = jQuery.noConflict(true);
                 </script>
-                    <div class="loginmodalcontainer" style="background-color:#f1f1f1">
+                    <div class="loginmodalcontainer">
                       <button type="button" onclick="document.getElementById('id06').style.display='none'" class="cancelbtn">Cancel</button>
                     </div>
                 </div>  
-              </div>  
+              </div> 
+            </div> 
+
             
                 <!------------------------------------------>
                 <!--PROPERTY MANAGER MAILCHIMP FORM 'id07'-->
@@ -177,14 +235,22 @@
                 <button  class="newsbtn" onclick="document.getElementById('id07').style.display='block'" style="width:auto;">I'm a Property Manager</button>
                 
                 <div id="id07" class="loginmodal">
-                  <div class="loginmodalcontainer">
-                  <div id="mc_embed_signup">
+                    <div class="wrapper"> 
+                        <div class="loginmodalcontainer">
+                          <div id="mc_embed_signup">
+
                   <!--<div id="mc_embed_shell">-->
                     <div class="loginmodalcontainer">
                     <form action="https://rentconnectme.us9.list-manage.com/subscribe/post?u=fd11795636b05a899eb3b3051&amp;id=39c9e38dff&amp;f_id=00d9e0e3f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-                        <div id="mc_embed_signup_scroll"><h2>Property Manager sign ups get early access to app and notification when you can upload your proeprties & vacancies for rent!</h2>
+                        <div style="display: block;" id="mc_embed_signup_scroll">
+                            <h2>Property Manager Newsletter</h2>
                             <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                            <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div><div class="mc-field-group"><label for="mce-FNAME">First Name</label><input style="color: #010101;" name="FNAME" class=" text" id="mce-FNAME" value=""></div>
+                            <div class="mc-field-group">
+                                <label style="color:#2E2B41; background-color: #fff9f9;" for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+                                <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div>
+                                <div class="mc-field-group">
+                                    <label style="color:#2E2B41; background-color: #fff9f9;" for="mce-FNAME">First Name</label>
+                                    <input style="color: #010101;" name="FNAME" class=" text" id="mce-FNAME" value=""></div>
                         </div>
                             <div hidden=""><input type="hidden" name="tags" value="12987446,12987434"></div>
                         <div id="mce-responses" class="clear foot">
@@ -198,38 +264,46 @@
                         <div class="optionalParent">
                             <div class="clear foot">
                                 <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
-                                <p style="margin: 0px auto;"><a href="http://eepurl.com/iT2g_E" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
+                                <p style="margin: 0px auto;">
+                                    <a href="http://eepurl.com/iT2g_E" title="Mailchimp - email marketing made easy and fun">
+                                        <span style="display: inline-block; background-color: transparent; border-radius: 4px;">
+                                            <img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span>
+                                        </a></p>
                             </div>
                         </div>
                     </form>
-                    </div>
-                   </div>
+                    
+                   
 
                 <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js">
                 </script>
                 <script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[6]='MMERG6';ftypes[6]='radio';}(jQuery));var $mcj = jQuery.noConflict(true);
                 </script>
-                    <div class="loginmodalcontainer" style="background-color:#f1f1f1">
+                    <div class="loginmodalcontainer">
                       <button type="button" onclick="document.getElementById('id07').style.display='none'" class="cancelbtn">Cancel</button>
                     </div>
+                </div>
+                </div>
                 </div>  
               </div>
-                
-    
             </div>
+    
+            </div> <!--mailchimps forms-->
+
+            <div>
             <h1 class="autoShow">Connecting Landlords & Tentants</h1>
                 <p class="autoShow">Rent Connect allows property owners and tenants to find each other in a more efficient, low risk way. Vacancies are matched with the right tenants through desired amenities.<br><br>
                     Tenants can also add in various documentation that assists in vetting them as amazing tenants, streamiling & fast-tracking the renatal application. <br><br>
-
-
                 </p> 
+                </div>
+
                 <div class="custom-shape-divider-bottom-1723226119">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                         <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" class="shape-fill"></path>
                     </svg>
                 </div>
-        </div>
-    </div>
+        </div> <!--class = about-->
+    </div> <!--content2-->
     <div class="content3">
         <div class="about-services">
             <h2 class="autoShow">HOW IT WORKS</h2>
@@ -338,7 +412,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="aboutus.html">About us</a></li>
                 <li><a href="#" style="cursor: not-allowed;" class="menu-item" disabled>Marketplace</a></li>
-                <li><a href="#" style="cursor: not-allowed;" class="menu-item" disabled>Login / Signup</a></li>
+                <li><a href="login.html" class="menu-item">Login / Signup</a></li>
             </ul>
         </div>
         <div class="column is-nav">
@@ -372,4 +446,5 @@
 
 </footer>
 <script src="js/modalControls.js"></script>
+<script type="text/javascript" src="js/login_register_validation.js" defer></script>
 </html>

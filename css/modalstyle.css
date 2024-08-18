@@ -15,10 +15,10 @@ color: red;
   }
 
 /* Full-width input fields */
-input[type=text], input[type=password] {
+input[type=text], input[type=email], input[type=password] {
   width: 100%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 0;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
@@ -95,7 +95,7 @@ span.psw {
 .loginmodal-content {
   background-color: #fefefe;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
+  /*border: 1px solid #888;*/
   width: 80%; /* Could be more or less, depending on screen size */
 }
 

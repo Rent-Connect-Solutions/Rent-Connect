@@ -491,11 +491,11 @@
  /* ==============================================================  HOW IT WORKKS ============================================================== */
 
  .about-services ul{
-    display: flex;
+    display: grid;
     margin: 30px auto;
     text-align: center;
     list-style: none;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 
@@ -505,7 +505,7 @@
 
  /*-- Profile Images--*/
 .about-services ul li img{
-  width: min(300px,90%);
+  width: min(250px,90%);
   height: 80%;
   margin: 0rem;
 }

@@ -636,6 +636,31 @@
     border: 2px solid #5e7ce2;
 }
 
+.waitbutton {
+ background-color: #f5f7fd;
+ color:#505b77;
+ font-size: 5rem;
+}
+
+.waitbutton:hover{
+    background-color: #5e7ce2;
+    color: #ffffff;
+    font-size: 5rem;
+    border:#f5f7fd solid 2px;
+   }
+   
+
+
+.buttonelement {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    padding: 4px;
+}
+
+
+ 
 @media (max-width: 1024px){
     .basicbtn{
         max-width: 10rem;
@@ -649,8 +674,47 @@
      max-width: 10rem;
      margin-left: 2rem;
      }
+     .waitbutton {
+        background-color: #f5f7fd;
+        color:#505b77;
+        font-size: 2rem;
+       }
+       .waitbutton:hover{
+        background-color: #5e7ce2;
+        color: #ffffff;
+        font-size: 5rem;
+        border:#f5f7fd solid 2px;
+       }
+       
+       
+       .buttonelement {
+           display: flex;
+           flex-direction: column;
+           text-align: center;
+           margin: auto;
+           padding: 4px;
+       }
+       
+
+
  }
  
+ .content3 .about-services .basicbtn{
+    display: grid;
+    justify-content: center;
+    width: 10rem;
+    height: auto;
+    background-color: #ffffff;
+    color:  #5e7ce2;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 50px;
+    border: none;
+    border: 2px solid #5e7ce2;
+  }
+
+
  /* ==============================================================  HOW IT WORKKS  ============================================================== */
 
 
@@ -684,7 +748,7 @@
 
 }
 .about-services h2{
-    font-size: 2.5rem;
+    font-size: 5rem;
     font-weight: 500;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -695,7 +759,7 @@
 }
 
 .about-services p{
-    font-size: 18px;
+    font-size: 1.75rem;
     margin-bottom: 5rem;
     font-weight: 500;
     color: #F5F7FD;
@@ -703,7 +767,7 @@
   }
 
 .about-services ul li p{
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-weight: 500;

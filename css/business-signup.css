@@ -89,6 +89,15 @@
 
  }
 
+.content p{
+    font-size: 13px;
+    background-color: #3685fd;
+    margin: 10px;
+    font-weight: 500;
+    color: #F5F7FD;
+    text-align: center;
+  }
+
  #p {
     color:#505b77;
     font-size: 1.2rem;
@@ -169,7 +178,6 @@
 
 
 
- 
 
  .menu-toggle {
     display: none;
@@ -347,7 +355,7 @@
         padding-top: 8rem;
         margin-top: 2rem;
         background-position: 60%;
-        background-size: 150%;
+        background-size: 300%;
         background-image: linear-gradient(
             to left, transparent, #f5f7fd
           ), url("/Images/pexels-maksgelatin-4352247.jpg");

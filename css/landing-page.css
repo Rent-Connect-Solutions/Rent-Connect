@@ -82,7 +82,7 @@
 
  .content h2 {
     color: #505b77;
-    font-size: 5rem;
+    font-size: 7rem;
     margin-left: 10rem;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 700;
@@ -91,7 +91,7 @@
 
  #p {
     color:#505b77;
-    font-size: 1.2rem;
+    font-size: 2rem;
     margin-top: 1em;
     margin-left: 10rem;
 
@@ -511,8 +511,8 @@
         background-color: #505b77;
         color: #ffffff;
         text-align: center;
-        font-size: 14px;
-        font-weight: 700;
+        font-size: 2rem;
+        font-weight: 500;
         text-transform: uppercase;
         letter-spacing: 0.03em;
     }
@@ -524,8 +524,8 @@
         background-color: #ffffff;
         color: #505b77;
         text-align: center;
-        font-size: 14px;
-        font-weight: 700;
+        font-size: 2rem;
+        font-weight: 500;
         text-transform: uppercase;
         letter-spacing: 0.03em;
     }
@@ -537,8 +537,8 @@
         background-color: #ffffff;
         color: #505b77;
         text-align: center;
-        font-size: 14px;
-        font-weight: 700;
+        font-size: 2rem;
+        font-weight: 500;
         text-transform: uppercase;
         letter-spacing: 0.03em;
     }
@@ -553,8 +553,8 @@
     background-color: #505b77;
     color: #ffffff;
     text-align: center;
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 1.3rem;
+    font-weight: 500;
     border: 2px solid #505b77;
     text-transform: uppercase;
     letter-spacing: 0.03em;
@@ -569,8 +569,8 @@
     color: #505b77;
     text-transform: uppercase;
     text-align: center;
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 1.3rem;
+    font-weight: 500;
     transition: 1s;
     letter-spacing: 0.03em;
 }
@@ -583,8 +583,8 @@
     background-color: #ffffff;
     color: #505b77;
     text-align: center;
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 1.3rem;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.03em;
 }
@@ -593,12 +593,12 @@
  .basicbtn {
     margin-top: 2rem;
     margin-left: 15rem;
-    width: 10rem;
+    width: 20rem;
     height: auto;
     background-color: #5e7ce2;
     color: #ffffff;
     text-align: center;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 500;
     border-radius: 50px;
     border: none;
@@ -608,11 +608,11 @@
 .basicbtn:hover {
     margin-top: 2rem;
     margin-left: 15rem;
-    width: 10rem;
+    width: 20rem;
     height: auto;
     background-color: #ffffff;
     color: #5e7ce2;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 500;
     text-align: center;
     border-radius: 50px;
@@ -624,12 +624,12 @@
 .basicbtn:visited {
     margin-top: 2rem;
     margin-left: 15rem;
-    width: 10rem;
+    width: 20rem;
     height: auto;
     background-color: #5e7ce2;
     color: #ffffff;
     text-align: center;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 500;
     border-radius: 50px;
     border: none;
@@ -640,6 +640,8 @@
  background-color: #f5f7fd;
  color:#505b77;
  font-size: 5rem;
+ max-width: auto;
+ text-align: center;
 }
 
 .waitbutton:hover{
@@ -647,17 +649,12 @@
     color: #ffffff;
     font-size: 5rem;
     border:#f5f7fd solid 2px;
+    max-width: auto;
+    text-align: center;
    }
    
 
 
-.buttonelement {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: auto;
-    padding: 4px;
-}
 
 
  
@@ -671,10 +668,12 @@
 
  @media (max-width: 768px) {
      .basicbtn, .basicbtn, .basicbtn {
-     max-width: 10rem;
-     margin-left: 2rem;
+     max-width: 20rem;
+     margin-left: 1rem;
+     text-align: center;
      }
      .waitbutton {
+        width: 100%;
         background-color: #f5f7fd;
         color:#505b77;
         font-size: 2rem;
@@ -686,21 +685,13 @@
         border:#f5f7fd solid 2px;
        }
        
-       
-       .buttonelement {
-           display: flex;
-           flex-direction: column;
-           text-align: center;
-           margin: auto;
-           padding: 4px;
-       }
+
        
 
 
  }
  
  /* ==============================================================  HOW IT WORKKS  ============================================================== */
-
 
  .about-services ul{
     display: flex;
@@ -742,7 +733,7 @@
 }
 
 .about-services p{
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     margin-bottom: 5rem;
     font-weight: 500;
     color: #F5F7FD;
@@ -761,6 +752,12 @@
 
 
 @media (max-width: 768px) {
+
+  .about-services {
+    width: 100%;
+
+  }
+
     .about-services h2{
         font-size: 2.5rem;
         font-weight: 500;
@@ -794,9 +791,7 @@
  }
    @media (max-width: 768px) {
     .about-services p{
-        margin-left: 25px;
-        margin-right: 25px;
-        font-size: 1rem;
+        font-size: 1.25rem;
         margin-bottom: 5rem;
         font-weight: 500;
         color: #F5F7FD;

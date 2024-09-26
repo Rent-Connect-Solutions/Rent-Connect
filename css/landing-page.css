@@ -699,24 +699,7 @@
 
  }
  
- .content3 .about-services .basicbtn{
-    display: grid;
-    justify-content: center;
-    width: 10rem;
-    height: auto;
-    background-color: #ffffff;
-    color:  #5e7ce2;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 500;
-    border-radius: 50px;
-    border: none;
-    border: 2px solid #5e7ce2;
-  }
-
-
  /* ==============================================================  HOW IT WORKKS  ============================================================== */
-
 
 
  .about-services ul{
@@ -809,9 +792,18 @@
 
      }
  }
-
-
-
+   @media (max-width: 768px) {
+    .about-services p{
+        margin-left: 25px;
+        margin-right: 25px;
+        font-size: 1rem;
+        margin-bottom: 5rem;
+        font-weight: 500;
+        color: #F5F7FD;
+        text-align: center; 
+    } 
+}
+        
 /* =========================  MAIL CHIMP SIGN UP BUTTONS CSS in MODAL Style Sheet ( Global button styles)  ========================*/
 /*== lANDLORD: id05 ==*/ /*== TENANT: id06 ==*//*== PROPERTY MANAGER: id07 ==*/
 

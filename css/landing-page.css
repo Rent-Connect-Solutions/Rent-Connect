@@ -314,11 +314,11 @@
     .namemobile{
         display: flex;
         float: inline-end;
-        color:#ffffff;
+        color:#505b773b;
         font-size: 1rem;
         padding: 0.5rem;
-        font-weight: 500;
-        border: 2px solid #ffffff;
+        font-weight: 300;
+        border: 2px solid #ffffff5b;
         letter-spacing: 0.2rem;
         text-align: center;
         margin-inline-end: 60px;
@@ -667,8 +667,8 @@
  }
 
  @media (max-width: 768px) {
-     .basicbtn, .basicbtn, .basicbtn {
-     max-width: 20rem;
+     .basicbtn {
+     max-width: 15rem;
      margin-left: 1rem;
      text-align: center;
      }
@@ -693,6 +693,17 @@
  
  /* ==============================================================  HOW IT WORKKS  ============================================================== */
 
+
+ .about-services h2{
+    font-size: 5rem;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #f5f7fd;
+    font-weight: 600;
+    text-align: center;
+}
  .about-services ul{
     display: flex;
     margin-top: -1rem;
@@ -710,26 +721,17 @@
   width: 300px;
   height: auto;
   margin: 0rem;
+  padding-block: 1rem;
 }
 
 .about-services ul li h1{
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
   margin-top: 20px;
   color: #f5f7fd;
   text-transform: uppercase;
   letter-spacing: 1px;
 
-}
-.about-services h2{
-    font-size: 5rem;
-    font-weight: 500;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-family: 'Times New Roman', Times, serif;
-    color: #f5f7fd;
-    font-weight: 600;
-    text-align: center;
 }
 
 .about-services p{

@@ -228,6 +228,13 @@
     margin: 2rem;
  }
 
+ img {
+   text-align: center;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
  @media (max-width: 1024px){
     .cards{
         max-width: 250px;

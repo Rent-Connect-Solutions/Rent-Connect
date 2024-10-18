@@ -33,11 +33,12 @@
 
         <main class="content">
 
-        <div class="createpost-text"><p>Add Property</p></div> 
+        <div class="createpost-text"><p>Add a Property to Rent Connect!</p></div>
+        <div style="text-align: center; font-style: italic;"><p>Remember, the more information you can provide will help you get matches with tenants!</p><br></div> 
         
             <form action='' class='form'>
                 <p class='field required'>
-                  <label class='label required' for='name'>Property Name</label>
+                  <label class='label required' for='name'>Property Address</label>
                   <input class='text-input' id='name' name='name' required type='text'>
                 </p>
                 <p class='field required half'>
@@ -45,8 +46,8 @@
                   <input class='text-input' id='location' name='location' required type='location'>
                 </p>
                 <p class='field half'>
-                  <label class='label' for='postcalcode'>Postal Code</label>
-                  <input class='text-input' id='postcalcode' name='postcalcode' type='postcalcode'>
+                  <label class='label' for='postalcode'>Postal Code</label>
+                  <input class='text-input' id='postalcode' name='postalcode' type='postalcode'>
                 </p>
                 
                 <div class='field'>
@@ -159,15 +160,32 @@
                   <textarea class='textarea' cols='50' id='about' name='about' rows='4'></textarea>
                 </p>
                 <p class='field half'>
-                  <label class='label' for='select'>Who are you</label>
+                  <label class='label' for='select'>I'm listing this property as:</label>
                   <select class='select' id='select'>
                     <option selected value=''></option>
-                    <option value='landlord'>Landlord</option>
-                    <option value='property-manager'>Property Manager</option>
+                    <option value='landlord'>I'm the Landlord</option>
+                    <option value='property-manager'>I'm the Property Manager</option>
                   </select>
                 </p>
                 <p class='field half'>
-                  <input class='button' type='submit' value='Send'>
+                  <label class='label' for='select'>Is rent controlled?</label>
+                  <select class='select' id='select'>
+                    <option selected value=''></option>
+                    <option value='rentcontrolled'>Yes rent is controlled</option>
+                    <option value='rentnotcontrolled'>No rent is not controlled</option>
+                  </select>
+                </p>
+                <p class='field'>
+                  <label class='label' for='select'>Do you also live at this property?</label>
+                  <select class='select' id='select'>
+                    <option selected value=''></option>
+                    <option value='ownerlivesonsite'>Yes I currently live here</option>
+                    <option value='ownerlivesoffsite'>No I do not live here</option>
+                  </select>
+                </p>
+                <br>
+                <p class='field half'>
+                  <input class='button' type='submit' value='List it!'>
                 </p>
               </form>
 

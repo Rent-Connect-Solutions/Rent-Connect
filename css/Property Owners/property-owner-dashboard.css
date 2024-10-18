@@ -219,6 +219,22 @@
     box-shadow: 3px 3px 15px rgba(55, 43, 96, .2);
  }
 
+ .matchescard {
+   display: flex;
+   flex-direction: column;
+   margin: 3rem;
+   align-items: center;
+   margin-left: auto;
+   margin-right:auto;
+   width: 75%;
+   min-height: 225px;
+   background-color: #fded9160;
+   border-radius: 10px;
+   border: 2px solid rgba(114, 141, 230, .4);
+   box-shadow: 3px 3px 15px rgba(55, 43, 96, .2);
+}
+
+
  #h1 {
     color: #505b77;
     font-size: 1.5rem;
@@ -246,4 +262,9 @@
      max-width: 250px;
 
      }
+ }
+
+ .verticalLine {
+   border-left: thick solid #ff0000;
+   padding-left: 15px;
  }

@@ -595,8 +595,8 @@
     margin-left: 15rem;
     width: 20rem;
     height: auto;
-    background-color: #5e7ce2;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #5e7ce2;
     text-align: center;
     font-size: 2rem;
     font-weight: 500;
@@ -610,8 +610,8 @@
     margin-left: 15rem;
     width: 20rem;
     height: auto;
-    background-color: #ffffff;
-    color: #5e7ce2;
+    background-color: #5e7ce2;
+    color: #ffffff;
     font-size: 2rem;
     font-weight: 500;
     text-align: center;
@@ -626,8 +626,8 @@
     margin-left: 15rem;
     width: 20rem;
     height: auto;
-    background-color: #5e7ce2;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #5e7ce2;
     text-align: center;
     font-size: 2rem;
     font-weight: 500;
@@ -1129,3 +1129,92 @@ img.bgimage {
     opacity: 0.6;
     cursor: not-allowed;
   }
+
+
+
+  /* ========================= BANNER ========================*/
+
+  .ban-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ban-container .ban{
+    background: #5e7ce2;
+    border-radius: 5px;
+    margin:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 5px 10px #0005;
+    overflow: hidden;
+}
+
+.ban-container .ban .card{
+    flex:1 1 250px;
+    padding:15px;
+    text-align: center;
+}
+
+.ban-container .ban .card img{
+    width:80%;
+}
+
+.ban-container .ban .content-ban{
+    flex:1 1 250px;
+    text-align: center;
+    padding:10px;
+    text-transform: uppercase;
+}
+
+.ban-container .ban .content-ban span{
+    color:#eee;
+    font-size: 25px;
+}
+
+.ban-container .ban .content-ban h3{
+    color:#fff;
+    font-size: 40px;
+}
+
+.ban-container .ban .content-ban h4{
+    color:#fff;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.ban-container .ban .content-ban p{
+    color:#eee;
+    font-size: 20px;
+    padding:10px 0;
+}
+
+.ban-container .ban .content-ban .btn{
+    display: block;
+    height:40px;
+    width:150px;
+    line-height: 40px;
+    background: #fff;
+    color:#5e7ce2;
+    margin:5px auto;
+    text-decoration: none;
+}
+
+.ban-container .ban .women{
+    position: relative;
+    bottom: -33px;
+    padding:10px;
+    flex:1 1 250px;
+}
+
+.ban-container .ban .women img{
+    width:100%;
+}
+
+@media (max-width:768px){
+    .ban-container .ban .women{
+        display: none;
+    }
+}

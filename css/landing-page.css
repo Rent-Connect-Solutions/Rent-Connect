@@ -138,11 +138,23 @@
 
  .content2 h1{
     color: #505b77;
-    font-size: 2rem;
-    font-weight: 500;
+    font-size: 5rem;
     text-align: center;
     margin-bottom: 2rem;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
     
+ }
+
+ .content2 p {
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-weight: 500;
+    color: #505b77;
+    text-align: center;
  }
 
 
@@ -359,6 +371,16 @@
        
     }
 
+    .content2 h1{
+        color: #505b77;
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-align: center;
+        margin-top: -5rem;
+        font-family: 'Times New Roman', Times, serif;
+        }
+      
+
     .content3 { /* ==========---------- MAIN CONTENT RESPONSIVE - MOBILE ----------==========*/
         padding-top: 8rem;
         display: flex;
@@ -418,7 +440,6 @@
         margin-left: 0rem;
         font-family: 'Times New Roman', Times, serif;
         font-weight: 700;
-    
      }
     
      #p {
@@ -900,13 +921,6 @@
   }
 /* ====================---------------- Content1,2,3,4 <H1> (MOBILE max-width:768px)-----------=========================*/
 
-.content2 h1{
-  color: #505b77;
-  font-size: 2rem;
-  font-weight: 500;
-  text-align: center;
-  margin-top: -5rem;
-  }
 
 .content3 h1{
     color: #505b77;
@@ -1155,7 +1169,7 @@ img.bgimage {
 }
 
 .ban-container .ban .card{
-    flex:1 1 250px;
+    flex:1 1 300px;
     padding:15px;
     text-align: center;
 }
@@ -1165,7 +1179,7 @@ img.bgimage {
 }
 
 .ban-container .ban .content-ban{
-    flex:1 1 250px;
+    flex:1 1 500px;
     text-align: center;
     padding:10px;
     text-transform: uppercase;
@@ -1190,7 +1204,7 @@ img.bgimage {
 .ban-container .ban .content-ban p{
     color:#eee;
     font-size: 20px;
-    padding:10px 0;
+    padding: 0;
 }
 
 .ban-container .ban .content-ban .btn{
@@ -1259,8 +1273,17 @@ img.bgimage {
     justify-content: center;
     align-items: center;
     display: flex;
+    flex-direction: column;
     padding-top: 50px;
     margin: 0;
+}
+
+.progressbar-container p {
+    color: #505b77;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
 }
 .progressbar {
     background: #bababa;
@@ -1271,14 +1294,14 @@ img.bgimage {
     padding: 0 5px;
     display: flex;
     height: 40px;
-    width: 600px;
+    width: 50%;
   }
   
   .progressbar-value {
     animation: load 3s normal forwards;
     box-shadow: 0 10px 40px -10px #fff;
     border-radius: 100px;
-    background: #5EE282;
+    background: #0cd33e;
     height: 30px;
     width: 0%;
   }
@@ -1287,3 +1310,4 @@ img.bgimage {
     0% { width: 0; }
     100% { width: 18%; }
   }
+

@@ -1254,3 +1254,36 @@ img.bgimage {
 
 
 }
+
+.progressbar-container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 50px;
+    margin: 0;
+}
+.progressbar {
+    background: #bababa;
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 40px;
+    width: 600px;
+  }
+  
+  .progressbar-value {
+    animation: load 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #5EE282;
+    height: 30px;
+    width: 0%;
+  }
+  
+  @keyframes load {
+    0% { width: 0; }
+    100% { width: 18%; }
+  }

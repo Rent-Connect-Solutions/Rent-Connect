@@ -737,6 +737,8 @@
 .about-services p{
     font-size: 1.5rem;
     margin-bottom: 5rem;
+    margin-left: 10%;
+    margin-right: 10%;
     font-weight: 500;
     color: #F5F7FD;
     text-align: center;

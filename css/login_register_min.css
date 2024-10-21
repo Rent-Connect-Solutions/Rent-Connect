@@ -62,7 +62,7 @@ form label{
   background-color: var(--accent-color);
   fill: var(--base-color);
   color: var(--base-color);
-  border-radius: 10px 0 0 10px;
+  /*border-radius: 10px 0 0 10px;*/
   display: flex;
   justify-content: center;
   align-items: center;

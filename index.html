@@ -113,9 +113,10 @@
         <div id="p">Bridging the gap between property owners and tenants 
         with<br>rent matching! 
         </div>  
-        <button onclick="window.location.href='https://mailchi.mp/8d2dfec33629/waitlist-rentconnect';" class="basicbtn">Join Waitlist Now!</button>
-        <!-- Removed pop up atm to replace with d
-         ata collection for validation. Would like to incoporate data collection into pop up form but will require more detailed work to figure that out
+
+        <button onclick="document.getElementById('id08').style.display='block'" class="basicbtn" style="width:auto;">Join Waitlist Now!</button>
+        <!-- <button onclick="window.location.href='https://mailchi.mp/8d2dfec33629/waitlist-rentconnect';" class="basicbtn">Join Waitlist Now!</button> -->
+        <!-- Removed pop up atm to replace with data collection for validation. Would like to incoporate data collection into pop up form but will require more detailed work to figure that out
         -----<button class="callbtn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">JOIN NOW!</button>  -->
 
     <!--------------------->  
@@ -164,14 +165,21 @@
     
     </div> <!--content1-->
 
+    <!-- Progress bar for waitlist signup WIP-->
     <div class="progressbar-container">
+        <p> Help us reach 1000 waitlist signups!</p> 
         <div class="progressbar">
             <div class="progressbar-value"> <p style="padding: 5px 5px 5px 35px;"></p></div>
         </div>
-        <p style="padding-left: 10px;"> Help us reach 1000 waitlist signups!</p>
+      
     </div>
 
     <div class="content2" style="position: relative;">   
+
+             <h1>Connecting Landlords & Tentants</h1>
+                <p>Our app is designed to connect property owners and tenants in a smarter, more efficient way. Property owners can actively search for pre-vetted tenants based on their preferences, streamlining the rental process and minimizing vacancies. Tenants can boost their profiles with key documents, making it easier to secure the right home faster.<br><br>
+                </p> 
+              
     
         <div class="ban-container">
 
@@ -182,15 +190,15 @@
                 <div class="content-ban">
                     <span> <h3>WIN $100 AMAZON GIFT CARD</h3></span>
                    
-                    
-                    <p>Click below and you could win!</p> <br>
+    
+                    <p>Click below and you could win!</p>
                     <h4> Winner will be drawn January 3, 2025 <br> <br>
                     **Restrictons Apply<br>
                     Must be 18 years of age<br>
                     Only 1 entry per email adress</h4> <br>
 
-                   <a href="#" class="btn"> Join Now</a>
-
+                   <button class="newbtn" onclick="document.getElementById('id08').style.display='block'" style="width:auto;">Join Now</button>
+                
                 </div>
                 <div class="women">
                     <img src="" alt="">
@@ -203,9 +211,9 @@
         <div class="about">
 
             <!-- <div class="mailchimpforms">
-                <!#----------------------------------
-                <!#--LANDLORD MAILCHIMP FORM 'id05'--
-                <#----------------------------------
+                ----------------------------------
+                --LANDLORD MAILCHIMP FORM 'id05'--
+                ----------------------------------
          
                 <button class="newsbtn" onclick="document.getElementById('id05').style.display='block'" style="width:auto;">I'm a Landlord</button>
                 
@@ -259,9 +267,9 @@
                   </div>
             
                   
-                <#----------------------------------
-                <#--TENANT MAILCHIMP FORM 'id06'--
-                <#--------------------------------
+                ----------------------------------
+                --TENANT MAILCHIMP FORM 'id06'--
+                --------------------------------
             
                 <button class="newsbtn" onclick="document.getElementById('id06').style.display='block'" style="width:auto;">I'm a Tenant</button>
                 
@@ -311,9 +319,9 @@
             </div> 
 
             
-                <#------------------------------------------
-                <#--PROPERTY MANAGER MAILCHIMP FORM 'id07'--
-                <#------------------------------------------
+                ------------------------------------------
+                --PROPERTY MANAGER MAILCHIMP FORM 'id07'--
+                ------------------------------------------
             
                 <button  class="newsbtn" onclick="document.getElementById('id07').style.display='block'" style="width:auto;">I'm a Property Manager</button>
                 
@@ -355,8 +363,6 @@
                             </div>
                         </div>
                     </form>
-                    
-                   
 
                 <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js">
                 </script>
@@ -371,6 +377,50 @@
               </div>
             </div>
             </div> --mailchimps forms-->
+
+
+                <!-- LANDLORD MAILCHIMP FORM 'id08' -->
+   
+                <div id="id08" class="loginmodal">
+                    <div class="wrapper">
+                        <div class="loginmodalcontainer" style="justify-content: center;">
+                    <div id="mc_embed_signup" style="display: block;">
+                        <div id="mc_embed_shell">
+                            <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+
+                      <div id="mc_embed_signup">
+                          <form action="https://rentconnectme.us9.list-manage.com/subscribe/post?u=fd11795636b05a899eb3b3051&amp;id=39c9e38dff&amp;f_id=0095e0e3f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                            <div style="display: block;" id="mc_embed_signup_scroll"><h2></h2>
+                                  <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                                  <div class="mc-field-group">
+                                    <label style="width: auto;" for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+                                    <input style="width: 350px; color: #010101;" type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div>
+                                    <div class="mc-field-group"><label style="width: auto;" for="mce-FNAME">First Name </label>
+                                        <input style="width: 350px; color: #010101;" type="text" name="FNAME" class=" text" id="mce-FNAME" value=""></div>
+                      <div hidden=""><input type="hidden" name="tags" value="12987446,15368345"></div>
+                              <div id="mce-responses" class="clear foot">
+                                  <div class="response" id="mce-error-response" style="display: none;"></div>
+                                  <div class="response" id="mce-success-response" style="display: none;"></div>
+                              </div>
+                          <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                              /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+                              <input type="text" name="b_fd11795636b05a899eb3b3051_39c9e38dff" tabindex="-1" value="">
+                          </div>
+                              <div class="optionalParent">
+                                  <div class="clear foot">
+                                      <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+                                      <p style="margin: 0px auto;"><a href="http://eepurl.com/iT2g_E" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
+                                  </div>
+                              </div>
+                          </div>
+                      </form>
+                      </div>
+                      <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
+                         
+                    </div>
+                </div>  
+                </div>  
+            </div>
 
             <div>
             <h1 class="autoShow">Connecting Landlords with the Right Tenants, Faster</h1>
@@ -409,7 +459,7 @@
 
             </ul>
            
-            <button onclick="window.location.href='https://mailchi.mp/8d2dfec33629/waitlist-rentconnect';" class="waitbutton">Join Waitlist Today!</button>
+            <!--<button onclick="window.location.href='https://mailchi.mp/8d2dfec33629/waitlist-rentconnect';" class="waitbutton">Join Waitlist Today!</button> --->
                 
            
         

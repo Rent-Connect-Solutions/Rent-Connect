@@ -1176,7 +1176,7 @@ img.bgimage {
 
 .ban-container .ban .content-ban h3{
     color:#fff;
-    font-size: 40px;
+    font-size: 3rem;
 }
 
 .ban-container .ban .content-ban h4{
@@ -1193,13 +1193,29 @@ img.bgimage {
 
 .ban-container .ban .content-ban .btn{
     display: block;
-    height:40px;
-    width:150px;
-    line-height: 40px;
-    background: #fff;
+    height:80px;
+    width:300px;
+    line-height: 80px;
+    background: #ffffff;
     color:#5e7ce2;
     margin:5px auto;
     text-decoration: none;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.ban-container .ban .content-ban .btn:hover{
+    display: block;
+    height:80px;
+    width:300px;
+    line-height: 80px;
+    background: #5e7ce2;
+    color:#ffffff;
+    margin:5px auto;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 30px;
+    border: solid 1px #ffffff;
 }
 
 .ban-container .ban .women{
@@ -1216,5 +1232,14 @@ img.bgimage {
 @media (max-width:768px){
     .ban-container .ban .women{
         display: none;
+
     }
+    
+    .ban-container .ban .content-ban h3{
+        color:#fff;
+        font-size: 1.5rem;
+        margin: 20px;
+    }
+
+
 }

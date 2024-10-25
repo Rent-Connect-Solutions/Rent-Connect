@@ -1294,7 +1294,7 @@ img.bgimage {
     padding: 0 5px;
     display: flex;
     height: 40px;
-    width: 600px;
+    width: 10%;
   }
   
   .progressbar-value {
@@ -1303,7 +1303,7 @@ img.bgimage {
     border-radius: 100px;
     background: #0cd33e;
     height: 30px;
-    width: 0%;
+    width: 60%;
   }
   
   @keyframes load {
@@ -1311,3 +1311,16 @@ img.bgimage {
     100% { width: 18%; }
   }
 
+
+
+@media (max-width: 768px) {
+  .progressbar{
+   width: 60%;
+  }
+}
+
+@media (max-width: 1024px) {
+    .progressbar{
+        width: 60%;
+    }
+}

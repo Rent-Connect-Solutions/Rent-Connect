@@ -38,6 +38,7 @@
     text-align: center;
  }
 
+
 .navbar .menu {
     margin: 0 -1rem;
 }
@@ -388,6 +389,7 @@
         margin-top: -10px;
     }
 
+    
 
 
 /* --------------------------=================== Content 4 @media (max-width: 768px) ========================------------------------------*/
@@ -447,8 +449,6 @@
         margin-top: 1rem;
         margin-left: 0rem;
         font-weight: 600 ;
-      
-    
      }
 
     
@@ -458,8 +458,17 @@
     margin-top: 2rem;
     display: grid;
     justify-content:center;
-       
 }
+
+.content5 {
+    background-color: #F5F7FD;
+    flex: 1 1 0;
+    min-height: 60vh;
+    display: flex;
+}
+
+
+
 
 /* ==================================================== CALL TO ACTION BUTTON STYLE ======================================================= */
 
@@ -733,6 +742,7 @@
     text-align: center;
     list-style: none;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 
@@ -982,7 +992,7 @@
 }
 
 
-/* ==================================================== FOOTER STYLE ==================================================================== */
+/* ==================================================== FOOTER STYLE ======================================================== */
 
 .footer-container{
     position:static;

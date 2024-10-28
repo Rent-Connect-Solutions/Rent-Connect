@@ -1217,7 +1217,7 @@ img.bgimage {
     display: block;
     height:80px;
     width:300px;
-    line-height: 80px;
+    line-height: 50px;
     background: #ffffff;
     color:#5e7ce2;
     margin:5px auto;
@@ -1230,7 +1230,7 @@ img.bgimage {
     display: block;
     height:80px;
     width:300px;
-    line-height: 80px;
+    line-height: 50px;
     background: #5e7ce2;
     color:#ffffff;
     margin:5px auto;
@@ -1267,7 +1267,15 @@ img.bgimage {
         display: block;
         height:40px;
         width:150px;
-        line-height: 40px;
+        line-height: 15px;
+        font-size: 20px;
+    }
+
+    .ban-container .ban .content-ban .btn:hover{
+        display: block;
+        height:40px;
+        width:150px;
+        line-height: 15px;
         font-size: 20px;
     }
     

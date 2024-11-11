@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="/css/Tenants/tenant-dashboard.css">
+<link rel="stylesheet" href="/css/Forms/form-profile.css">
+
+<!----===== Browser tab title ===== ---->
+<title>Rent Connect Dashboard</title>
+
+
+
+<!----===== Browser tab icon large ===== ---->
+<link rel="icon" type="image/png" sizes="32x32" href="/images/Logo Blue Transparent.png">
+<!----===== Browser tab icon small ===== ---->
+<link rel="icon" type="image/png" sizes="16x16" href="/images/Logo Transparent.png"> 
+<!----===== iPhone homescreen icon large ===== ---->
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<!----===== For browsers that support color matching  ===== ---->
+<meta name="theme-color" content="#3685fd">
+<!----===== Browser icon list ===== ---->
+<link rel="manifest" href="images/site.webmanifest">
+
+
+
+<title>Tenant Dashboard</title>
+</head>
+
+
+
+
+<body>
+    <div class="app">
+
+        <div class="menu-toggle">
+            <div class="hamburger">
+                <span></span>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <h3>Menu</h3>
+
+            <nav class="menu">
+                <a href="tenant-my-dashboard-tab.html" class="menu-item">Dashboard</a>
+                <a href="tenant-my-profile-tab.html" class="menu-item is-active">Profile</a>
+                <a href="tenant-my-posts-tab.html" class="menu-item">Posts</a>
+                <a href="tenant-my-documents-tab.html" class="menu-item">Documents</a>
+                <a href="#" class="menu-item">Log out</a>
+            </nav>
+
+        </aside>
+
+        <main class="content">
+            <h1>Your Profile</h1>
+            <p>Update or Edit your Rent Connect profile</p>
+            
+          <h2>Profile Picture</h2>
+          <img src="Images/Profile-Pic-Img.png" sizes="Thumbnail" alt="Display Pic"></img>
+            <form action='' class='form'>
+                <p class='field required half'>
+                  <label class='label required' for='name'>Name</label>
+                  <input class='text-input' id='name' name='name' required type='text'>
+                </p>
+                <p class='field required half'>
+                  <label class='label required' for='name'>Email</label>
+                  <input class='text-input' id='name' name='name' required type='text'>
+                </p>
+                
+                <p class='field half'>
+                  <input class='button' type='submit' value='Send'>
+                </p>
+              </form>
+  
+        
+            
+
+        </main>
+
+
+    </div>
+
+    <script>
+        const menu_toggle = document.querySelector('.menu-toggle');
+        const sidebar = document.querySelector ('.sidebar');
+
+        menu_toggle.addEventListener('click', () => {
+            menu_toggle.classList.toggle ('is-active');
+            sidebar.classList.toggle('is-active');
+
+        })
+
+    </script>
+
+</body>
+</html>

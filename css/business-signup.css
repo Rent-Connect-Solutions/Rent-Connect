@@ -1,0 +1,1034 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: MuliRegular, sans-serif;
+}
+
+
+/* ==========---------- SIDE BAR NAVIGATION ----------========== */
+.app {
+    display:block;
+    min-height: 8vh;
+}
+
+
+ .navbar {
+    flex: 0 0 0;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: space-between;
+    background-color: #5e7ce2;
+    color: #ffffff;
+    padding: 1rem 1.5rem;
+    margin-bottom: 0.4rem;
+ 
+ }
+
+ .navbarname {
+    display: inline;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 1rem;
+    letter-spacing: 0.5rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+ }
+
+.navbar .menu {
+    margin: 0 -1rem;
+}
+
+.navbar .menu .menu-item {
+    display: inline;
+    padding: 1em;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.2s linear;
+  
+ }
+
+ .navbar .menu .menu-item:hover,
+ .navbar .menu .menu-item.is-active {
+    color:#5e7ce2;
+    background-color: #f5f7fd;
+ }
+
+ .content {
+    background-position: 60%;
+    background-size: 100%;
+    background-image: linear-gradient(
+        to left, transparent, #f5f7fd
+      ), url("/Images/pexels-maksgelatin-4352247.jpg");
+    background-color: #f5f7fd;
+    background-repeat: no-repeat;
+    flex: 1 1 0;
+    padding: 2rem;
+    min-height: 45vh;   
+  
+ }
+
+
+
+ body {
+    background-color: #F5F7FD;
+ }
+
+
+
+
+ .content h2 {
+    color: #505b77;
+    font-size: 5rem;
+    margin-left: 10rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+
+ }
+
+.content p{
+    font-size: 13px;
+    background-color: #3685fd;
+    margin: 10px;
+    font-weight: 500;
+    color: #F5F7FD;
+    text-align: center;
+  }
+
+ #p {
+    color:#505b77;
+    font-size: 1.2rem;
+    margin-top: 1em;
+    margin-left: 10rem;
+
+ }
+
+.content2 {
+    background-color: #F5F7FD;
+    flex: 1 1 0;
+    padding: 4rem;
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-between;
+ }
+
+
+/* --------=================------ SHAPE DIVDER -----------==============---------*/
+.custom-shape-divider-bottom-1723226119 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 0;
+}
+
+.custom-shape-divider-bottom-1723226119 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 155px;
+}
+
+.custom-shape-divider-bottom-1723226119 .shape-fill {
+    fill: #5e7ce2;
+}
+
+
+
+
+ .content2 h1{
+    color: #505b77;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2rem;
+    
+ }
+
+  #mc_embed_signup {
+    background-color: none;
+    max-width: 50%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+ }
+
+ .content4 h1{
+    color: #505b77;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    padding-block: 1rem;
+ }
+ 
+ .content3 h1{
+    color: #505b77;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+ }
+
+
+
+
+ .menu-toggle {
+    display: none;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 99px;
+    background-color: #5e7ce2;
+    cursor: pointer;
+    z-index: 999;
+ }
+
+
+ .hamburger {
+    position: relative;
+    top: calc(50% - 2px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+ }
+
+.hamburger > span,
+.hamburger > span::before,
+.hamburger > span::after {
+    display: block;
+    position:absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 99px;
+    background-color: #f5f7fd;
+    transition-duration: .25s;
+}
+
+.hamburger > span::before {
+    content: '';
+    top: -8px;
+}
+
+.hamburger > span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu-toggle.is-active .hamburger > span {
+    transform: rotate(45deg);
+}
+
+.menu-toggle.is-active .hamburger > span::before {
+    top: 0;
+    transform: rotate(0deg);
+}
+
+.menu-toggle.is-active .hamburger > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+
+.namemobile{
+    display: none;
+    color:#ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 2px solid #ffffff;
+    letter-spacing: 0.5rem;
+}
+
+/* ==========---------- SIDE BAR RESPONSIVE - MOBILE ----------========== */
+ @media (max-width: 1024px){
+    .navbar {
+        max-width: 100%;
+    }
+    .navbarname {
+        display: inline;
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        padding: 1rem;
+        letter-spacing: 0.5rem;
+        font-weight: 500;
+        font-size: 1.5rem;
+        text-align: center;
+    }  
+ }
+
+ @media (max-width: 2000px){
+    .content { /* ==========---------- MAIN CONTENT RESPONSIVE - MOBILE ----------==========*/
+        padding-top: 8rem;
+        margin-top: -0.5rem;
+        background-position: 60%;
+        background-size: 100%;
+        background-image: linear-gradient(
+            to left, transparent, #f5f7fd
+          ), url("/Images/pexels-maksgelatin-4352247.jpg");
+        background-color: #f5f7fd;
+        background-repeat: no-repeat;
+    }
+    .content h2 {
+        font-size: 4.3rem;
+        margin-top: -6rem;
+        margin-left: 10rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 700;
+        
+    
+     }
+     
+   
+     #p {
+        font-size: 1.rem;
+        margin-top: 1rem;
+        margin-left: 10rem;
+        
+    
+     }
+}
+
+
+.autoShow{
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 5%);
+}
+@keyframes autoShowAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+ @media (max-width: 768px) {
+    .menu-toggle{
+        display:block;
+    }
+
+    .navbar .menu .menu-item {
+        display: block;
+    }
+
+    .namemobile{
+        display: flex;
+        float: inline-end;
+        color:#ffffff;
+        font-size: 1rem;
+        padding: 0.5rem;
+        font-weight: 500;
+        border: 2px solid #ffffff;
+        letter-spacing: 0.2rem;
+        text-align: center;
+        margin-inline-end: 60px;
+        margin-bottom: 80px;
+        margin-top: -123px;
+        margin-right: -10px;
+        
+    }
+    
+    .navbarname {
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        letter-spacing: 0.5rem;
+        font-weight: 500;
+        font-size: 1rem;
+        text-align: center;
+        margin-top: -50vh;
+        margin-left: -10vh;
+        
+     }
+
+    .content { /* ==========---------- MAIN CONTENT RESPONSIVE - MOBILE ----------==========*/
+        padding-top: 8rem;
+        margin-top: 2rem;
+        background-position: 60%;
+        background-size: 300%;
+        background-image: linear-gradient(
+            to left, transparent, #f5f7fd
+          ), url("/Images/pexels-maksgelatin-4352247.jpg");
+        background-color: #f5f7fd;
+        background-repeat: no-repeat;
+       
+    }
+
+    .content2 { /* ==========---------- MAIN CONTENT RESPONSIVE - MOBILE ----------==========*/
+        padding-top: 4rem;
+        margin-top: 2rem;
+        display: flex;
+       flex-direction: column;
+       
+    }
+
+    #mc_embed_signup {
+        max-width: 100%;
+
+    }
+
+    .content3 { /* ==========---------- MAIN CONTENT RESPONSIVE - MOBILE ----------==========*/
+        padding-top: 8rem;
+        display: flex;
+        min-height: 155vh;
+        margin-top: -10px;
+    }
+
+
+
+/* --------------------------=================== Content 4 @media (max-width: 768px) ========================------------------------------*/
+
+    .content4 {
+        background-color: #F5F7FD;
+        flex: 1 1 0;
+        padding: 2rem;
+        min-height: 90vh;
+    }
+    .content4 .list {
+        display: grid;
+        justify-content:center;
+    }
+ 
+
+    .autoShow{
+        animation: autoShowAnimation both;
+        animation-timeline: view(70% 5%);
+    }
+    @keyframes autoShowAnimation{
+        from{
+            opacity: 0;
+            transform: translateY(200px) scale(0.3);
+        }
+        to  {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+
+    .navbar {
+        position:fixed;
+        top: 0;
+        left: -250px;
+        height: 100vh;
+        width: 100%;
+        max-width: 250px;
+        transition: 0.2s linear;
+        z-index: 999;
+    }
+
+    .navbar.is-active {
+        left: 0;
+    }
+
+    .content h2 {
+        font-size: 4.3rem;
+        margin-top: -6rem;
+        margin-left: 0rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 700;
+    
+     }
+    
+     #p {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        margin-left: 0rem;
+      
+    
+     }
+
+    
+ }
+.content4 { 
+    padding-block: 4rem;
+    margin-top: 2rem;
+    display: grid;
+    justify-content:center;
+       
+}
+
+/* ==================================================== CALL TO ACTION BUTTON STYLE ======================================================= */
+
+.callbtn {
+    margin-top: 2rem;
+    margin-left: 15rem;
+    width: 10rem;
+    height: auto;
+    background-color: #5e7ce2;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 50px;
+    border: none;
+    border: 2px solid #5e7ce2;
+
+}
+
+.callbtn:hover {
+    margin-top: 2rem;
+    margin-left: 15rem;
+    width: 10rem;
+    height: auto;
+    background-color: #ffffff;
+    color: #5e7ce2;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+    border: 2px solid #5e7ce2;
+}
+
+.callbtn:visited {
+    margin-top: 2rem;
+    margin-left: 15rem;
+    width: 10rem;
+    height: auto;
+    background-color: #5e7ce2;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 50px;
+    border: none;
+    border: 2px solid #5e7ce2;
+}
+
+@media (max-width: 1024px){
+    .callbtn{
+        max-width: 10rem;
+    }
+
+ 
+ }
+
+ @media (max-width: 768px) {
+     .callbtn, .callbtn:hover, .callbtn:visited {
+     max-width: 10rem;
+     margin-left: 2rem;
+
+     }
+
+     .newsbtn {
+        display: flex;
+        width: auto;
+        height: auto;
+        background-color: #505b77;
+        color: #ffffff;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+    }
+    
+    .newsbtn:hover {
+        display: flex;
+        width: auto;
+        height: auto;
+        background-color: #ffffff;
+        color: #505b77;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+    }
+    
+    .newsbtn:visited {
+        display: flex;
+        width: auto;
+        height: auto;
+        background-color: #ffffff;
+        color: #505b77;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+    }
+
+ }
+
+.newsbtn {
+    display: flex;
+    margin: 1rem;
+    width: auto;
+    height: auto;
+    background-color: #505b77;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    border: 2px solid #505b77;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.newsbtn:hover {
+    display: flex;
+    margin: 1rem;
+    width: auto;
+    height: auto;
+    background-color: #ffffff;
+    color: #505b77;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 1s;
+    letter-spacing: 0.03em;
+}
+
+.newsbtn:visited {
+    display: flex;
+    margin: 1rem;
+    width: auto;
+    height: auto;
+    background-color: #ffffff;
+    color: #505b77;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+ /* ==============================================================  HOW IT WORKKS  ============================================================== */
+
+
+
+ .about-services ul{
+    display: flex;
+    margin-top: -1rem;
+    text-align: center;
+    list-style: none;
+    justify-content: space-between;
+}
+
+
+.about-services ul li{
+  margin: 0 50px;
+}
+
+.about-services ul li img{
+  width: 300px;
+  height: auto;
+  margin: 0rem;
+}
+
+.about-services ul li h1{
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 20px;
+  color: #f5f7fd;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+}
+.about-services h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #f5f7fd;
+    font-weight: 600;
+    text-align: center;
+}
+
+.about-services p{
+    font-size: 18px;
+    margin-bottom: 5rem;
+    font-weight: 500;
+    color: #F5F7FD;
+    text-align: center;
+  }
+
+.about-services ul li p{
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #F5F7FD;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+
+@media (max-width: 768px) {
+    .about-services h2{
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin-top: -5rem;
+        font-family: 'Times New Roman', Times, serif;
+        color: #f5f7fd;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .img1 {
+        float:left;
+        margin-left: 20rem;
+    }
+    
+    .img2 {
+        float: right;
+        margin-right: 20rem;
+    }
+ }
+
+
+ @media (max-width: 950px) {
+  .about-services ul{
+     display:inline;
+     text-align: center;
+     max-width: 10rem;
+     margin-left: 2rem;
+
+     }
+ }
+
+
+
+/* =========================  MAIL CHIMP SIGN UP BUTTONS CSS in MODAL Style Sheet ( Global button styles)  ========================*/
+/*== lANDLORD: id05 ==*/ /*== TENANT: id06 ==*//*== PROPERTY MANAGER: id07 ==*/
+
+.img1 {
+    float:left;
+    margin-left: 20rem;
+}
+
+.img2 {
+    float: right;
+    margin-right: 20rem;
+}
+
+
+
+
+
+
+/* ====================================================================PROFILE CARDS ====================================================================*/
+/* --
+.cards ul{
+  display: inline-flex;
+  text-align: center;
+  list-style: none;
+  width: 100%;
+  
+}
+
+.cards ul li{
+  background-color: #ffffff;
+  width: min(768px, 90%);
+  height: 300px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 30px;
+  border: 1px solid #505b77 ;
+
+}
+
+.cards ul li img{
+  width: 120px;
+  height: auto;
+  margin: 0rem;
+  margin-top: 1rem;
+  border-radius: 100%;
+}
+
+.cards ul li h1{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #5e7ce2;
+  margin-top: 1rem;
+}
+
+.cards ul li p{
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #505b77;
+}
+  -- */
+
+@media (max-width: 1024px){
+  .cards ul{
+      max-width: 100%;
+     
+}
+}
+
+@media (max-width: 768px) {
+  .cards ul{
+  display:inline;
+   max-width: 100%;
+  }
+
+  .cards ul li{
+    background-color: #ffffff;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    border-radius: 30px;
+    margin-top:1rem;
+    box-shadow: 3px 3px 15px #505b77;
+    border: 1px solid #505b77 ;
+  
+  }
+
+  .cards ul li h1{
+  font-size: 2rem;
+  font-weight: 500;
+  color: #5e7ce2;
+  margin-top: 0rem;
+  }
+/* ====================---------------- Content1,2,3,4 <H1> (MOBILE max-width:768px)-----------=========================*/
+
+.content2 h1{
+  color: #505b77;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: -5rem;
+  }
+
+.content3 h1{
+    color: #505b77;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: -8rem;
+  }
+
+
+.content4 h1{
+    color: #505b77;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    padding-block: 1rem;
+  }
+}
+
+.about {
+    display: inline;
+    color:#505b77;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    margin-bottom: 0rem;
+    text-align: center;
+    z-index: 10;
+    
+  
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    max-width: 100%;
+    margin-top: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #5e7ce2;
+    font-weight: 600;
+}
+
+.about p{
+    padding: 0rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    font-size: 1.5rem;
+}
+
+
+@media (max-width: 768px) {
+    .about p{
+        padding: 0rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+
+/* ==================================================================== FOOTER STYLE ==================================================================== */
+
+.footer-container{
+    position:static;
+    background-color: #5e7ce2;
+    min-height: 250px;
+    width: 100%;
+    
+}
+
+.footer-content {
+    display: inline-flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    row-gap: 20px;
+    max-width: 1180px;
+    margin-left: 15rem;
+    text-align: left;
+    padding-top: 2.5rem;
+    
+}
+
+ul { list-style: none;}
+a { text-decoration: unset; }
+a:hover { text-decoration: underline; }
+ul > li > a { color:#fff;  }
+ul > li { line-height: 2em; margin-left: .5rem;}
+
+.main-logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 5rem;
+}
+.main-logo .logo {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+.main-logo .logo > img {
+    display: block;
+    width: 100%;
+    min-width: 40px;
+
+}
+.logo-info {
+    text-align: left;
+    line-height: 20px;
+}
+.text {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: .5em;
+}
+.copyright {
+    color: #fff;
+    font-size: 1rem;
+}
+.footer .column {
+    width: 100%;
+    font-size: 14px;
+    text-align: left;
+}
+
+.footer .column .column-title {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 0.5em;
+    color: #fff;
+
+}
+.footer .column .column-title:not(:first-child) {
+    margin-top: 1em;
+}
+
+
+.section-title {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #505b77;
+    margin: 0.5rem;
+}
+
+.section-sub-heading span {
+    opacity: 0.6;
+}
+.section-sub-heading strong {
+    font-weight: 600;
+}
+
+img.bgimage {
+    width: 100%;
+    
+}
+
+@media (max-width: 1224px){
+    .footer-content {
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .text {
+        font-size: 2rem;
+        color: #fff;
+        font-weight: 500;
+        margin-bottom: .5em;
+        line-height: 1em;
+    }
+    .copyright {
+        color: #fff;
+        font-size: 1rem;
+    
+    }
+
+    .section-title {
+        font-size: 30px;
+        
+    }
+
+    .column.is-logo {
+        order: 2;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .footer-content {
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .text {
+        font-size: 2rem;
+        color: #fff;
+        font-weight: 500;
+        margin-bottom: .5em;
+        line-height: 1em;
+    }
+    .copyright {
+        color: #fff;
+        font-size: 1rem;
+    
+    }
+
+    .section-title {
+        font-size: 30px;
+        
+    }
+
+    .column.is-logo {
+        order: 4;
+    }
+}
+
+/* ======================== Disabled button style from login/register pages ===============================*/
+
+.disabled {
+    background-color: #aaaaaa;
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+

@@ -427,11 +427,12 @@
     }
 
     .content h2 {
-        font-size: 4.3rem;
+        font-size: 4rem;
         margin-top: -6rem;
         margin-left: 0rem;
         font-family: 'Times New Roman', Times, serif;
         font-weight: 700;
+        line-height: 4.5rem;
      }
     
      #p {
@@ -1035,13 +1036,18 @@ ul > li { line-height: 2em; margin-left: .5rem;}
 .logo-info {
     text-align: left;
     line-height: 20px;
+    
 }
 .text {
     font-size: 2rem;
     color: #fff;
     font-weight: 500;
     margin-bottom: .5em;
+    text-decoration: none;
+    text-decoration-line: none;
 }
+
+
 .copyright {
     color: #fff;
     font-size: 1rem;

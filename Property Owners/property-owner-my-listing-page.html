@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Listing</title>
+    <link rel="stylesheet" href="/css/Property Owners/property-owner-my-listing-page.css">
+
+      <!----===== Browser tab title ===== ---->
+      <title>Rent Connect Dashboard</title>
+
+      <!----===== Browser tab icon large ===== ---->
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/images/Logo Blue Transparent.png"
+      />
+      <!----===== Browser tab icon small ===== ---->
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/images/Logo Transparent.png"
+      />
+      <!----===== iPhone homescreen icon large ===== ---->
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+      <!----===== For browsers that support color matching  ===== ---->
+      <meta name="theme-color" content="#3685fd" />
+      <!----===== Browser icon list ===== ---->
+      <link rel="manifest" href="images/site.webmanifest" />
+  
+      <title>Property Owner Dashboard</title>
+    </head>
+
+
+
+
+   
+
+
+<body>
+
+    <div class="app">
+        <div class="menu-toggle">
+          <div class="hamburger">
+            <span></span>
+          </div>
+        </div>
+  
+        <aside class="sidebar">
+          <h3>Menu</h3>
+  
+          <nav class="menu">
+            <a
+              href="property-owner-my-dashboard-tab.html"
+              class="menu-item is-active"
+              >Dashboard</a
+            >
+            <a href="property-owner-my-profile-tab.html" class="menu-item"
+              >Profile</a
+            >
+            <a href="property-owner-my-properties.html" class="menu-item"
+              >Properties</a
+            >
+            <a href="#" class="menu-item">Marketplace</a>
+            <a href="#" class="menu-item">Log out</a>
+          </nav>
+        </aside>
+  
+    <main class="content">
+          <h1>Welcome back, NAME</h1>
+         
+  
+          <center> <p>Your Matches:</p>
+  
+           
+              <div class="plus radius"><h3>5</h3></div>
+  
+              <p> <a href="EXAMPLE.COM"> View all</a></p> <br>
+  
+          </center>
+ 
+        
+   
+
+    <div class="container">
+
+    <div class="property-title">
+        <h1>Property #1 - 123 Fake Street</h1>
+        <h2>$2,200 / month</h2>
+    </div>
+
+    <div class="image-gallery">
+        <div class="scroll-container">
+            <img src="/Images/Table.JPG" alt="Property Image 1" class="property-image">
+            <img src="/Images/Table.JPG" alt="Property Image 1" class="property-image">
+            <img src="/Images/Table.JPG" alt="Property Image 1" class="property-image">
+            <img src="/Images/Table.JPG" alt="Property Image 1" class="property-image">
+        </div>
+    </div>
+
+    <div class="property-info">
+        <h2>Beautiful Family Home</h2>
+        <p><strong>Location:</strong> 123 Main Street, Hometown</p>
+        <p><strong>Price:</strong> $350,000</p>
+
+        <div class="amenities">
+            <div class="inside-amenities">
+                <h3>Inside Amenities</h3>
+                <ul>
+                    <li>Central Air Conditioning</li>
+                    <li>Heating</li>
+                    <li>Fireplace</li>
+                    <li>Hardwood Floors</li>
+                </ul>
+            </div>
+
+            <div class="outside-amenities">
+                <h3>Outside Amenities</h3>
+                <ul>
+                    <li>Garage</li>
+                    <li>Swimming Pool</li>
+                    <li>Garden</li>
+                    <li>Outdoor Patio</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="description-section">
+        <h3>Description</h3>
+        <textarea class="description-box" rows="5" cols="80" readonly>
+            A spacious 4-bedroom, 3-bathroom family home with a large backyard, modern amenities, and a two-car garage. Perfect for families looking for a peaceful neighborhood.
+        </textarea>
+    </div>
+
+    <div class="property-summary">
+        <h3>Property Summary</h3>
+        <div class="summary-grid">
+            <p><strong>Property Type:</strong> Residential</p>
+            <p><strong>Storeys:</strong> 2</p>
+            <p><strong>Square Footage:</strong> 2,500 sq ft</p>
+            <p><strong>City Name:</strong> Hometown</p>
+            <p><strong>Title:</strong> Freehold</p>
+            <p><strong>Land Size:</strong> 6,000 sq ft</p>
+            <p><strong>Built in:</strong> 2015</p>
+            <p><strong>Annual Property Taxes:</strong> $4,200</p>
+            <p><strong>Parking Type:</strong> Garage</p>
+            <p><strong>Time on Rent Connect:</strong> 20 days</p>
+        </div>
+    </div>
+
+    <div class="share-section">
+        <a href="#" class="edit-btn">Edit</a>
+    </div>
+
+    
+
+    </div>
+    </main>
+</div>
+<script>
+    const menu_toggle = document.querySelector(".menu-toggle");
+    const sidebar = document.querySelector(".sidebar");
+
+    menu_toggle.addEventListener("click", () => {
+      menu_toggle.classList.toggle("is-active");
+      sidebar.classList.toggle("is-active");
+    });
+  </script>
+</body>
+</html>

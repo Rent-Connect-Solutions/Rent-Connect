@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Tenants/tenant-listing-post-page.css">
+    <title>Tenant Profile - Rent Connect</title>
+</head>
+<body>
+    <div class="app">
+        <div class="menu-toggle">
+            <div class="hamburger">
+                <span></span>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <h3>Menu</h3>
+            <nav class="menu">
+                <a href="property-owner-my-dashboard-tab.html" class="menu-item">Dashboard</a>
+                <a href="property-owner-my-profile-tab.html" class="menu-item">Profile</a>
+                <a href="property-owner-my-properties.html" class="menu-item">Properties</a>
+                <a href="#" class="menu-item">Marketplace</a>
+                <a href="#" class="menu-item">Log out</a>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <h1>Tenant Profile</h1>
+            <p>Details about your matched tenant are displayed below.</p>
+
+            <!-- Profile Section -->
+            <section class="tenant-section hero">
+                <img src="tenant-photo.jpg" alt="Tenant Picture" class="profile-img">
+                <div class="info">
+                    <h2 id="tenant-name">John Doe</h2>
+                    <p id="tenant-age-profession">Age: 30 | Profession: Software Engineer</p>
+                    <p id="tenant-score">Tenant Score: 85%</p>
+                </div>
+            </section>
+            <hr>
+
+            <!-- About Tenant Section -->
+            <section class="tenant-section">
+                <h2>About Tenant</h2>
+                <p id="tenant-bio">John is a professional with a stable income and excellent rental history. He prefers a pet-friendly property and is a non-smoker.</p>
+            </section>
+            <hr>
+
+            <!-- Verified Documents Section -->
+            <section class="tenant-section">
+                <h2>Verified Documents</h2>
+                <div class="documents" id="tenant-documents">
+                    <!-- API Connection #1: Dynamically populate tenant documents -->
+                </div>
+            </section>
+            <hr>
+
+            <!-- Amenities Section -->
+            <section class="tenant-section">
+                <h2>Amenities Preference</h2>
+                <div class="amenities" id="tenant-amenities">
+                    <!-- API Connection #2: Dynamically populate tenant amenities -->
+                </div>
+            </section>
+            <hr>
+
+            <!-- Actions Section -->
+            <section class="tenant-section cta-section">
+                <h2>Take Action</h2>
+                <div class="cta-buttons">
+                    <button class="contact">Contact Tenant</button>
+                    <button class="schedule">Schedule a Viewing</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="/js/tenant-listing-post-page.js"></script>
+    <script>
+        const menu_toggle = document.querySelector(".menu-toggle");
+        const sidebar = document.querySelector(".sidebar");
+
+        menu_toggle.addEventListener("click", () => {
+            menu_toggle.classList.toggle("is-active");
+            sidebar.classList.toggle("is-active");
+        });
+    </script>
+</body>
+</html>

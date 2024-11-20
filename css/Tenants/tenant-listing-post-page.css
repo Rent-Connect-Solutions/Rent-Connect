@@ -156,7 +156,7 @@
    display: inline-table;
    margin: 10px;
     text-align: center;
-    
+    width: 30%;
     min-height: 400px;
     background-color: #ffffff;
     border-radius: 10px;
@@ -218,76 +218,6 @@ img {
  @media (max-width: 768px) {
      .cards {
      max-width: 250px;
-     
 
      }
  }
-
-/* Responsive Styles for Tenant Grid */
-@media (max-width: 1024px) {
-    .tenant-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 15px;
-    }
-    .cards {
-        padding: 10px;
-        min-width: 250px; /* Minimum width for mobile cards */
-    }
-    .cards h1 {
-        font-size: 1em;
-    }
-    .cards p {
-        font-size: 0.9em;
-    }
-    .cards img {
-        width: 60px;
-        height: 60px;
-    }
-    .cards button {
-        font-size: 0.9em;
-    }
-}
-
-/* Mobile-Friendly Adjustments */
-@media (max-width: 768px) {
-    .tenant-grid {
-        grid-template-columns: 1fr;
-    }
-    .cards {
-        padding: 10px;
-        min-width: 250px; /* Ensure cards maintain a readable size */
-    }
-    .cards img {
-        width: 50px;
-        height: 50px;
-    }
-    .cards h1 {
-        font-size: 0.9em;
-    }
-    .cards p {
-        font-size: 0.8em;
-    }
-    .cards button {
-        font-size: 0.8em;
-        padding: 8px 12px;
-    }
-}
-
-
-/* Centering cards within the grid */
-.tenant-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    justify-content: center; /* Center the grid items horizontally */
-    align-items: center; /* Center the grid items vertically if needed */
-    padding: 20px;
-}
-
-/* Ensure cards maintain responsiveness and centering for mobile */
-@media (max-width: 768px) {
-    .tenant-grid {
-        grid-template-columns: 1fr;
-        justify-content: center; /* Center the single column grid */
-    }
-}

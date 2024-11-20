@@ -1,123 +1,102 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link
-      rel="stylesheet"
-      href="/css/Property Owners/property-owner-matches.css"
-    />
-    <!----===== Browser tab title ===== ---->
-    <title>Rent Connect Dashboard</title>
-
-    <!----===== Browser tab icon large ===== ---->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/images/Logo Blue Transparent.png"
-    />
-    <!----===== Browser tab icon small ===== ---->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/images/Logo Transparent.png"
-    />
-    <!----===== iPhone homescreen icon large ===== ---->
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
-    <!----===== For browsers that support color matching  ===== ---->
-    <meta name="theme-color" content="#3685fd" />
-    <!----===== Browser icon list ===== ---->
-    <link rel="manifest" href="images/site.webmanifest" />
-
-    <title>Property Owner Dashboard</title>
-  </head>
-
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Property Owners/property-owner-matches.css">
+    <title>Matched Tenants - Rent Connect</title>
+</head>
+<body>
     <div class="app">
-      <div class="menu-toggle">
-        <div class="hamburger">
-          <span></span>
-        </div>
-      </div>
-
-      <aside class="sidebar">
-        <h3>Menu</h3>
-
-        <nav class="menu">
-          <a
-            href="property-owner-my-dashboard-tab.html"
-            class="menu-item is-active"
-            >Dashboard</a
-          >
-          <a href="property-owner-my-profile-tab.html" class="menu-item"
-            >Profile</a
-          >
-          <a href="property-owner-my-properties.html" class="menu-item"
-            >Properties</a
-          >
-          <a href="#" class="menu-item">Marketplace</a>
-          <a href="#" class="menu-item">Log out</a>
-        </nav>
-      </aside>
-
-      <main class="content">
-        <h1>Welcome back, NAME</h1>
-
-        <center><h2>Matches for: <br>
-          <i>123 Ave South, Hamilton, ON L8T2M9</i></h2></center>
-      
-
-        <div class="cards">
-          <img src="/Images/Profile-Pic-Img.png"/>
-          <h1>Tenant Name</h1>
-          <li> References</li>
-          <li> Credit Score</li>
-          <li> References</li>
-          <li> References</li>
-
-          <button> View Profile</button>
+        <div class="menu-toggle">
+            <div class="hamburger">
+                <span></span>
+            </div>
         </div>
 
-        <div class="cards">
-          <img src="/Images/Profile-Pic-Img.png"/>
-          <h1>Tenant Name</h1>
-          <li> References</li>
-          <li> Credit Score</li>
-          <li> Completed Rental Agreement</li>
+        <aside class="sidebar">
+            <h3>Menu</h3>
+            <nav class="menu">
+                <a href="property-owner-my-dashboard-tab.html" class="menu-item is-active">Dashboard</a>
+                <a href="property-owner-my-profile-tab.html" class="menu-item">Profile</a>
+                <a href="property-owner-my-properties.html" class="menu-item">Properties</a>
+                <a href="#" class="menu-item">Marketplace</a>
+                <a href="#" class="menu-item">Log out</a>
+            </nav>
+        </aside>
 
-          <button> View Profile</button>
-        </div>
+        <main class="content">
+            <h1>Welcome back, NAME</h1>
+            <center>
+                <h2>Matches for: <br><i>123 Ave South, Hamilton, ON L8T2M9</i></h2>
+            </center>
 
-        <div class="cards">
-          <img src="/Images/Profile-Pic-Img.png"/>
-          <h1>Tenant Name</h1>
-          <li> References</li>
-        
-          <button> View Profile</button>
-        </div>
+            
+<div class="tenant-grid">
+    <div class="cards">
+        <img src="/Images/Profile-Pic-Img.png" alt="Tenant 1">
+        <h1>John Doe</h1>
+        <p>Software Engineer | Non-Smoker</p>
+        <p>Key Amenities: <span>Pet-Friendly, Quiet Neighborhood</span></p>
+        <ul>
+            <li>Credit Score: <span>✔️</span></li>
+            <li>Proof of Income: <span>✔️</span></li>
+            <li>References: <span>❌</span></li>
+        </ul>
+        <button onclick="viewTenantProfile(1)">View Profile</button>
+    </div>
+    <div class="cards">
+        <img src="/Images/Profile-Pic-Img.png" alt="Tenant 2">
+        <h1>Jane Smith</h1>
+        <p>Marketing Manager | Non-Smoker</p>
+        <p>Key Amenities: <span>Pet-Friendly, Near Schools</span></p>
+        <ul>
+            <li>Credit Score: <span>❌</span></li>
+            <li>Proof of Income: <span>✔️</span></li>
+            <li>References: <span>✔️</span></li>
+        </ul>
+        <button onclick="viewTenantProfile(2)">View Profile</button>
+    </div>
+    <div class="cards">
+        <img src="/Images/Profile-Pic-Img.png" alt="Tenant 3">
+        <h1>Robert Johnson</h1>
+        <p>Graphic Designer | Smoker</p>
+        <p>Key Amenities: <span>Gym Access, Near Public Transit</span></p>
+        <ul>
+            <li>Credit Score: <span>✔️</span></li>
+            <li>Proof of Income: <span>❌</span></li>
+            <li>References: <span>✔️</span></li>
+        </ul>
+        <button onclick="viewTenantProfile(3)">View Profile</button>
+    </div>
+    <div class="cards">
+        <img src="/Images/Profile-Pic-Img.png" alt="Tenant 4">
+        <h1>Emily Davis</h1>
+        <p>Teacher | Non-Smoker</p>
+        <p>Key Amenities: <span>Close to Public Transit, Pet-Friendly</span></p>
+        <ul>
+            <li>Credit Score: <span>✔️</span></li>
+            <li>Proof of Income: <span>✔️</span></li>
+            <li>References: <span>✔️</span></li>
+        </ul>
+        <button onclick="viewTenantProfile(4)">View Profile</button>
+    </div>
+</div>
 
-        <div class="cards">
-          <img src="/Images/Profile-Pic-Img.png"/>
-          <h1>Tenant Name</h1>
-          <li> References</li>
-
-          <button> View Profile</button>
-        </div>
-      </main>
+        </main>
     </div>
 
+    <script src="property-owner-matches.js"></script>
     <script>
-      const menu_toggle = document.querySelector(".menu-toggle");
-      const sidebar = document.querySelector(".sidebar");
+        const menu_toggle = document.querySelector(".menu-toggle");
+        const sidebar = document.querySelector(".sidebar");
 
-      menu_toggle.addEventListener("click", () => {
-        menu_toggle.classList.toggle("is-active");
-        sidebar.classList.toggle("is-active");
-      });
+        menu_toggle.addEventListener("click", () => {
+            menu_toggle.classList.toggle("is-active");
+            sidebar.classList.toggle("is-active");
+        });
     </script>
-  </body>
+</body>
 </html>

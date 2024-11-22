@@ -10,7 +10,7 @@
       href="/css/Property Owners/property-owner-matches.css"
     />
     <!----===== Browser tab title ===== ---->
-    <title>Rent Connect Dashboard</title>
+    <title>Rent Connect - Matches</title>
 
     <!----===== Browser tab icon large ===== ---->
     <link
@@ -50,7 +50,7 @@
         <nav class="menu">
           <a
             href="property-owner-my-dashboard-tab.html"
-            class="menu-item is-active"
+            class="menu-item"
             >Dashboard</a
           >
           <a href="property-owner-my-profile-tab.html" class="menu-item"
@@ -59,53 +59,59 @@
           <a href="property-owner-my-properties.html" class="menu-item"
             >Properties</a
           >
-          <a href="#" class="menu-item">Marketplace</a>
+          <a href="#" class="menu-item is-active">Match Me</a>
           <a href="#" class="menu-item">Log out</a>
         </nav>
       </aside>
 
       <main class="content">
-        <h1>Welcome back, NAME</h1>
+        <h1>Welcome back, {USER.FIRST_NAME}</h1>
 
         <center><h2>Matches for: <br>
-          <i>123 Ave South, Hamilton, ON L8T2M9</i></h2></center>
+          <i>{PROPERTY.LOCATION_ID}</i></h2></center>
       
 
         <div class="cards">
           <img src="/Images/Profile-Pic-Img.png"/>
-          <h1>Tenant Name</h1>
-          <li> References</li>
-          <li> Credit Score</li>
-          <li> References</li>
-          <li> References</li>
+          <h1>{USER.FIRST_NAME}</h1>
+          <li>References available</li>
+          <li>Credit Score available</li>
+          <li>Completed Rental Agreement available</li>
+          <li>Proof of Income available</li>
 
-          <button> View Profile</button>
+          <button>View Profile</button>
         </div>
 
         <div class="cards">
           <img src="/Images/Profile-Pic-Img.png"/>
-          <h1>Tenant Name</h1>
-          <li> References</li>
-          <li> Credit Score</li>
-          <li> Completed Rental Agreement</li>
+          <h1>{USER.FIRST_NAME}</h1>
+          <li>References available</li>
+          <li>Credit Score available</li>
+          <li>Completed Rental Agreement available</li>
+          <li class="notavailable"></li>
 
-          <button> View Profile</button>
+          <button>View Profile</button>
         </div>
 
         <div class="cards">
           <img src="/Images/Profile-Pic-Img.png"/>
-          <h1>Tenant Name</h1>
-          <li> References</li>
+          <h1>{USER.FIRST_NAME}</h1>
+          <li>References available</li>
+          <li></li>
+          <li></li>
         
-          <button> View Profile</button>
+          <button>View Profile</button>
         </div>
 
         <div class="cards">
           <img src="/Images/Profile-Pic-Img.png"/>
-          <h1>Tenant Name</h1>
-          <li> References</li>
+          <h1>{USER.FIRST_NAME}</h1>
+          <li>References available</li>
+          <li>Credit Score available</li>
+          <li></li>
+          <li></li>
 
-          <button> View Profile</button>
+          <button>View Profile</button>
         </div>
       </main>
     </div>

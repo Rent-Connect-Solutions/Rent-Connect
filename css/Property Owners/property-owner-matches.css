@@ -185,13 +185,18 @@
    list-style:none;
    text-align: left;
    margin: 10px;
- }
-
+}
+  
  .cards li::before {
    content: '✓';
    color: greenyellow;
  }
- 
+
+ .notavailable li::before {
+    content: 'ⓧ';
+    color: orangered;
+  }
+
 img {
   width: 30%;
   text-align: center;

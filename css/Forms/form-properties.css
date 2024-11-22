@@ -93,9 +93,10 @@
     color: #ffffff;
   
   }
-  .form .option-input:checked + label, .form .checkbox-input:checked + label {
+  .form .option-input:checked + label, .form .checkbox-input:checked + label .form .checkbox-label:checked + label {
     color: white;
-    background-color: #5e7ce2;
+    /*background-color: #5e7ce2;*/
+    background-color: #4E4E4E;
   }
   
   .form .button {
@@ -116,6 +117,7 @@
     background-color:  white;
     border: 1px solid #5e7ce2
   }
+
   .form .button:active {
     position: relative;
     top: 1px;

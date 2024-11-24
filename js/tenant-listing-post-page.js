@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const tenantId = new URLSearchParams(window.location.search).get('id');
     
-    // API Connection #1: Fetch tenant details using the tenantId.
+    // API Connection #9: Fetch tenant details using the tenantId.
     fetch(`/api/tenant-details?id=${tenantId}`)
         .then(response => response.json())
         .then(data => {

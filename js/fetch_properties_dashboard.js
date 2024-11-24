@@ -6,7 +6,7 @@ const userId = 1;
 
 async function fetchProperties() {
   try {
-    // API Connection Point #5: Fetch properties from the backend API
+    // API Connection Point #4: Fetch properties from the backend API
     const response = await fetch(`http://localhost:3000/api/properties?userId=${userId}`);
     
     if (!response.ok) {
@@ -16,7 +16,7 @@ async function fetchProperties() {
     const data = await response.json();
     const propertyList = document.getElementById('property-list');
 
-    // API Connection Point #6: Populate the frontend with fetched properties
+    // API Connection Point #5: Populate the frontend with fetched properties
     if (data.properties.length > 0) {
       data.properties.forEach(property => {
         const li = document.createElement('li');
@@ -30,7 +30,7 @@ async function fetchProperties() {
     }
   } catch (error) {
     console.error('Error:', error);
-    // API Connection Point #7: Handle frontend errors (e.g., failed fetch or network issue)
+    // API Connection Point #6: Handle frontend errors (e.g., failed fetch or network issue)
   }
 }
 

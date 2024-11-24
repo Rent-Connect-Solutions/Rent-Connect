@@ -44,6 +44,7 @@
     color:#5e7ce2;
     background-color: #f5f7fd;
     border-radius: 10px 0px 0px 10px;
+    
  }
 
  .content {
@@ -124,6 +125,7 @@
  @media (max-width: 1024px){
     .sidebar {
         max-width: 200px;
+        z-index: 999;
     }
  }
 
@@ -219,7 +221,7 @@
     box-shadow: 3px 3px 15px rgba(55, 43, 96, .2);
  }
 
- .matchescard {
+ /*.matchescard {
    display: flex;
    flex-direction: column;
    margin: 3rem;
@@ -228,27 +230,135 @@
    margin-right:auto;
    width: 75%;
    min-height: 225px;
-   background-color: #fded9160;
+   background-color: #5328ef;
    border-radius: 10px;
    border: 2px solid rgba(114, 141, 230, .4);
    box-shadow: 3px 3px 15px rgba(55, 43, 96, .2);
 }
+   .matchescard a {
+      color: #ffffff; 
+      font-size: 1.5rem;
+   } 
+*/
 
-
+/*---------------------- Matchcard styling---------------------------------- */
+.matchcard {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+   background-color: #ffffff;
+   border-radius: 8px;
+   width: auto;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   margin-block: 1.5rem;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   flex-wrap: wrap; /* Make columns stack on smaller screens */
+ }
+ 
+ /* Add hover effect for the whole card */
+ .matchcard:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+ }
+ 
+ /* Each column within the matchcard */
+ .matchcard-column {
+   flex: 1;
+   text-align: center;
+   padding: 10px;
+   border-radius: 8px;
+   position: relative; /* Needed for tooltip positioning */
+   margin: 10px;
+ }
+ 
+ /* Left column for premium matches */
+ .matchcard-column.premium {
+   background-color: #ffd700; /* Gold background for premium */
+   color: #000;
+   font-weight: bold;
+ }
+ 
+ /* Right column for regular matches */
+ .matchcard-column.regular {
+   background-color: #f0f0f0; /* Light gray background */
+   color: #333;
+ }
+ 
+ /* Hover effect for individual columns */
+ .matchcard-column:hover {
+   transform: scale(1.05); /* Slightly increase the size */
+   background-color: #ffe680; /* Slightly brighter gold for premium */
+ }
+ 
+ .matchcard-column.regular:hover {
+   background-color: #e0e0e0; /* Slightly darker gray for regular */
+ }
+ 
+ /* Tooltip styling */
+ .tooltip {
+   position: absolute;
+   bottom: -50px; /* Adjust based on tooltip size */
+   left: 50%;
+   transform: translateX(-50%);
+   background-color: #333;
+   color: #fff;
+   padding: 8px 12px;
+   border-radius: 4px;
+   font-size: 0.875rem;
+   white-space: nowrap;
+   opacity: 0;
+   visibility: hidden;
+   transition: opacity 0.3s ease, visibility 0.3s ease;
+   pointer-events: none; /* Prevent interaction with the tooltip */
+   z-index: 1000;
+ }
+ 
+ /* Tooltip arrow */
+ .tooltip::after {
+   content: '';
+   position: absolute;
+   top: -6px;
+   left: 50%;
+   transform: translateX(-50%);
+   border-width: 6px;
+   border-style: solid;
+   border-color: transparent transparent #333 transparent;
+ }
+ 
+ /* Show tooltip on hover */
+ .matchcard-column:hover .tooltip {
+   opacity: 1;
+   visibility: visible;
+ }
+ 
+ /* Responsive Adjustments */
+ @media (max-width: 768px) {
+   .tooltip {
+     bottom: -70px; /* More space for smaller screens */
+     font-size: 0.75rem; /* Slightly smaller text for tooltips */
+     padding: 6px 10px;
+    
+   }
+ }
+ 
+ 
  #h1 {
-    color: #505b77;
+    color: #000000;
     font-size: 1.5rem;
     font-weight: 500;
     text-align: center;
     justify-content: center;
-    margin: 2rem;
+    margin: 1rem;
  }
 
  img {
+   width: fit-content;
    text-align: center;
    display: block;
    margin-left: auto;
    margin-right: auto;
+   margin-block: 1.5rem;
  }
 
  @media (max-width: 1024px){

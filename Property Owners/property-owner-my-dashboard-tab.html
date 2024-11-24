@@ -59,7 +59,7 @@
           <a href="property-owner-my-properties.html" class="menu-item"
             >Properties</a
           >
-          <a href="#" class="menu-item">Marketplace</a>
+          <a href="#" class="menu-item">Match Me</a>
           <a href="#" class="menu-item">Log out</a>
         </nav>
       </aside>
@@ -69,11 +69,27 @@
         <p>Your Rent Connect Dashboard</p>
 
         <!-- Overall matches for all properties -->
-        <div class="matchescard">
-        <div id="h1">You've got Matches!</div>
-         <a style="color: #505b77; font-size: 30px" href="property-owner-my-properties.html">150 users matched</a> 
-         <a class="verticalLine" style="color:gold; font-size: 30px; font-weight: 600;" href="property-owner-my-properties.html"> 8 Premium users matched!</a>
+        <div class="matchcard">
+          
+          <div class="matchcard-column premium">
+            
+            <h3>Premium Matches</h3>
+            <div id="premium-matches-count">0</div>
+            <!---- Tooltip for Premium Matches ---->
+            <div class="tooltip">These are matches with premium tenants who have additional privileges and higher engagement levels.</div>
+          </div>
+         
+          <div class="matchcard-column regular">
+           
+            <h3>Regular Matches</h3>
+            <div id="regular-matches-count">0</div>
+            <!---- Tooltip for Regular Matches ---->
+            <div class="tooltip">These are matches with regular tenants. They form the majority of tenant matches.</div>
+          </div>
+          
         </div>
+        
+        
 
 
         <!-- Button to add a listing to your profile -->
@@ -87,11 +103,11 @@
         </div>
 
         <div class="cards">
-          <div id="h1">Stats</div>
+          <div id="h1">Market Statistics (coming soon)</div>
         </div>
 
         <div class="cards">
-          <div id="h1">Content card</div>
+          <div id="h1">Beta Test Updates:</div>
         </div>
       </main>
     </div>

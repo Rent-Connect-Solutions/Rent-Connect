@@ -93,10 +93,11 @@
     color: #ffffff;
   
   }
-  .form .option-input:checked + label, .form .checkbox-input:checked + label .form .checkbox-label:checked + label {
+  /* this is where we can specify the color of the selected form option */
+  .form .option-input:checked + label, .form .checkbox-input:checked + label {
     color: white;
     /*background-color: #5e7ce2;*/
-    background-color: #4E4E4E;
+    background-color: #2e2e2e;
   }
   
   .form .button {
@@ -115,7 +116,7 @@
   .form .button:hover, .form .button:focus, .form .button:active {
     color: #5e7ce2;
     background-color:  white;
-    border: 1px solid #5e7ce2
+    border: 1px solid #5e7ce2;
   }
 
   .form .button:active {

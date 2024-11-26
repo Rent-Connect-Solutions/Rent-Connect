@@ -37,15 +37,19 @@
         
             <form action='' class='form'>
                 <p class='field required'>
-                  <label class='label required'>Property Address</label>
+                  <label class='label required' for='property_name'>Property Address</label>
                   <input class='text-input' id='PROPERTY_NAME' name='PROPERTY_NAME'>
                 </p>
+                <p class='field'>
+                  <label class='label' for='propert_tags'>Property Tags</label>
+                  <input class='text-input' id='PROPERTY_TAGS' name='PROPERTY_TAGS'>
+                </p>
                 <p class='field required half'>
-                  <label class='label'>City</label>
+                  <label class='label' for='city'>City</label>
                   <input class='text-input' id='CITY' name='CITY'>
                 </p>
                 <p class='field half'>
-                  <label class='label'>Postal Code</label>
+                  <label class='label' for='zip_postcode'>Postal Code</label>
                   <input class='text-input' id='ZIP_POSTCODE' name='ZIP_POSTCODE'>
                 </p>
                 
@@ -134,19 +138,19 @@
                   <label class='label'>Bathrooms</label>
                   <ul class='options'>
                     <li class='option'>
-                      <input class='option-input' id='NUM_BATH' name='NUM_BATH' type='radio' value='1'>
+                      <input class='option-input' for='' id='NUM_BATH' name='NUM_BATH' type='radio' value='1'>
                       <label class='option-label'>1</label>
                     </li>
                     <li class='option'>
-                      <input class='option-input' id='NUM_BATH' name='NUM_BATH' type='radio' value='1.5'>
+                      <input class='option-input' for='' id='NUM_BATH' name='NUM_BATH' type='radio' value='1.5'>
                       <label class='option-label'>1.5</label>
                     </li>
                     <li class='option'>
-                      <input class='option-input' id='NUM_BATH' name='NUM_BATH' type='radio' value='2'>
+                      <input class='option-input' for='' id='NUM_BATH' name='NUM_BATH' type='radio' value='2'>
                       <label class='option-label'>2</label>
                     </li>
                     <li class='option'>
-                      <input class='option-input' id='NUM_BATH' name='NUM_BATH' type='radio' value='2.5'>
+                      <input class='option-input' for='' id='NUM_BATH' name='NUM_BATH' type='radio' value='2.5'>
                       <label class='option-label'>2.5+</label>
                     </li>
                    
@@ -188,9 +192,6 @@
                 <p class='field half'>
                   <input class='button' type='submit' value='List it!'>
                   </p>
-                  <p class='field half'>
-                  <input style=" background: orangered;" class='button' type='reset' value='Clear Form'>
-                </p>
               </form>
 
          

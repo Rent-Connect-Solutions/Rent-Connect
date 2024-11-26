@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="/css/Property Owners/property-owner-dashboard.css">
+<link rel="stylesheet" href="/css/Forms/form-properties.css">
+
+<!----===== Browser tab title ===== ---->
+<title>Rent Connect - Post Your Property</title>
+
+<!----===== Browser tab icon large ===== ---->
+<link rel="icon" type="image/png" sizes="32x32" href="/images/Logo Blue Transparent.png">
+<!----===== Browser tab icon small ===== ---->
+<link rel="icon" type="image/png" sizes="16x16" href="/images/Logo Transparent.png"> 
+<!----===== iPhone homescreen icon large ===== ---->
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<!----===== For browsers that support color matching  ===== ---->
+<meta name="theme-color" content="#3685fd">
+<!----===== Browser icon list ===== ---->
+<link rel="manifest" href="images/site.webmanifest">
+
+
+<title>Rent Connect - Post Your Property</title>
+</head>
+
+<body>
+    <div class="app">
+
+
+        <main class="content">
+
+        <div class="createpost-text"><p>Add a Property to Rent Connect!</p></div>
+        <div style="text-align: center; font-style: italic;"><p>Remember, the more info you can provide for your property means more oppertunities to match with tenants!</p><br></div> 
+        
+            <form action='' class='form'>
+                <p class='field required'>
+                  <label class='label required' for='name'>Property Address</label>
+                  <input class='text-input' id='PROPERTY_NAME' name='PROPERTY_NAME' required type='text'>
+                </p>
+                <p class='field required half'>
+                  <label class='label' for='location'>City</label>
+                  <input class='text-input' id='CITY' name='CITY' required type='location'>
+                </p>
+                <p class='field half'>
+                  <label class='label' for='postalcode'>Postal Code</label>
+                  <input class='text-input' id='ZIP_POSTCODE' name='ZIP_POSTCODE' type='postalcode'>
+                </p>
+                
+                <div class='field'>
+                  <label class='label'>Amenities</label>
+                  <ul class='checkboxes'>
+                    <li class='checkbox'>
+                      <input class='checkbox-input' id='AMENITY_01' name='AMENITY_01' type='checkbox' value='AMENITY_01'>
+                      <label class='checkbox-label' for='AMENITY_01'>Parking</label>
+                    </li>
+                    <li class='checkbox'>
+                      <input class='checkbox-input' id='AMENITY_02' name='AMENITY_02' type='checkbox' value='AMENITY_02'>
+                      <label class='checkbox-label' for='AMENITY_02'>Backyard</label>
+                    </li>
+                    <li class='checkbox'>
+                      <input class='checkbox-input' id='AMENITY_03' name='AMENITY_03' type='checkbox' value='AMENITY_03'>
+                      <label class='checkbox-label' for='AMENITY_03'>Utilities Included</label>
+                    </li>
+                    <li class='checkbox'>
+                      <input class='checkbox-input' id='AMENITY_04' name='AMENITY_04' type='checkbox' value='AMENITY_04'>
+                      <label class='checkbox-label' for='AMENITY_04'>Washer / Dryer</label>
+                    </li>
+                    <li class='checkbox'>
+                      <input class='checkbox-input' id='AMENITY_05' name='AMENITY_05' type='checkbox' value='AMENITY_05'>
+                      <label class='checkbox-label' for='AMENITY_05'>Wheelchair Accessible</label>
+                    </li>
+                    <li class='checkbox'>
+                      <input class='checkbox-input' id='choice-5' name='choice' type='checkbox' value='5'>
+                      <label class='checkbox-label' for='choice-5'>Fully Furnished</label>
+                    </li>
+                    <li class='checkbox'>
+                      <input class='checkbox-input' id='choice-6' name='choice' type='checkbox' value='6'>
+                      <label class='checkbox-label' for='choice-6'>Garage</label>
+                    </li>
+                    <li class='checkbox'>
+                      <input class='checkbox-input' id='choice-7' name='choice' type='checkbox' value='7'>
+                      <label class='checkbox-label' for='choice-7'>Gas Appliances</label>
+                    </li>
+                    <li class='checkbox'>
+                      <input class='checkbox-input' id='choice-8' name='choice' type='checkbox' value='8'>
+                      <label class='checkbox-label' for='choice-8'>Gas Fireplace</label>
+                    </li>
+                    <li class='checkbox'>
+                      <input class='checkbox-input' id='choice-9' name='choice' type='checkbox' value='9'>
+                      <label class='checkbox-label' for='choice-9'>Garden</label>
+                    </li>
+                    <li class='checkbox'>
+                      <input class='checkbox-input' id='choice-10' name='choice' type='checkbox' value='10'>
+                      <label class='checkbox-label' for='choice-10'>Park nearby(<2km)</label>
+                    </li> 
+                    <li class='checkbox'>
+                      <input class='checkbox-input' id='choice-11' name='choice' type='checkbox' value='11'>
+                      <label class='checkbox-label' for='choice-11'>school nearby (<2km)</2km></label>
+                    </li>
+                    <li class='checkbox'>
+                      <input class='checkbox-input' id='choice-12' name='choice' type='checkbox' value='*'>
+                      <label class='checkbox-label' for='choice-12'>Select All</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class='field'>
+                  <label class='label'>Bedrooms</label>
+                  <ul class='options'>
+                    <li class='option'>
+                      <input class='option-input' id='option-0' name='option' type='radio' value='0'>
+                      <label class='option-label' for='option-0'>1</label>
+                    </li>
+                    <li class='option'>
+                      <input class='option-input' id='option-1' name='option' type='radio' value='1'>
+                      <label class='option-label' for='option-1'>2</label>
+                    </li>
+                    <li class='option'>
+                      <input class='option-input' id='option-2' name='option' type='radio' value='2'>
+                      <label class='option-label' for='option-2'>3</label>
+                    </li>
+                    <li class='option'>
+                      <input class='option-input' id='option-3' name='option' type='radio' value='3'>
+                      <label class='option-label' for='option-3'>4+</label>
+                    </li>
+                   
+                    </li>
+                  </ul>
+                </div>
+                
+                <div class='field'>
+                  <label class='label'>Bathrooms</label>
+                  <ul class='options'>
+                    <li class='option'>
+                      <input class='option-input' id='option-4' name='option' type='radio' value='4'>
+                      <label class='option-label' for='option-4'>1</label>
+                    </li>
+                    <li class='option'>
+                      <input class='option-input' id='option-5' name='option' type='radio' value='5'>
+                      <label class='option-label' for='option-5'>1.5</label>
+                    </li>
+                    <li class='option'>
+                      <input class='option-input' id='option-6' name='option' type='radio' value='6'>
+                      <label class='option-label' for='option-6'>2</label>
+                    </li>
+                    <li class='option'>
+                      <input class='option-input' id='option-7' name='option' type='radio' value='7'>
+                      <label class='option-label' for='option-7'>2.5+</label>
+                    </li>
+                   
+                    </li>
+                  </ul>
+                </div>
+
+                <p class='field'>
+                  <label class='label' for='about'>About Property</label>
+                  <textarea class='textarea' cols='50' id='about' name='about' rows='4'></textarea>
+                </p>
+                <p class='field half'>
+                  <label class='label' for='select'>I'm listing this property as:</label>
+                  <select class='select' id='select'>
+                    <option selected value=''></option>
+                    <option value='landlord'>I'm the Landlord</option>
+                    <option value='property-manager'>I'm the Property Manager</option>
+                  </select>
+                </p>
+                <p class='field half'>
+                  <label class='label' for='select'>Is rent controlled?</label>
+                  <select class='select' id='select'>
+                    <option selected value=''></option>
+                    <option value='rentcontrolled'>Yes rent is controlled</option>
+                    <option value='rentnotcontrolled'>No rent is not controlled</option>
+                  </select>
+                </p>
+                <p class='field'>
+                  <label class='label' for='select'>Do you also live at this property?</label>
+                  <select class='select' id='select'>
+                    <option selected value=''></option>
+                    <option value='ownerlivesonsite'>Yes I currently live here</option>
+                    <option value='ownerlivesoffsite'>No I do not live here</option>
+                  </select>
+                </p>
+                <br>
+                <p class='field half'>
+                  <input class='button' type='submit' value='List it!'>
+                </p>
+              </form>
+
+         
+
+        </main>
+
+
+    </div>
+
+    <script>
+        const menu_toggle = document.querySelector('.menu-toggle');
+        const sidebar = document.querySelector ('.sidebar');
+
+        menu_toggle.addEventListener('click', () => {
+            menu_toggle.classList.toggle ('is-active');
+            sidebar.classList.toggle('is-active');
+
+        })
+
+    </script>
+
+</body>
+</html>

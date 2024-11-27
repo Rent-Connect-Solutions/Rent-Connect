@@ -48,7 +48,7 @@
                 <a href="property-owner-my-dashboard-tab.html" class="menu-item">Dashboard</a>
                 <a href="property-owner-my-profile-tab.html" class="menu-item">Profile</a>
                 <a href="property-owner-my-properties.html" class="menu-item is-active">Properties</a>
-                <a href="#" class="menu-item">Marketplace</a>
+                <a href="property-owner-matches.html" class="menu-item">Match Me</a>
                 <a href="#" class="menu-item">Log out</a>
             </nav>
 
@@ -56,7 +56,7 @@
 
         <main class="content">
             <h1>Properties</h1>
-            <p>Add+ or veiw you properties</p>
+            <p>Add + or veiw you properties</p>
 
             <a href="property-owner-add-properties.html" target="popup" onclick="window.open('property-owner-add-properties.html', 'popup', 'width=800,height=600')  ; return false;" >
                 <div class="plus radius"></div>
@@ -64,16 +64,22 @@
             <div class="createpost-text"><p>Add Property</p></div> 
 
             <div class="cards"> <!------------------ Javascript JS here to add more properties visually in cards ------------>
-                <div id="h1">Property #1</div> 
+               
+                    <div id="properties">
+                      <h2>Your Properties</h2>
+                      <ul id="property-list">
+                        <!-- API Connection Point #4: Property names will populate dynamically here -->
+                      </ul>
+                    </div>
             </div>
-            
-
+                
         </main>
 
 
     </div>
-
+    <script src="app.js"></script>
     <script>
+        
         const menu_toggle = document.querySelector('.menu-toggle');
         const sidebar = document.querySelector ('.sidebar');
 

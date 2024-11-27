@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 
 
 
-// 1. Configure the MySQL connection
+// API # 1. Configure the MySQL connection
 const db = mysql.createConnection({
     host: 'localhost', // Replace with your DB host
     user: 'root',      // Replace with your DB username
@@ -27,7 +27,7 @@ const db = mysql.createConnection({
     database: 'your_database_name', // Replace with your DB name
 });
 
-// 2. Connect to the database
+// API #2. Connect to the database
 db.connect(err => {
     if (err) {
         console.error('Error connecting to the database:', err);
@@ -37,7 +37,7 @@ db.connect(err => {
     }
 });
 
-// 3. Define the API endpoint
+// API #3. Define the API endpoint
 app.post('/api/select-account-type', (req, res) => {
     const { account_type } = req.body;
 

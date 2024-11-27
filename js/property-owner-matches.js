@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const tenantGrid = document.querySelector('.tenant-grid');
 
-    // API Connection #1: Fetch matched tenants for a specific property.
+    // API Connection #7: Fetch matched tenants for a specific property.
     fetch('/api/matched-tenants?propertyId=123')
         .then(response => response.json())
         .then(tenants => {
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(err => console.error('Error fetching tenants:', err));
 });
 
-// API Connection #2: Navigate to a specific tenant profile.
+// API Connection #8: Navigate to a specific tenant profile.
 function viewTenantProfile(tenantId) {
     window.location.href = `/tenant-profile.html?id=${tenantId}`;
 }

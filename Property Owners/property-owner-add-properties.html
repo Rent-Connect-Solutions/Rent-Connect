@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="/css/Forms/form-properties.css">
 
 <!----===== Browser tab title ===== ---->
-<title>Rent Connect Dashboard</title>
+<title>Rent Connect - Post Your Property</title>
 
 <!----===== Browser tab icon large ===== ---->
 <link rel="icon" type="image/png" sizes="32x32" href="/images/Logo Blue Transparent.png">
@@ -30,6 +30,7 @@
 <body>
     <div class="app">
 
+
         <main class="content">
 
         <div class="createpost-text"><p>Add a Property to Rent Connect!</p></div>
@@ -37,159 +38,138 @@
         
             <form action='' class='form'>
                 <p class='field required'>
-                  <label class='label required'>Property Address</label>
-                  <input class='text-input' id='PROPERTY_NAME' name='PROPERTY_NAME'>
+                  <label class='label required' for='name'>Property Address</label>
+                  <input class='text-input' id='PROPERTY_NAME' name='PROPERTY_NAME' required type='text'>
+                </p>
+                <p class='field'>
+                  <label class='label' for='PROPERTY_DESC'>About Property</label>
+                  <textarea class='textarea' cols='50' id='PROPERTY_DESC' name='PROPERTY_DESC' rows='4'></textarea>
                 </p>
                 <p class='field required half'>
-                  <label class='label'>City</label>
-                  <input class='text-input' id='CITY' name='CITY'>
+                  <label class='label' for='location'>City</label>
+                  <input class='text-input' id='CITY' name='CITY' required type='location'>
                 </p>
                 <p class='field half'>
-                  <label class='label'>Postal Code</label>
-                  <input class='text-input' id='ZIP_POSTCODE' name='ZIP_POSTCODE'>
+                  <label class='label' for='postalcode'>Postal Code</label>
+                  <input class='text-input' id='ZIP_POSTCODE' name='ZIP_POSTCODE' type='postalcode'>
                 </p>
                 
                 <div class='field'>
                   <label class='label'>Amenities</label>
                   <ul class='checkboxes'>
                     <li class='checkbox'>
-                      <input class='checkbox-input' id='AMENITY_01' name='AMENITY_01' type='checkbox'>
-                      <label class='checkbox-label'>Parking</label>
+                      <input class='checkbox-input' id='AMENITY_01' name='AMENITY_01' type='checkbox' value='Parking'>
+                      <label class='checkbox-label' for='AMENITY_01'>Parking</label>
                     </li>
                     <li class='checkbox'>
-                      <input class='checkbox-input' id='AMENITY_02' name='AMENITY_02' type='checkbox'>
-                      <label class='checkbox-label'>Backyard</label>
+                      <input class='checkbox-input' id='AMENITY_02' name='AMENITY_02' type='checkbox' value='Backyard'>
+                      <label class='checkbox-label' for='AMENITY_02'>Backyard</label>
                     </li>
                     <li class='checkbox'>
-                      <input class='checkbox-input' id='AMENITY_03' name='AMENITY_02' type='checkbox'>
-                      <label class='checkbox-label'>Utilities Included</label>
+                      <input class='checkbox-input' id='AMENITY_03' name='AMENITY_03' type='checkbox' value='Utilities Included'>
+                      <label class='checkbox-label' for='AMENITY_03'>Utilities Included</label>
                     </li>
                     <li class='checkbox'>
-                      <input class='checkbox-input' id='AMENITY_03' name='AMENITY_03' type='checkbox'>
-                      <label class='checkbox-label'>Washer/Dryer</label>
+                      <input class='checkbox-input' id='AMENITY_04' name='AMENITY_04' type='checkbox' value='Washer / Dryer'>
+                      <label class='checkbox-label' for='AMENITY_04'>Washer / Dryer</label>
                     </li>
                     <li class='checkbox'>
-                      <input class='checkbox-input' id='AMENITY_04' name='AMENITY_04' type='checkbox'>
-                      <label class='checkbox-label'>Wheelchair Accessible</label>
+                      <input class='checkbox-input' id='AMENITY_05' name='AMENITY_05' type='checkbox' value='Wheelchair Accessible'>
+                      <label class='checkbox-label' for='AMENITY_05'>Wheelchair Accessible</label>
                     </li>
                     <li class='checkbox'>
-                      <input class='checkbox-input' id='AMENITY_05' name='cAMENITY_05' type='checkbox'>
-                      <label class='checkbox-label'>Fully Furnished</label>
+                      <input class='checkbox-input' id='AMENITY_06' name='AMENITY_06' type='checkbox' value='Fully Furnished'>
+                      <label class='checkbox-label' for='AMENITY_06'>Fully Furnished</label>
                     </li>
                     <li class='checkbox'>
-                      <input class='checkbox-input' id='AMENITY_06' name='AMENITY_06' type='checkbox'>
-                      <label class='checkbox-label'>Garage</label>
+                      <input class='checkbox-input' id='AMENITY_07' name='AMENITY_07' type='checkbox' value='Garage'>
+                      <label class='checkbox-label' for='AMENITY_07'>Garage</label>
                     </li>
                     <li class='checkbox'>
-                      <input class='checkbox-input' id='AMENITY_07' name='AMENITY_07' type='checkbox'>
-                      <label class='checkbox-label'>Gas Appliances</label>
+                      <input class='checkbox-input' id='AMENITY_08' name='AMENITY_08' type='checkbox' value='Gas Appliances'>
+                      <label class='checkbox-label' for='AMENITY_08'>Gas Appliances</label>
                     </li>
                     <li class='checkbox'>
-                      <input class='checkbox-input' id='AMENITY_08' name='AMENITY_08' type='checkbox'>
-                      <label class='checkbox-label'>Gas Fireplace</label>
+                      <input class='checkbox-input' id='AMENITY_09' name='AMENITY_09' type='checkbox' value='Gas Fireplace'>
+                      <label class='checkbox-label' for='AMENITY_09'>Gas Fireplace</label>
                     </li>
                     <li class='checkbox'>
-                      <input class='checkbox-input' id='AMENITY_09' name='AMENITY_09' type='checkbox'>
-                      <label class='checkbox-label'>Garden</label>
+                      <input class='checkbox-input' id='AMENITY_10' name='AMENITY_10' type='checkbox' value='Private Garden'>
+                      <label class='checkbox-label' for='AMENITY_10'>Private Garden</label>
                     </li>
                     <li class='checkbox'>
-                      <input class='checkbox-input' id='AMENITY_10' name='AMENITY_10' type='checkbox'>
-                      <label class='checkbox-label'>Park nearby(<2km)</label>
+                      <input class='checkbox-input' id='AMENITY_11' name='AMENITY_11' type='checkbox' value='Near Park'>
+                      <label class='checkbox-label' for='AMENITY_11'>Park nearby(<2km)</label>
                     </li> 
                     <li class='checkbox'>
-                      <input class='checkbox-input' id='AMENITY_11' name='AMENITY_11' type='checkbox'>
-                      <label class='checkbox-label'>School nearby (<2km)</2km></label>
+                      <input class='checkbox-input' id='AMENITY_12' name='AMENITY_12' type='checkbox' value='Near School'>
+                      <label class='checkbox-label' for='AMENITY_12'>School nearby (<2km)</2km></label>
                     </li>
                     <li class='checkbox'>
-                      <input class='checkbox-input' id='AMENITY_12' name='AMENITY_12' type='checkbox'>
-                      <label class='checkbox-label'>Pool/Hot tub</label>
+                      <input class='checkbox-input' id='AMENITY_13' name='AMENITY_13' type='checkbox' value='Near Bus Route'>
+                      <label class='checkbox-label' for='AMENITY_13'>Bus Route nearby</label>
                     </li>
+                    <li class='checkbox'>
+                      <input class='checkbox-input' id='AMENITY_14' name='AMENITY_14' type='checkbox' value='Entertainment'>
+                      <label class='checkbox-label' for='AMENITY_14'>Entertainment nearby</label>
+                    </li>
+                    <!-- Disabled for MVP
+                    <li class='checkbox'>
+                      <input class='checkbox-input' id='AMENITY_#' name='choice' type='checkbox' value='*'>
+                      <label class='checkbox-label' for='AMENITY-#'>Select All</label>
+                    </li>
+                    -->
                   </ul>
                 </div>
-                <div class='field'>
-                  <label class='label'>Bedrooms</label>
-                  <ul class='options'>
-                    <li class='option'>
-                      <input class='option-input' id='NUM_BED' name='NUM_BED' type='radio' value='1'>
-                      <label class='option-label'>1</label>
-                    </li>
-                    <li class='option'>
-                      <input class='option-input' id='NUM_BED' name='NUM_BED' type='radio' value='2'>
-                      <label class='option-label'>2</label>
-                    </li>
-                    <li class='option'>
-                      <input class='option-input' id='NUM_BED' name='NUM_BED' type='radio' value='3'>
-                      <label class='option-label'>3</label>
-                    </li>
-                    <li class='option'>
-                      <input class='option-input' id='NUM_BED' name='NUM_BED' type='radio' value='4'>
-                      <label class='option-label'>4+</label>
-                    </li>
-                   
-                    </li>
-                  </ul>
-                </div>
-                
-                <div class='field'>
-                  <label class='label'>Bathrooms</label>
-                  <ul class='options'>
-                    <li class='option'>
-                      <input class='option-input' id='NUM_BATH' name='NUM_BATH' type='radio' value='1'>
-                      <label class='option-label'>1</label>
-                    </li>
-                    <li class='option'>
-                      <input class='option-input' id='NUM_BATH' name='NUM_BATH' type='radio' value='1.5'>
-                      <label class='option-label'>1.5</label>
-                    </li>
-                    <li class='option'>
-                      <input class='option-input' id='NUM_BATH' name='NUM_BATH' type='radio' value='2'>
-                      <label class='option-label'>2</label>
-                    </li>
-                    <li class='option'>
-                      <input class='option-input' id='NUM_BATH' name='NUM_BATH' type='radio' value='2.5'>
-                      <label class='option-label'>2.5+</label>
-                    </li>
-                   
-                    </li>
-                  </ul>
-                </div>
-
-                <p class='field'>
-                  <label class='label'>About Property</label>
-                  <textarea class='textarea' cols='50' id='PROPERTY_DESC' rows='4'></textarea>
-                </p>
-                <!--
                 <p class='field half'>
-                  <label class='label'>I'm listing this property as:</label>
-                  <select class='select' id='#'>
+                  <label class='label' for='NUM_BED'>Number of Bedrooms:</label>
+                  <select class='select' id='NUM_BED>
                     <option selected value=''></option>
-                    <option value='value1'>TEXT1</option>
-                    <option value='value2'>TEXT2</option>
+                    <option value='1'>1</option>
+                    <option value='2'>2</option>
+                    <option value='3'>3</option>
+                    <option value='4+'>4 or more</option>
                   </select>
                 </p>
-                -->
-                <p class='field'>
-                  <label class='label'>Is rent controlled?</label>
+                
+                <p class='field half'>
+                  <label class='label' for='NUM_BATH'>Number of Bathrooms:</label>
+                  <select class='select' id='NUM_BATH>
+                    <option selected value=''></option>
+                    <option value='1'>1</option>
+                    <option value='1.5'>1.5</option>
+                    <option value='2'>2</option>
+                    <option value='2+'>2.5 or more</option>
+                  </select>
+                </p>
+
+                <p class='field half'>
+                  <label class='label' for='select'>I'm listing this property as:</label>
+                  <select class='select' id='select'>
+                    <option selected value=''></option>
+                    <option value='landlord'>I'm the Landlord</option>
+                    <option value='property-manager'>I'm the Property Manager</option>
+                  </select>
+                </p>
+                <p class='field half'>
+                  <label class='label' for='PROPERTY_RENT_CONTROL'>Is rent controlled?</label>
                   <select class='select' id='PROPERTY_RENT_CONTROL'>
                     <option selected value=''></option>
-                    <option value='rentcontrolled'>Yes rent is controlled</option>
-                    <option value='rentnotcontrolled'>No rent is not controlled</option>
+                    <option value='true'>Yes rent is controlled</option>
+                    <option value='false'>No rent is not controlled</option>
                   </select>
                 </p>
                 <p class='field'>
-                  <label class='label'>Do you also live at this property?</label>
+                  <label class='label' for='USER_IS_TENANT'>Do you also live at this property?</label>
                   <select class='select' id='USER_IS_TENANT'>
                     <option selected value=''></option>
-                    <option value='ownerlivesonsite'>Yes I currently live here</option>
-                    <option value='ownerlivesoffsite'>No I do not live here</option>
+                    <option value='true'>Yes I currently live here</option>
+                    <option value='false'>No I do not live here</option>
                   </select>
                 </p>
                 <br>
                 <p class='field half'>
                   <input class='button' type='submit' value='List it!'>
-                  </p>
-                  <p class='field half'>
-                  <input style=" background: orangered;" class='button' type='reset' value='Clear Form'>
                 </p>
               </form>
 

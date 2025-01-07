@@ -307,17 +307,22 @@ body {
     background-color: #f5f7fd;
     font-family: MuliRegular, sans-serif;
 }
-.property-summary {
+.more-info {
     margin-top: 20px;
     border-top: 1px solid #5e7ce2;
     padding-top: 20px;
     color: #5e7ce2 ;
 }
-.summary-grid {
+.more-info-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     color: #505b77;
+}
+
+.edit-section {
+    margin-top: 40px;
+    text-align: center;
 }
 .share-section {
     margin-top: 40px;
@@ -340,7 +345,7 @@ body {
         width: 50%;
         margin: auto;
     }
-    .summary-grid {
+    .more-info-grid {
         grid-template-columns: 1fr;
     }
     .amenities {
@@ -365,7 +370,7 @@ body {
         width: 50%;
         margin: auto;
     }
-    .summary-grid {
+    .more-info-grid {
         grid-template-columns: 1fr;
     }
     .amenities {

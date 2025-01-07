@@ -311,7 +311,7 @@
    visibility: hidden;
    transition: opacity 0.3s ease, visibility 0.3s ease;
    pointer-events: none; /* Prevent interaction with the tooltip */
-   z-index: 1000;
+   z-index: 999;
  }
  
  /* Tooltip arrow */
@@ -330,6 +330,7 @@
  .matchcard-column:hover .tooltip {
    opacity: 1;
    visibility: visible;
+   
  }
  
  /* Responsive Adjustments */
@@ -338,7 +339,7 @@
      bottom: -70px; /* More space for smaller screens */
      font-size: 0.75rem; /* Slightly smaller text for tooltips */
      padding: 6px 10px;
-    
+     
    }
  }
  

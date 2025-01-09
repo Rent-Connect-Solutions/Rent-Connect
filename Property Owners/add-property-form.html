@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Selected Amenities</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Your CSS links -->
+  <link rel="stylesheet" href="/css/Property Owners/property-owner-dashboard.css">
+  <link rel="stylesheet" href="/css/Forms/form-properties.css">
+
+  <!-- Browser tab icons, etc. -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/Logo Blue Transparent.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/Logo Transparent.png"> 
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <meta name="theme-color" content="#3685fd">
+  <link rel="manifest" href="images/site.webmanifest">
+</head>
+<body>
+  <div class="app">
+    <main class="content">
+      <div class="createpost-text">
+        <p>Add a Property to Rent Connect!</p>
+      </div>
+      <div style="text-align: center; font-style: italic;">
+        <p>Remember, the more info you can provide for your property means more opportunities to match with tenants!</p>
+        <br>
+      </div> 
+
+      <!-- 
+        ACTION = property_manager_my_listing_page.html (the page that will display the results)
+        METHOD = GET for simple demo. 
+        If you prefer a server-side approach or an API, switch to POST + fetch().
+      -->
+      <form id="amenitiesForm" action="/Property Owners/my-listing-page.html" method="GET" class="form">
+        
+        <!-- Property Address -->
+        <p class='field required'>
+          <label class='label required' for='PROPERTY_NAME'>Property Address</label>
+          <input class='text-input' id='PROPERTY_NAME' name='PROPERTY_NAME' required type='text'>
+        </p>
+        
+        <!-- About Property -->
+        <p class='field'>
+          <label class='label' for='PROPERTY_DESC'>About Property</label>
+          <textarea class='textarea' cols='50' id='PROPERTY_DESC' name='PROPERTY_DESC' rows='4'></textarea>
+        </p>
+        
+        <!-- City -->
+        <p class='field required half'>
+          <label class='label' for='CITY'>City</label>
+          <input class='text-input' id='CITY' name='CITY' required type='text'>
+        </p>
+        
+        <!-- Postal Code -->
+        <p class='field half'>
+          <label class='label' for='ZIP_POSTCODE'>Postal Code</label>
+          <input class='text-input' id='ZIP_POSTCODE' name='ZIP_POSTCODE' type='text'>
+        </p>
+        
+        <!-- Amenities -->
+        <div class='field'>
+          <label class='label'>Amenities</label>
+          <ul class='checkboxes'>
+            <li class='checkbox'>
+              <input class='checkbox-input' id='AMENITY_01' name='amenities[]' type='checkbox' value='Parking'>
+              <label class='checkbox-label' for='AMENITY_01'>Parking</label>
+            </li>
+            <li class='checkbox'>
+              <input class='checkbox-input' id='AMENITY_02' name='amenities[]' type='checkbox' value='Backyard'>
+              <label class='checkbox-label' for='AMENITY_02'>Backyard</label>
+            </li>
+            <li class='checkbox'>
+              <input class='checkbox-input' id='AMENITY_03' name='amenities[]' type='checkbox' value='Utilities Included'>
+              <label class='checkbox-label' for='AMENITY_03'>Utilities Included</label>
+            </li>
+            <li class='checkbox'>
+              <input class='checkbox-input' id='AMENITY_04' name='amenities[]' type='checkbox' value='Washer / Dryer'>
+              <label class='checkbox-label' for='AMENITY_04'>Washer / Dryer</label>
+            </li>
+            <li class='checkbox'>
+              <input class='checkbox-input' id='AMENITY_05' name='amenities[]' type='checkbox' value='Wheelchair Accessible'>
+              <label class='checkbox-label' for='AMENITY_05'>Wheelchair Accessible</label>
+            </li>
+            <li class='checkbox'>
+              <input class='checkbox-input' id='AMENITY_06' name='amenities[]' type='checkbox' value='Fully Furnished'>
+              <label class='checkbox-label' for='AMENITY_06'>Fully Furnished</label>
+            </li>
+            <li class='checkbox'>
+              <input class='checkbox-input' id='AMENITY_07' name='amenities[]' type='checkbox' value='Garage'>
+              <label class='checkbox-label' for='AMENITY_07'>Garage</label>
+            </li>
+            <li class='checkbox'>
+              <input class='checkbox-input' id='AMENITY_08' name='amenities[]' type='checkbox' value='Gas Appliances'>
+              <label class='checkbox-label' for='AMENITY_08'>Gas Appliances</label>
+            </li>
+            <li class='checkbox'>
+              <input class='checkbox-input' id='AMENITY_09' name='amenities[]' type='checkbox' value='Gas Fireplace'>
+              <label class='checkbox-label' for='AMENITY_09'>Gas Fireplace</label>
+            </li>
+            <li class='checkbox'>
+              <input class='checkbox-input' id='AMENITY_10' name='amenities[]' type='checkbox' value='Private Garden'>
+              <label class='checkbox-label' for='AMENITY_10'>Private Garden</label>
+            </li>
+            <li class='checkbox'>
+              <input class='checkbox-input' id='AMENITY_11' name='amenities[]' type='checkbox' value='Near Park'>
+              <label class='checkbox-label' for='AMENITY_11'>Park nearby(&lt;2km)</label>
+            </li>
+            <li class='checkbox'>
+              <input class='checkbox-input' id='AMENITY_12' name='amenities[]' type='checkbox' value='Near School'>
+              <label class='checkbox-label' for='AMENITY_12'>School nearby (&lt;2km)</label>
+            </li>
+            <li class='checkbox'>
+              <input class='checkbox-input' id='AMENITY_13' name='amenities[]' type='checkbox' value='Near Bus Route'>
+              <label class='checkbox-label' for='AMENITY_13'>Bus Route nearby</label>
+            </li>
+            <li class='checkbox'>
+              <input class='checkbox-input' id='AMENITY_14' name='amenities[]' type='checkbox' value='Entertainment'>
+              <label class='checkbox-label' for='AMENITY_14'>Entertainment nearby</label>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Number of Bedrooms -->
+        <p class='field half'>
+          <label class='label' for='NUM_BED'>Number of Bedrooms:</label>
+          <!-- Added 'name' so it will appear in the GET query -->
+          <select class='select' id='NUM_BED' name='NUM_BED'>
+            <option selected value=''></option>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4+'>4 or more</option>
+          </select>
+        </p>
+        
+        <!-- Number of Bathrooms -->
+        <p class='field half'>
+          <label class='label' for='NUM_BATH'>Number of Bathrooms:</label>
+          <!-- Added 'name' so it will appear in the GET query -->
+          <select class='select' id='NUM_BATH' name='NUM_BATH'>
+            <option selected value=''></option>
+            <option value='1'>1</option>
+            <option value='1.5'>1.5</option>
+            <option value='2'>2</option>
+            <option value='2.5'>2.5 or more</option>
+          </select>
+        </p>
+
+        <!-- I'm listing this property as: -->
+        <p class='field half'>
+          <label class='label' for='PROPERTY_OWNER_TYPE'>I'm listing this property as:</label>
+          <!-- Added 'name' so it will appear in the GET query -->
+          <select class='select' id='PROPERTY_OWNER_TYPE' name='PROPERTY_OWNER_TYPE'>
+            <option selected value=''></option>
+            <option value='landlord'>I'm the Landlord</option>
+            <option value='property-manager'>I'm the Property Manager</option>
+          </select>
+        </p>
+        
+        <!-- Is rent controlled? -->
+        <p class='field half'>
+          <label class='label' for='PROPERTY_RENT_CONTROL'>Is rent controlled?</label>
+          <!-- Added 'name' so it will appear in the GET query -->
+          <select class='select' id='PROPERTY_RENT_CONTROL' name='PROPERTY_RENT_CONTROL'>
+            <option selected value=''></option>
+            <option value='true'>Yes rent is controlled</option>
+            <option value='false'>No rent is not controlled</option>
+          </select>
+        </p>
+
+        <p class='field half'>
+          <label class='label' for='PERMISSION_TO_RENT'>Select if you have permission to Rent this unit</label>
+          <!-- Added 'name' so it will appear in the GET query -->
+          <select class='select' id='PERMISSION_TO_RENT' name='PERMISSION_TO_RENT'>
+            <option selected value=''></option>
+            <option value='true'>Yes</option>
+            <option value='false'>No</option>
+          </select>
+        </p>
+        
+        <!-- Do you also live at this property? -->
+        <p class='field'>
+          <label class='label' for='USER_IS_TENANT'>Do you also live at this property?</label>
+          <!-- Added 'name' so it will appear in the GET query -->
+          <select class='select' id='USER_IS_TENANT' name='USER_IS_TENANT'>
+            <option selected value=''></option>
+            <option value='true'>Yes I currently live here</option>
+            <option value='false'>No I do not live here</option>
+          </select>
+        </p>
+        <p class='field required'>
+          <label class='label required' for='RENT_PRICE'>$$$</label>
+          <input class='text-input' id='RENT_PRICE' name='RENT_PRICE' required type='text'>
+        </p>
+        <br>
+        
+        <!-- Submit button -->
+        <p class='field half'>
+          <input class='button' type='submit' value='List it!'>
+        </p>
+      </form>
+    </main>
+  </div>
+
+  <script>
+    const menu_toggle = document.querySelector('.menu-toggle');
+    const sidebar = document.querySelector('.sidebar');
+
+    if(menu_toggle){
+      menu_toggle.addEventListener('click', () => {
+        menu_toggle.classList.toggle('is-active');
+        sidebar.classList.toggle('is-active');
+      })
+    }
+  </script>
+</body>
+</html>

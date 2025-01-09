@@ -7,12 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="stylesheet" href="/css/Tenants/tenant-dashboard.css">
-<link rel="stylesheet" href="/css/Forms/form-profile.css">
-
 <!----===== Browser tab title ===== ---->
 <title>Rent Connect Dashboard</title>
-
-
 
 <!----===== Browser tab icon large ===== ---->
 <link rel="icon" type="image/png" sizes="32x32" href="/images/Logo Blue Transparent.png">
@@ -26,9 +22,10 @@
 <link rel="manifest" href="images/site.webmanifest">
 
 
-
 <title>Tenant Dashboard</title>
 </head>
+
+
 
 
 
@@ -46,37 +43,36 @@
             <h3>Menu</h3>
 
             <nav class="menu">
-                <a href="tenant-my-dashboard-tab.html" class="menu-item">Dashboard</a>
-                <a href="tenant-my-profile-tab.html" class="menu-item is-active">Profile</a>
-                <a href="tenant-my-posts-tab.html" class="menu-item">Posts</a>
-                <a href="tenant-my-documents-tab.html" class="menu-item">Documents</a>
+                <a href="/Tenants/my-dashboard-tab.html" class="menu-item is-active">Dashboard</a>
+                <a href="/Tenants/my-profile-tab.html" class="menu-item">Profile</a>
+                <a href="/Tenants/my-posts-tab.html" class="menu-item">Posts</a>
+                <a href="/Tenants/my-documents-tab.html" class="menu-item">Documents</a>
                 <a href="#" class="menu-item">Log out</a>
             </nav>
 
         </aside>
 
         <main class="content">
-            <h1>Your Profile</h1>
-            <p>Update or Edit your Rent Connect profile</p>
-            
-          <h2>Profile Picture</h2>
-          <img src="Images/Profile-Pic-Img.png" sizes="Thumbnail" alt="Display Pic"></img>
-            <form action='' class='form'>
-                <p class='field required half'>
-                  <label class='label required' for='name'>Name</label>
-                  <input class='text-input' id='name' name='name' required type='text'>
-                </p>
-                <p class='field required half'>
-                  <label class='label required' for='name'>Email</label>
-                  <input class='text-input' id='name' name='name' required type='text'>
-                </p>
-                
-                <p class='field half'>
-                  <input class='button' type='submit' value='Send'>
-                </p>
-              </form>
-  
-        
+            <h1>Welcome back, NAME</h1>
+            <p>Your Rent Connect Dashboard</p>
+
+            <a href="/Tenants/post-form.html">
+                <div class="plus radius"></div>
+            </a>
+            <div class="createpost-text"><p>Make a Post</p></div>
+
+            <div class="cards">
+                <div id="h1">My Post</div> <!-- Javascript JS to visually show a image uploaded of a proeprty uplaoded, Alphabetical scroll of cards for 5+ Units-->
+            </div>
+
+            <div class="cards">
+                <div id="h1">My Documents</div> <!-- Non MVP --Javascript JS Stats pulling a average of tenant $$ in address of rental, Trending areas atm, Market Statistics (non MVP feature)-->
+            </div>
+
+            <div class="cards">
+                <div id="h1">My Profile</div> <!-- Javascipt JS go to the marketplace -->
+            </div>
+
             
 
         </main>

@@ -1,33 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Property Listing</title>
-  <link rel="stylesheet" href="/css/Property Owners/property-owner-my-listing-page.css">
+  <link rel="stylesheet" href="/css/Property Owners/property-owner-my-listing-page.css" />
 
-  <!----===== Browser tab title ===== ---->
-  <title>Rent Connect Dashboard</title>
-
-  <!----===== Browser tab icon large ===== ---->
+  <!-- Browser tab icons, etc. -->
   <link
     rel="icon"
     type="image/png"
     sizes="32x32"
     href="/images/Logo Blue Transparent.png"
   />
-  <!----===== Browser tab icon small ===== ---->
   <link
     rel="icon"
     type="image/png"
     sizes="16x16"
     href="/images/Logo Transparent.png"
   />
-  <!----===== iPhone homescreen icon large ===== ---->
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
-  <!----===== For browsers that support color matching  ===== ---->
   <meta name="theme-color" content="#3685fd" />
-  <!----===== Browser icon list ===== ---->
   <link rel="manifest" href="images/site.webmanifest" />
 
   <title>Property Owner Dashboard</title>
@@ -36,25 +29,15 @@
 
 <div class="app">
   <div class="menu-toggle">
-    <div class="hamburger">
-      <span></span>
-    </div>
+    <div class="hamburger"><span></span></div>
   </div>
 
   <aside class="sidebar">
     <h3>Menu</h3>
     <nav class="menu">
-      <a
-        href="/Property Owners/my-dashboard-tab.html"
-        class="menu-item is-active"
-        >Dashboard</a
-      >
-      <a href="/Property Owners/my-profile-tab.html" class="menu-item"
-        >Profile</a
-      >
-      <a href="/Property Owners/my-properties.html" class="menu-item"
-        >Properties</a
-      >
+      <a href="/Property Owners/my-dashboard-tab.html" class="menu-item is-active">Dashboard</a>
+      <a href="/Property Owners/my-profile-tab.html" class="menu-item">Profile</a>
+      <a href="/Property Owners/my-properties.html" class="menu-item">Properties</a>
       <a href="/Property Owners/rental-matches.html" class="menu-item">Match Me</a>
       <a href="#" class="menu-item">Log out</a>
     </nav>
@@ -62,66 +45,55 @@
 
   <main class="content">
     <h1>Welcome back, NAME</h1>
-
     <center>
       <p>Your Matches:</p>
       <div class="plus radius"><h3>5</h3></div>
-      <p><a href="/Property Owners/rental-matches.html"> View all</a></p> <br>
+      <p><a href="/Property Owners/rental-matches.html">View all</a></p>
+      <br />
     </center>
 
     <div class="container">
-      <!-- 
-        Property Title & Address: We'll inject the address from the form 
-        (PROPERTY_NAME) into #propertyName 
-      -->
+      <!-- We'll show the Property Address as the "title" -->
       <div class="property-title">
         <h1>Property #1 - <span id="propertyTitle"></span></h1>
-          <h2>$<span id="rentAmount"></span> / month</h2> 
+        <!-- ONLY ONE RENT PRICE -->
+        <h2>$<span id="RENT_PRICE"></span> / month</h2>
       </div>
 
-      <!-- Example of an image gallery. This remains static or can be adapted
-           to show images that you upload separately. -->
+      <!-- Example of an image gallery -->
       <div class="image-gallery">
         <div class="scroll-container">
-          <img src="/Images/Table.JPG" alt="Property Image 1" class="property-image">
-          <img src="/Images/Table.JPG" alt="Property Image 2" class="property-image">
-          <img src="/Images/Table.JPG" alt="Property Image 3" class="property-image">
-          <img src="/Images/Table.JPG" alt="Property Image 4" class="property-image">
+          <img src="/Images/Table.JPG" alt="Property Image 1" class="property-image" />
+          <img src="/Images/Table.JPG" alt="Property Image 2" class="property-image" />
+          <img src="/Images/Table.JPG" alt="Property Image 3" class="property-image" />
+          <img src="/Images/Table.JPG" alt="Property Image 4" class="property-image" />
         </div>
       </div>
 
       <!-- Main Property Info -->
       <div class="property-info">
-
         <!-- City + ZIP/Postcode -->
         <p>
-          <strong>Location:</strong> 
-          <span id="city"></span>
-          <span id="zipPostcode"></span>
-        </p>
-
-        <!-- monthly rent -->
-        <p>
-          <strong>Rent $</strong> 
-          <span id="rentAmount"> /month</span>
+          <strong>Location:</strong>
+          <span id="CITY"></span>,
+          <span id="ZIP_POSTCODE"></span>
         </p>
 
         <!-- Amenities Section -->
         <div class="amenities">
-            <h3>Amenities</h3>
-            <!-- Dynamically fill this list with JavaScript -->
-            <ul id="amenitiesList"></ul>
+          <h3>Amenities</h3>
+          <ul id="amenitiesList"></ul>
         </div>
       </div>
 
       <!-- Description Section -->
       <div class="description-section">
         <h3>Description</h3>
-        <textarea 
-          class="description-box" 
-          rows="5" 
-          cols="80" 
-          readonly 
+        <textarea
+          class="description-box"
+          rows="5"
+          cols="80"
+          readonly
           id="propertyDesc"
         ></textarea>
       </div>
@@ -130,88 +102,80 @@
       <div class="more-info">
         <h3>More Information</h3>
         <div class="more-info-grid">
-
-          <!-- Number of Bedrooms & Bathrooms from the form -->
           <p>
-            <strong>Bedrooms:</strong> 
+            <strong>Bedrooms:</strong>
             <span id="numBed"></span>
           </p>
           <p>
-            <strong>Bathrooms:</strong> 
+            <strong>Bathrooms:</strong>
             <span id="numBath"></span>
           </p>
           <p>
-            <strong>Listing As:</strong> 
+            <strong>Listing As:</strong>
             <span id="propertyOwnerType"></span>
           </p>
           <p>
-            <strong>Rent Controlled:</strong> 
+            <strong>Rent Controlled:</strong>
             <span id="rentControl"></span>
           </p>
           <p>
-            <strong>Permission to Rent</strong> 
+            <strong>Permission to Rent:</strong>
             <span id="permissionToRent"></span>
           </p>
           <p>
-            <strong>Owner Occupies Property:</strong> 
+            <strong>Owner Occupies Property:</strong>
             <span id="userIsTenant"></span>
           </p>
-
-          <!-- The following are placeholders from the existing design -->
-          <!-- <p><strong>Property Type:</strong> Residential</p>
-          <p><strong>Storeys:</strong> 2</p>
-          <p><strong>Square Footage:</strong> 2,500 sq ft</p>
-          <p><strong>Title:</strong> Freehold</p>
-          <p><strong>Land Size:</strong> 6,000 sq ft</p>
-          <p><strong>Built in:</strong> 2015</p>
-          <p><strong>Annual Property Taxes:</strong> $4,200</p>
-          <p><strong>Parking Type:</strong> Garage</p>
-          <p><strong>Time on Rent Connect:</strong> 20 days</p> -->
         </div>
       </div>
 
-      <!--This should pop the Form back up for editing and updateing(share-section was eventually going to have social media sharable links)-->
       <div class="edit-section">
         <a href="#" class="edit-btn">Edit</a>
       </div>
-      <!--share-section was eventually going to have social media sharable links -->
-      <!-- <div class="share-section">
-        <a href="#" class="edit-btn">Edit</a>
-      </div> -->
     </div>
   </main>
 </div>
 
 
-<!-- @Kiranpal to adjust and edit for proper connection to back-end This is attempt to assist with front-back end connection-->
-
-
-
-<!-- ===== JavaScript to read URL parameters and display the data ===== -->
+<!-- JavaScript: Fetch property data and populate fields -->
 <script>
-  // We'll fetch the property data from the /api/property endpoint
   fetch('/api/property')
     .then(response => response.json())
     .then(data => {
-      // data will be the object we stored in storage.js
-      // If there's no data (null), handle that case
       if (!data || Object.keys(data).length === 0) {
-        document.body.insertAdjacentHTML('beforeend', '<p>No property data found. Please add a property first.</p>');
+        document.body.insertAdjacentHTML(
+          'beforeend',
+          '<p>No property data found. Please add a property first.</p>'
+        );
         return;
       }
 
-      // Populate the fields
-      document.getElementById('propertyTitle').textContent  = data.PROPERTY_TITLE        || '';
-      document.getElementById('rentAmount').textContent     = data.RENT_AMOUNT           || '';
-      document.getElementById('propertyName').textContent   = data.PROPERTY_NAME         || '';
-      document.getElementById('propertyDesc').value         = data.PROPERTY_DESC         || '';
-      document.getElementById('city').textContent           = data.CITY                  || '';
-      document.getElementById('zipPostcode').textContent    = data.ZIP_POSTCODE          || '';
-      document.getElementById('numBed').textContent         = data.NUM_BED               || '';
-      document.getElementById('numBath').textContent        = data.NUM_BATH              || '';
+      // Use PROPERTY_NAME for the "title" (or change this if you have a separate PROPERTY_TITLE)
+      document.getElementById('propertyTitle').textContent = data.PROPERTY_NAME || '';
+
+      // The only rent price display
+      document.getElementById('RENT_PRICE').textContent = data.RENT_PRICE || '';
+
+      // Description
+      document.getElementById('propertyDesc').value = data.PROPERTY_DESC || '';
+
+      // City & Zip
+      document.getElementById('CITY').textContent = data.CITY || '';
+      document.getElementById('ZIP_POSTCODE').textContent = data.ZIP_POSTCODE || '';
+
+      // Bedrooms & Bathrooms
+      document.getElementById('numBed').textContent = data.NUM_BED || '';
+      document.getElementById('numBath').textContent = data.NUM_BATH || '';
+
+      // Owner Type & Rent Control
       document.getElementById('propertyOwnerType').textContent = data.PROPERTY_OWNER_TYPE || '';
-      document.getElementById('rentControl').textContent    = data.PROPERTY_RENT_CONTROL || '';
-      document.getElementById('userIsTenant').textContent   = data.USER_IS_TENANT        || '';
+      document.getElementById('rentControl').textContent       = data.PROPERTY_RENT_CONTROL || '';
+
+      // Permission to rent
+      document.getElementById('permissionToRent').textContent = data.PERMISSION_TO_RENT || '';
+
+      // Owner Occupies the Property
+      document.getElementById('userIsTenant').textContent = data.USER_IS_TENANT || '';
 
       // Amenities array
       const amenitiesList = document.getElementById('amenitiesList');

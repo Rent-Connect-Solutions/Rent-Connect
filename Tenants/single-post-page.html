@@ -1,92 +1,187 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/Tenants/tenant-listing-post-page.css">
-    <title>Tenant Profile - Rent Connect</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tenant Post</title>
+  <link rel="stylesheet" href="/css/Property Owners/property-owner-my-listing-page.css" />
+
+  <!-- Browser tab icons, etc. -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/Logo Blue Transparent.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/Logo Transparent.png" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+  <meta name="theme-color" content="#3685fd" />
+  <link rel="manifest" href="/images/site.webmanifest" />
+
+  <title>Rent Connect Tenant Dashboard</title>
 </head>
 <body>
-    <div class="app">
-        <div class="menu-toggle">
-            <div class="hamburger">
-                <span></span>
-            </div>
+<div class="app">
+  <div class="menu-toggle">
+    <div class="hamburger"><span></span></div>
+  </div>
+
+  <aside class="sidebar">
+    <h3>Menu</h3>
+    <nav class="menu">
+      <a href="/Tenants/my-dashboard-tab.html" class="menu-item is-active">Dashboard</a>
+      <a href="/Tenants/my-profile-tab.html" class="menu-item">Profile</a>
+      <a href="/Tenants/my-posts-tab.html" class="menu-item">Posts</a>
+      <a href="/Tenants/my-documents-tab.html" class="menu-item">Documents</a>
+      <a href="#" class="menu-item">Log out</a>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <!-- Show the Tenant's Name in the heading -->
+    <h1>Welcome back, <span id="NAME"></span>!</h1>
+
+    <center>
+      <p>Your Matches:</p>
+      <div class="plus radius"><h3>5</h3></div>
+      <!-- <p><a href="/Tenants/post-form.html">View all</a></p> -->
+    </center>
+    <br />
+
+    <div class="container">
+      <!-- Tenant "Title" or "Post" Info -->
+      <div class="title">
+        <!-- Instead of "Property #1", maybe "My Rental Preferences" or anything tenant-related -->
+        <h1>My Rental Preferences</h1>
+        <!-- Show how much they can spend per month -->
+        <h2>Budget: $<span id="RENT_PRICE"></span> / month</h2>
+      </div>
+
+      <!-- You can have a static image gallery or remove if not needed -->
+      <div class="image-gallery">
+        <div class="scroll-container">
+          <img src="/Images/Lucas_AboutUs.jpg" alt="Tenant Image 1" class="property-image" />
+          <img src="/Images/Lucas_AboutUs.jpg" alt="Tenant Image 2" class="property-image" />
         </div>
+      </div>
 
-        <aside class="sidebar">
-            <h3>Menu</h3>
-            <nav class="menu">
-                <a href="/Tenants/my-dashboard-tab.html" class="menu-item">Dashboard</a>
-                <a href="/Tenants/my-profile-tab.html" class="menu-item">Profile</a>
-                <a href="/Tenants/my-posts-tab.html" class="menu-item">Properties</a>
-                <a href="/Tenants/my-documents-tab.html" class="menu-item">Documents</a>
-                <a href="#" class="menu-item">Log out</a>
-            </nav>
-        </aside>
+      <!-- Basic Info -->
+      <div class="property-info">
+        <p>
+          <strong>Preferred City:</strong> 
+          <span id="CITY"></span>
+        </p>
+        <p>
+          <strong>Postal Code:</strong>
+          <span id="ZIP_POSTCODE"></span>
+        </p>
+      </div>
 
-        <main class="content">
-            <h1>Tenant Profile</h1>
-            <p>Details about your matched tenant are displayed below.</p>
+      <!-- Amenities Section -->
+      <div class="amenities">
+        <h3>Required Amenities</h3>
+        <ul id="amenitiesList"></ul>
+      </div>
 
-            <!-- Profile Section -->
-            <section class="tenant-section hero">
-                <img src="tenant-photo.jpg" alt="Tenant Picture" class="profile-img">
-                <div class="info">
-                    <h2 id="tenant-name">John Doe</h2>
-                    <p id="tenant-age-profession">Age: 30 | Profession: Software Engineer</p>
-                    <p id="tenant-score">Tenant Score: 85%</p>
-                </div>
-            </section>
-            <hr>
+      <!-- Description Section -->
+      <div class="description-section">
+        <h3>About Me / Why I Should Get The Rental</h3>
+        <textarea 
+          class="description-box"
+          rows="5"
+          cols="80"
+          readonly
+          id="TENANT_DESC"
+        ></textarea>
+      </div>
 
-            <!-- About Tenant Section -->
-            <section class="tenant-section">
-                <h2>About Tenant</h2>
-                <p id="tenant-bio">John is a professional with a stable income and excellent rental history. He prefers a pet-friendly property and is a non-smoker.</p>
-            </section>
-            <hr>
+      <!-- More Information on Tenant Requirements -->
+      <div class="more-info">
+        <h3>Additional Info</h3>
+        <div class="more-info-grid">
 
-            <!-- Verified Documents Section -->
-            <section class="tenant-section">
-                <h2>Verified Documents</h2>
-                <div class="documents" id="tenant-documents">
-                    <!-- API Connection #1: Dynamically populate tenant documents -->
-                </div>
-            </section>
-            <hr>
+          <p>
+            <strong>Number of Parking Spots:</strong>
+            <span id="NUM_PARKING"></span>
+          </p>
+          <p>
+            <strong>Bedrooms Wanted:</strong> 
+            <span id="NUM_BED"></span>
+          </p>
+          <p>
+            <strong>Bathrooms Wanted:</strong> 
+            <span id="NUM_BATH"></span>
+          </p>
+          <p>
+            <strong>Type of Unit:</strong> 
+            <span id="TYPE_UNIT"></span>
+          </p>
+          <p>
+            <strong>Pay Stubs Ready:</strong> 
+            <span id="PAY_STUB"></span>
+          </p>
+          <p>
+            <strong>References Ready:</strong> 
+            <span id="REFERENCES"></span>
+          </p>
+          <p>
+            <strong>Letter of Employment:</strong> 
+            <span id="LETTER_EMPLOYMENT"></span>
+          </p>
+          <p>
+            <strong>Credit Score On Hand:</strong> 
+            <span id="CREDIT_SCORE"></span>
+          </p>
+        </div>
+      </div>
 
-            <!-- Amenities Section -->
-            <section class="tenant-section">
-                <h2>Amenities Preference</h2>
-                <div class="amenities" id="tenant-amenities">
-                    <!-- API Connection #2: Dynamically populate tenant amenities -->
-                </div>
-            </section>
-            <hr>
-
-            <!-- Actions Section -->
-            <section class="tenant-section cta-section">
-                <h2>Take Action</h2>
-                <div class="cta-buttons">
-                    <button class="contact">Contact Tenant</button>
-                    <button class="schedule">Schedule a Viewing</button>
-                </div>
-            </section>
-        </main>
+      <div class="edit-section">
+        <a href="#" class="edit-btn">Edit</a>
+      </div>
     </div>
+  </main>
+</div>
 
-    <script src="/js/tenant-single-post-page.js"></script>
-    <script>
-        const menu_toggle = document.querySelector(".menu-toggle");
-        const sidebar = document.querySelector(".sidebar");
+<!-- JavaScript to fetch tenant data and populate fields -->
+<script>
+  // Example: fetch from /api/tenant (adjust the endpoint to your actual route)
+  fetch('/api/tenant')
+    .then(response => response.json())
+    .then(data => {
+      if (!data || Object.keys(data).length === 0) {
+        document.body.insertAdjacentHTML(
+          'beforeend',
+          '<p>No tenant data found. Please fill out the form first.</p>'
+        );
+        return;
+      }
 
-        menu_toggle.addEventListener("click", () => {
-            menu_toggle.classList.toggle("is-active");
-            sidebar.classList.toggle("is-active");
+      // Map each field from the data to the correct ID
+      document.getElementById('NAME').textContent = data.NAME || '';
+      document.getElementById('TENANT_DESC').value = data.TENANT_DESC || '';
+      document.getElementById('CITY').textContent = data.CITY || '';
+      document.getElementById('ZIP_POSTCODE').textContent = data.ZIP_POSTCODE || '';
+      document.getElementById('NUM_PARKING').textContent = data.NUM_PARKING || '';
+      document.getElementById('NUM_BED').textContent = data.NUM_BED || '';
+      document.getElementById('NUM_BATH').textContent = data.NUM_BATH || '';
+      document.getElementById('TYPE_UNIT').textContent = data.TYPE_UNIT || '';
+      document.getElementById('PAY_STUB').textContent = data.PAY_STUB === 'true' ? 'Yes' : 'No';
+      document.getElementById('REFERENCES').textContent = data.REFERENCES === 'true' ? 'Yes' : 'No';
+      document.getElementById('LETTER_EMPLOYMENT').textContent = data.LETTER_EMPLOYMENT === 'true' ? 'Yes' : 'No';
+      document.getElementById('CREDIT_SCORE').textContent = data.CREDIT_SCORE === 'true' ? 'Yes' : 'No';
+      document.getElementById('RENT_PRICE').textContent = data.RENT_PRICE || '';
+
+      // Amenities array
+      const amenitiesList = document.getElementById('amenitiesList');
+      amenitiesList.innerHTML = '';
+      if (Array.isArray(data.amenities) && data.amenities.length > 0) {
+        data.amenities.forEach(amenity => {
+          const li = document.createElement('li');
+          li.textContent = amenity;
+          amenitiesList.appendChild(li);
         });
-    </script>
+      } else {
+        amenitiesList.innerHTML = '<li>No amenities selected.</li>';
+      }
+    })
+    .catch(err => {
+      console.error('Error fetching tenant data:', err);
+    });
+</script>
 </body>
 </html>
